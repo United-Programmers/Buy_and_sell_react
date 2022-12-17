@@ -1,0 +1,158 @@
+$blue: #556ee6;
+$indigo: #564ab1;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #f46a6a;
+$orange: #f1734f;
+$yellow: #f1b44c;
+$green: #34c38f;
+$teal: #050505;
+$cyan: #50a5f1;
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #eff2f7;
+$gray-300: #f6f6f6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #74788d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-200;
+$dark: $gray-800;
+
+//
+// chartist.scss
+//
+.ct-golden-section:before {
+  float: none;
+}
+.ct-chart {
+  max-height: 300px;
+  .ct-label {
+    // fill: $gray-100!important;
+    color: $gray-500;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+.ct-chart.simple-pie-chart-chartist {
+  .ct-label {
+    color: $gray-500;
+    fill: $gray-500;
+    font-size: 16px;
+  }
+}
+.ct-chart {
+  .ct-series {
+    &.ct-series-a {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $primary;
+      }
+    }
+    &.ct-series-b {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $success;
+      }
+    }
+    &.ct-series-c {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $warning;
+      }
+    }
+    &.ct-series-d {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $danger;
+      }
+    }
+    &.ct-series-e {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $info;
+      }
+    }
+    &.ct-series-f {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $pink;
+      }
+    }
+    &.ct-series-g {
+      .ct-bar,
+      .ct-line,
+      .ct-point,
+      .ct-slice-donut {
+        stroke: $primary;
+      }
+    }
+  }
+}
+.ct-series-a {
+  .ct-area,
+  .ct-slice-pie {
+    fill: $primary !important;
+  }
+}
+.ct-series-b {
+  .ct-area,
+  .ct-slice-pie {
+    fill: $success !important;
+  }
+}
+.ct-series-c {
+  .ct-area,
+  .ct-slice-pie {
+    fill: $warning;
+  }
+}
+.ct-series-d {
+  .ct-area,
+  .ct-slice-pie {
+    fill: $danger !important;
+  }
+}
+.ct-area {
+  fill-opacity: 0.33 !important;
+}
+.chartist-tooltip {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  min-width: 10px;
+  padding: 2px 10px;
+  border-radius: 3px;
+  background: $dark;
+  color: $white;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.2s linear;
+  &.tooltip-show {
+    opacity: 1;
+  }
+}

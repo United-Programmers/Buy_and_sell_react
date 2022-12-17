@@ -1,0 +1,269 @@
+@import "./icons.scss";
+
+// Dark Theme
+// @import "./bootstrap-dark.scss";
+// @import "./app-dark.scss";
+
+// Light Theme
+@import "./bootstrap.scss";
+@import "./app.scss";
+
+// RTL Mode
+// @import "./rtl/bootstrap-rtl";
+// @import "./rtl/components-rtl";
+// @import "./rtl/float-rtl";
+// @import "./rtl/general-rtl";
+// @import "./rtl/pages-rtl";
+// @import "./rtl/plugins-rtl";
+// @import "./rtl/spacing-rtl";
+// @import "./rtl/structure-rtl";
+// @import "./rtl/text-rtl";
+
+body {
+  * {
+    outline: none;
+  }
+}
+#sidebar-menu {
+  ul {
+    li {
+      a {
+        i {
+          min-width: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+[class*=" ti-"],
+[class^="ti-"] {
+  font-family: themify;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.noti-icon .badge {
+  left: 23px;
+}
+.dataTables_filter,
+.dataTables_paginate {
+  float: right;
+}
+.rdw-editor-main {
+  border: 1px solid $gray-300;
+  height: 239px;
+}
+.dz-message {
+  text-align: center;
+  margin: 2em 0;
+}
+// kanban board
+.react-kanban-column {
+  height: 100%;
+  min-height: 28px;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 2px;
+  background-color: rgb(238, 238, 238);
+  margin: 5px;
+  vertical-align: top;
+}
+
+.fcYNFc,
+.sc-AxmLO.gmtmqV {
+  background-color: $card-bg !important;
+  margin: 0 20px 0 0 !important;
+}
+.task-box {
+  border: 1px solid $border-color;
+}
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+.ReactModal__Overlay {
+  z-index: 1001 !important;
+}
+.chat-conversation .right .conversation-list {
+  margin-right: 15px;
+}
+.external-event {
+  &:hover {
+    cursor: pointer;
+  }
+}
+a:hover {
+  cursor: pointer;
+}
+.rating-container {
+  background-color: transparent !important;
+}
+.input-group-append {
+  z-index: 0;
+}
+.input-color {
+  color: $input-color !important;
+}
+.sketch-picker {
+  position: absolute;
+  z-index: 1;
+}
+.rangeslider__fill {
+  background-color: $primary !important;
+}
+
+.flatpickr-months .flatpickr-month {
+  background: $primary !important;
+}
+.flatpickr-weekdays {
+  background: $primary !important;
+}
+span.flatpickr-weekday {
+  background: $primary !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  background: $primary !important;
+}
+span.flatpickr-weekday {
+  color: $white !important;
+}
+.flatpickr-day.selected {
+  background: $primary !important;
+}
+
+//File-manager
+.file-manager {
+  .table td {
+    padding: 0.35rem;
+  }
+}
+
+//Crypto enteries
+.bs-select select {
+  width: auto !important;
+}
+
+//Authenication carousel
+.slider_css {
+  .slide {
+    background: none !important;
+  }
+
+  // .control-dots {
+  //   margin-top: 35px !important;
+  // }
+
+  .carousel-status,
+  .control-next,
+  .control-prev {
+    display: none !important;
+  }
+}
+.carousel {
+  .control-dots {
+    margin: -5px 0px;
+  }
+  .dot {
+    background: #556ee6 !important;
+    width: 9px !important;
+    height: 9px !important;
+  }
+}
+
+// calendar modal
+.close {
+  background: transparent;
+  border: 0;
+  font-size: 10px;
+  padding: 1.35rem 1.25rem;
+  background: transparent escape-svg($btn-close-bg-dark) center /
+    $btn-close-width auto no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  width: 1em;
+  height: 1em;
+  z-index: 2;
+  span {
+    display: none;
+  }
+}
+
+.wizard .actions {
+  position: relative !important;
+  display: block !important;
+  text-align: right !important;
+  width: 100% !important;
+}
+.wizard .actions > ul {
+  display: block !important;
+  text-align: right !important;
+  padding-left: 0 !important;
+}
+.wizard .actions > ul > li {
+  display: inline-block !important;
+  margin: 0 0.5em !important;
+}
+
+//Dropdown
+.dropup .dropdown-menu {
+  top: auto !important;
+  bottom: 100% !important;
+  transform: translate3d(5px, 5px, 0px) !important;
+}
+
+//form editor
+.rdw-editor-toolbar,
+.rdw-editor-main {
+  border: 1px solid #ccc !important;
+}
+
+//Calendar
+.app-calendar .btn {
+  text-transform: capitalize;
+}
+.dropzone:focus {
+  outline: none !important ;
+}
+//dropdown
+.dropdown-menu.dropdown-menu-right {
+  right: 0 !important;
+  left: auto !important;
+}
+.card-columns {
+  column-count: 3;
+  grid-column-gap: 1.25rem;
+  -webkit-column-gap: 1.25rem;
+  grid-column-gap: 24px;
+  column-gap: 24px;
+  orphans: 1;
+  widows: 1;
+}
+.ion-ios-checkmark-circle-outline {
+  font-size: 3.5rem;
+  line-height: 56px;
+}
+label {
+  margin-bottom: 0.5rem;
+}
+.DraftEditor-editorContainer {
+  margin-left: 14px !important;
+}
+.wizard .steps .nav-link {
+  background-color: #daddf5;
+  color: #626ed4;
+}
+.wizard .steps .nav-link .number {
+  border-color: #626ed4;
+}

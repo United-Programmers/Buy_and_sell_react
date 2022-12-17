@@ -1,0 +1,109 @@
+// 
+// authentication.scss
+//
+
+
+// login-1
+
+.account-pages {
+    .logo-admin {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0px auto;
+        width: 74px;
+        height: 74px;
+        line-height: 74px;
+        background: $card-bg;
+        border-radius: 50%;
+        border-bottom: 2px solid $success;
+      }
+}
+
+//  login-2
+
+.accountbg {
+    position: absolute;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+  }
+  
+  .account-page-full {
+    left: 0;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    width: 420px;
+    background-color: $card-bg;
+  
+    .card {
+      border: none;
+    }
+  }
+  
+  .account-copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+
+
+// authentication home icon
+.home-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+
+//  Maintenance
+
+.maintenance-img {
+    img {
+        max-width: 320px;
+      }     
+}
+
+
+// Coundown
+
+/*------------ Subscriber --------------*/
+
+
+.coming-soon-search-form {
+  input {
+      padding: 15px 20px;
+      width: 100%;
+      color: $gray-800;
+      border: 2px solid $gray-200;
+      outline: none !important;
+      padding-right: 180px;
+      padding-left: 30px;
+      border-radius: 30px;
+      background-color: $card-bg;
+  }
+  button {
+      position: absolute;
+      top: 7px;
+      right: 8px;
+      outline: none !important;
+      border-radius: 30px;
+      padding: 9px 30px;
+  }
+  form {
+      position: relative;
+      max-width: 600px;
+      margin: 0px auto;
+  }
+}
+
+
+
+  
+
+ 

@@ -1,0 +1,64 @@
+//
+// Form editors.scss
+//
+
+// Tinymce 
+
+.tox-tinymce {
+  border: 1px solid $gray-200 !important;
+}
+
+.tox {
+  .tox-statusbar {
+    border-top: 1px solid $gray-200 !important;
+  }
+    .tox-menubar, .tox-edit-area__iframe, .tox-statusbar{
+      background-color: $card-bg !important;
+      background: none !important;
+    }
+    .tox-mbtn{
+      color: $gray-700 !important;
+        &:hover:not(:disabled):not(.tox-mbtn--active){
+            background-color: $gray-300 !important;
+        }
+    }
+    .tox-tbtn{
+        &:hover{
+            background-color: $gray-300 !important;
+        }
+    }
+
+    .tox-toolbar, .tox-toolbar__overflow, .tox-toolbar__primary{
+      background: $gray-200 !important;
+    }
+
+    .tox-tbtn{
+      color: $gray-700 !important;
+      svg{
+        fill: $gray-700 !important;
+      }
+    }
+
+    .tox-edit-area__iframe{
+      background-color: $card-bg !important;
+    }
+  
+    .tox-statusbar a, .tox-statusbar__path-item, .tox-statusbar__wordcount{
+      color: $gray-700 !important;
+    }
+
+    &:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+      border-right: 1px solid darken($gray-200, 5%) !important;
+    } 
+
+    .tox-toolbar-overlord{
+      .tox-toolbar__primary{
+        border-color: $gray-200 !important;
+        border-bottom: 1px solid $gray-200;
+      }
+    }
+}
+
+.tox-tinymce-aux{
+  z-index: 1000 !important;
+}

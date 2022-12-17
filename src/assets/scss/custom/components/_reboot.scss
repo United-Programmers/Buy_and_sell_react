@@ -1,0 +1,45 @@
+/* =============
+   General
+============= */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.h1,.h2,.h3,.h4,.h5,.h6,
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-semibold;
+}
+
+
+p{
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+label {
+  font-weight: $fw-medium;
+}
+
+b,
+strong {
+  font-weight: $fw-medium;
+}
+
+// blockquote
+
+.blockquote {
+  padding: 10px 20px;
+  border-left: 4px solid $gray-300;
+}
+
+.blockquote-reverse {
+  border-left: 0;
+  border-right: 4px solid $gray-300;
+  text-align: right;
+}
