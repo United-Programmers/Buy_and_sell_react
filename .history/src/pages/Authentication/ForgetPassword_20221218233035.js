@@ -69,5 +69,18 @@ const ForgetPasswordPage = () => {
   )
 }
 
+ForgetPasswordPage.propTypes = {
+  forgetError: PropTypes.any,
+  forgetSuccessMsg: PropTypes.any,
+  history: PropTypes.object,
+  userForgetPassword: PropTypes.func
+}
 
-export default ForgetPasswordPage
+const mapStatetoProps = state => {
+  const { forgetError, forgetSuccessMsg } = state.ForgetPassword
+  return { forgetError, forgetSuccessMsg }
+}
+
+export default withRouter(
+  connect(mapStatetoProps, { userForgetPassword })(ForgetPasswordPage)
+)

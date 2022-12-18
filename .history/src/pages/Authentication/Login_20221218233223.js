@@ -114,4 +114,17 @@ const Login = () => {
   )
 }
 
-export default Login
+const mapStateToProps = state => {
+  const { error } = state.Login
+  return { error }
+}
+
+export default withRouter(
+  connect(mapStateToProps, { loginUser, apiError })(Login)
+)
+
+Login.propTypes = {
+  error: PropTypes.any,
+  history: PropTypes.object,
+  loginUser: PropTypes.func,
+}

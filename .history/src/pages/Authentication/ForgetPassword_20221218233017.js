@@ -57,8 +57,8 @@ const ForgetPasswordPage = () => {
               <div className="mt-5 text-center">
                 <p>Remember It ? <Link to="login" className="fw-medium text-primary"> Sign In here </Link> </p>
                 <p>
-                  © {new Date().getFullYear()}  Crafted with
-                  <i className="mdi mdi-heart text-danger" /> by The united programmers
+                  © {new Date().getFullYear()} Veltrix. Crafted with{" "}
+                  <i className="mdi mdi-heart text-danger" /> by Themesbrand
                 </p>
               </div>
             </Col>
@@ -69,5 +69,18 @@ const ForgetPasswordPage = () => {
   )
 }
 
+ForgetPasswordPage.propTypes = {
+  forgetError: PropTypes.any,
+  forgetSuccessMsg: PropTypes.any,
+  history: PropTypes.object,
+  userForgetPassword: PropTypes.func
+}
 
-export default ForgetPasswordPage
+const mapStatetoProps = state => {
+  const { forgetError, forgetSuccessMsg } = state.ForgetPassword
+  return { forgetError, forgetSuccessMsg }
+}
+
+export default withRouter(
+  connect(mapStatetoProps, { userForgetPassword })(ForgetPasswordPage)
+)
