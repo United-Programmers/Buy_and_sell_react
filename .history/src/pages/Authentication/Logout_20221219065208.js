@@ -8,14 +8,19 @@ import { AvForm, AvField } from "availity-reactstrap-validation"
 import { loginUser, apiError } from "../../store/actions"
 import logoSm from "../../assets/images/logo-sm.png";
 
-const Login = () => {
+const Logout = () => {
 
 
   return (
     <React.Fragment>
       <MetaTags>
-        <title>Login | Buy & sell</title>
+        <title>Logout | Buy & sell</title>
       </MetaTags>
+      <div className="home-btn d-none d-sm-block">
+        <Link to="/" className="text-dark">
+          <i className="fas fa-home h2" />
+        </Link>
+      </div>
       <div className="account-pages my-5 pt-sm-5">
         <Container>
           <Row className="justify-content-center">
@@ -29,6 +34,10 @@ const Login = () => {
                         handleValidSubmit(e, v)
                       }}
                     >
+                      {props.error && typeof props.error === "string" ? (
+                        <Alert color="danger">{props.error}</Alert>
+                      ) : null}
+
                       <div className="mb-3">
                         <AvField
                           name="email"
@@ -105,4 +114,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Logout
