@@ -5,10 +5,10 @@ import { Redirect } from "react-router-dom"
 //* AUTHENTICATION PAGES
 import Login from "../pages/Authentication/Login/Login"
 import Logout from "../pages/Authentication/Logout/Logout"
-import UserRegister from "../pages/Authentication/Users/UserRegister"
+import UserRegister from "../pages/Authentication/UserRegister"
 import AdminRegister from "../pages/Authentication/Admin/AdminRegister"
 import DriverRegister from "../pages/Authentication/Driver/DriverRegister"
-import SellerRegister from "../pages/Authentication/Sellers/SellerRegister"
+import SellerRegister from "../pages/Authentication/SellerRegister"
 import ForgetPwd from "../pages/Authentication/Forgot password/ForgetPassword"
 import ResetPassword from "../pages/Authentication/Reset password/ResetPassword"
 
