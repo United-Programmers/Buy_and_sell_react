@@ -11,6 +11,8 @@ import { withTranslation } from "react-i18next"
 import logodarkImg from "../../assets/images/logo-dark.png";
 import logosmImg from "../../assets/images/logo-sm.png";
 import logolightImg from "../../assets/images/logo-light.png";
+import { BsCart4 } from 'react-icons/bs';
+import { AiOutlineHeart } from 'react-icons/ai';
 
 const Header = props => {
 
@@ -79,18 +81,21 @@ const Header = props => {
               <i className="mdi mdi-menu"></i>
             </button>
           </div>
-          <div className="d-flex">
-            {/* <LanguageDropdown /> */}
-            <div className="dropdown d-none d-lg-inline-block">
-              <button type="button" className="btn header-item noti-icon waves-effect" onClick={() => {
-                toggleFullscreen()
-              }} data-bs-toggle="fullscreen">
-                <i className="mdi mdi-fullscreen"></i>
-              </button>
-            </div>
-            {/* <NotificationDropdown /> */}
+
+          <div className="d-flex ">
+           <Link to="/shopping-cart" className="mt-3 pt-1">
+              <BsCart4 size={25} />
+              <span className="badge bg-danger rounded-pill">3</span>
+           </Link>
+
+           <Link to="/wishlist" className="mt-3 mx-4 pt-1">
+              <AiOutlineHeart size={25} />
+              <span className="badge bg-danger rounded-pill">0</span>
+           </Link>
+
             <ProfileMenu />
           </div>
+
         </div>
       </header>
     </React.Fragment>
