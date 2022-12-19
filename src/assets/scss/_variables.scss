@@ -22,18 +22,18 @@ $sidebar-menu-item-color: #66676d;
 $sidebar-menu-sub-item-color: #464b50;
 $sidebar-menu-item-icon-color: #464b50;
 $sidebar-menu-item-hover-color: #0b0d0e;
-$sidebar-menu-item-active-color: #626ed4;
+$sidebar-menu-item-active-color: #9A00C0;
 $sidebar-menu-item-active-bg: #f5f5f5;
 
 // Vertical Colored Sidebar - Colored
 
-$sidebar-colored-bg: #626ed4; //2c313a
+$sidebar-colored-bg: #9A00C0; //2c313a
 $sidebar-colored-menu-item-color: rgba($white, 0.7);
 $sidebar-colored-menu-sub-item-color: rgba($white, 0.7);
 $sidebar-colored-menu-item-icon-color: rgba($white, 0.7);
 $sidebar-colored-menu-item-hover-color: rgba($white, 1.0);
 $sidebar-colored-menu-item-active-color: rgba($white, 1.0);
-$sidebar-colored-menu-item-active-bg: #6b77dd;
+$sidebar-colored-menu-item-active-bg: #9A00C0;
 
 // Topbar - Deafult Light
 $header-height: 50px;
@@ -53,11 +53,10 @@ $footer-bg: #f2f2f5;
 $footer-color: #74788d;
 
 // Horizontal nav
-$topnav-bg:   #333547;
-
-$menu-item-color: #a1a2ab;
+$topnav-bg:   #9A00C0;
+$menu-item-color: #ffffff;
 $menu-subitem-color: #66676d;
-$menu-item-active-color: #626ed4;
+$menu-item-active-color: #9A00C0;
 
 // Right Sidebar
 $rightbar-width:  280px;
@@ -120,7 +119,7 @@ $grays: (
 
 
 $blue:       #626ed4;
-$purple:     #6f42c1;
+$purple:     #9A00C0;
 $pink:       #e83e8c;
 $red:        #ec4561;
 $orange:     #f1734f;

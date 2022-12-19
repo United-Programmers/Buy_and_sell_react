@@ -79,27 +79,22 @@ const Navbar = props => {
             >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link
-                    className="nav-link"
-                    to="dashboard"
-                  >
+                  <Link className="nav-link"to="home">
                     <i className="ti-home me-2" />
-                    {props.t("Dashboard")} {props.menuOpen}
+                    {props.t("Home")} {props.menuOpen}
                   </Link>
 
                 </li>
 
                 <li className="nav-item dropdown mega-dropdown">
-                  <Link
-                    to="/#"
-                    onClick={e => {
+                  <Link to="/#" onClick={e => {
                       e.preventDefault()
                       setui(!ui)
                     }}
                     className="nav-link dropdown-toggle arrow-none"
                   >
                     <i className="ti-package me-2"></i>
-                    {props.t("UI Elements")}
+                    {props.t("Categories 1")}
                   </Link>
                   <div
                     className={classname(
@@ -144,7 +139,7 @@ const Navbar = props => {
                       setcomponent(!component)
                     }}
                   >
-                    <i className="ti-harddrives me-2"></i> Components
+                    <i className="ti-harddrives me-2"></i> Categories 2
                   </Link>
                   <div className={classname("dropdown-menu", { show: component })}>
                     <div className="dropdown">
