@@ -4,7 +4,7 @@ import { connect } from "react-redux"
 import { Link } from "react-router-dom"
 import { showRightSidebarAction, toggleLeftmenu } from "../../store/actions"
 import { Row, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap"
-import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown"
+import RegisterOption from "../CommonForBoth/TopbarDropdown/RegisterOption"
 import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown"
 import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu"
 import { withTranslation } from "react-i18next"
@@ -13,6 +13,7 @@ import logosmImg from "../../assets/images/logo-sm.png";
 import logolightImg from "../../assets/images/logo-light.png";
 import { BsCart4 } from 'react-icons/bs';
 import { AiOutlineHeart } from 'react-icons/ai';
+import { IoMdNotificationsOutline } from 'react-icons/io';
 
 const Header = props => {
 
@@ -82,7 +83,12 @@ const Header = props => {
             </button>
           </div>
 
-          <div className="d-flex ">
+
+          <div className="d-flex">
+          <div className="px-5">
+            <RegisterOption />
+            </div>
+            
            <Link to="/shopping-cart" className="mt-2 pt-1 text-dark">
               <BsCart4 size={25} />
               <span className="badge bg-danger rounded-pill">3</span>
@@ -90,7 +96,12 @@ const Header = props => {
 
            <Link to="/wishlist" className="mt-2 mx-4 pt-1 text-dark">
               <AiOutlineHeart size={25} />
-              <span className="badge bg-danger rounded-pill">0</span>
+              <span className="badge bg-primary rounded-pill">0</span>
+           </Link>
+
+           <Link to="/user-message" className="mt-2  pt-1 text-dark">
+              <IoMdNotificationsOutline size={25} />
+              <span className="badge bg-danger rounded-pill">2</span>
            </Link>
 
             <ProfileMenu />

@@ -10,6 +10,8 @@ import { SlBasketLoaded } from 'react-icons/sl';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { CiCreditCard1 } from 'react-icons/ci';
 import { FaUserFriends } from 'react-icons/fa';
+import { AiOutlineMessage } from 'react-icons/ai';
+import { HiOutlineUsers } from 'react-icons/hi';
 
 const ProfileMenu = () => {
   const [menu, setMenu] = useState(false)
@@ -18,8 +20,9 @@ const ProfileMenu = () => {
     <React.Fragment>
       <Dropdown isOpen={menu} toggle={() => setMenu(!menu)} className="d-inline-block">
 
-        <DropdownToggle className="btn header-item waves-effect" id="page-header-user-dropdown" tag="button">
+        <DropdownToggle className="btn header-item waves-effect px-5" id="page-header-user-dropdown" tag="button">
           <img className="rounded-circle header-profile-user" src={user1} alt="user" />
+          <span className="mdi mdi-chevron-down mx-1"> Joseph </span>
         </DropdownToggle>
 
         <DropdownMenu className="dropdown-menu-end">
@@ -29,7 +32,9 @@ const ProfileMenu = () => {
           <div className="dropdown-divider" />
           <DropdownItem tag="a" href="/wishlist"> <MdFavoriteBorder size={20} /> Wishlist </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/vendors"> <FaUserFriends size={20} /> Vendors </DropdownItem>
+          <DropdownItem tag="a" href="/vendors"> <HiOutlineUsers size={20} /> Vendors </DropdownItem>
+          <div className="dropdown-divider" />
+          <DropdownItem tag="a" href="/user-message"> <AiOutlineMessage size={20} /> Message </DropdownItem>
         </DropdownMenu>
 
       </Dropdown>
