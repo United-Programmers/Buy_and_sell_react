@@ -1,7 +1,6 @@
 import React from "react"
 import { Redirect } from "react-router-dom"
 
-
 //* AUTHENTICATION PAGES
 import Login from "../pages/Authentication/Login/Login"
 import Logout from "../pages/Authentication/Logout/Logout"
