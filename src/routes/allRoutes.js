@@ -21,6 +21,7 @@ import ShoppingCart from "../pages/Products/Shopping-Cart/index"
 import WishList from "../pages/Products/Wishlist/index"
 import Vendors from "../pages/Vendors/All-vendors/index"
 import VendorShop from "../pages/Vendors/Vendors-shops/index"
+import UserMessage from "../pages/Messages/User/index"
 
 
 const userRoutes = [
@@ -32,6 +33,7 @@ const userRoutes = [
   { path: "/wishlist", component: WishList },
   { path: "/vendors", component: Vendors },
   { path: "/vendor-shop/:id", component: VendorShop },
+  { path: "/user-message", component: UserMessage },
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
 
