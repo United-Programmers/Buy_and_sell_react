@@ -26,15 +26,15 @@ const ProfileMenu = () => {
         </DropdownToggle>
 
         <DropdownMenu className="dropdown-menu-end">
-          <DropdownItem tag="a" href="/user-profile"> <BiUserCircle size={20} /> Profile info </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/user-profile" className="text-dark">  <BiUserCircle size={20} /> Profile info </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/user-orders"> <SlBasketLoaded size={20} /> Orders </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/user-orders" className="text-dark">  <SlBasketLoaded size={20} /> Orders </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/wishlist"> <MdFavoriteBorder size={20} /> Wishlist </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/wishlist" className="text-dark"> <MdFavoriteBorder size={20} /> Wishlist </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/vendors"> <HiOutlineUsers size={20} /> Vendors </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/vendors" className="text-dark"> <HiOutlineUsers size={20} /> Vendors </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/user-message"> <AiOutlineMessage size={20} /> Message </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/user-message" className="text-dark"> <AiOutlineMessage size={20} /> Message </Link> </DropdownItem>
         </DropdownMenu>
 
       </Dropdown>

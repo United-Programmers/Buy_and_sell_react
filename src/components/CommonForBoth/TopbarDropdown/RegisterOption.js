@@ -18,11 +18,11 @@ const RegisterOption = () => {
         </DropdownToggle>
 
         <DropdownMenu className="language-switch dropdown-menu-end">
-        <DropdownItem tag="a" href="/#"> <BiUserPlus size={20} /> Buyer </DropdownItem>
+        <DropdownItem tag="a"> <Link to="/#" className="text-dark"> <BiUserPlus size={20} /> Buyer </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/#"> <GrUserAdmin size={20} /> Seller </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/#" className="text-dark"> <GrUserAdmin size={20} /> Seller </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/#"> <BiCar size={20} /> Driver </DropdownItem>
+          <DropdownItem tag="a"><Link to="/#" className="text-dark"> <BiCar size={20} /> Driver </Link> </DropdownItem>
          
         </DropdownMenu>
       </Dropdown>
