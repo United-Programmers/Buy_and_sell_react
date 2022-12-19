@@ -83,12 +83,12 @@ const Header = props => {
           </div>
 
           <div className="d-flex ">
-           <Link to="/shopping-cart" className="mt-3 pt-1 text-dark">
+           <Link to="/shopping-cart" className="mt-2 pt-1 text-dark">
               <BsCart4 size={25} />
               <span className="badge bg-danger rounded-pill">3</span>
            </Link>
 
-           <Link to="/wishlist" className="mt-3 mx-4 pt-1 text-dark">
+           <Link to="/wishlist" className="mt-2 mx-4 pt-1 text-dark">
               <AiOutlineHeart size={25} />
               <span className="badge bg-danger rounded-pill">0</span>
            </Link>
