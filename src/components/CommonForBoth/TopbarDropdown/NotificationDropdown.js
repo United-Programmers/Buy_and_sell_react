@@ -11,13 +11,11 @@ const Cart = props => {
 
   return (
     <React.Fragment>
-      <Dropdown  isOpen={menu} toggle={() => setMenu(!menu)} className="dropdown d-inline-block"tag="li" >
         <DropdownToggle className="btn header-item noti-icon waves-effect" tag="button" id="page-header-notifications-dropdown">
           <BsCart4 />
           <span className="badge bg-danger rounded-pill">3</span>
         </DropdownToggle>
 
-      </Dropdown>
     </React.Fragment>
   )
 }

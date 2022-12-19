@@ -9,6 +9,7 @@ import { BiUserCircle, BiMap } from 'react-icons/bi';
 import { SlBasketLoaded } from 'react-icons/sl';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { CiCreditCard1 } from 'react-icons/ci';
+import { FaUserFriends } from 'react-icons/fa';
 
 const ProfileMenu = () => {
   const [menu, setMenu] = useState(false)
@@ -16,20 +17,21 @@ const ProfileMenu = () => {
   return (
     <React.Fragment>
       <Dropdown isOpen={menu} toggle={() => setMenu(!menu)} className="d-inline-block">
+
         <DropdownToggle className="btn header-item waves-effect" id="page-header-user-dropdown" tag="button">
           <img className="rounded-circle header-profile-user" src={user1} alt="user" />
         </DropdownToggle>
+
         <DropdownMenu className="dropdown-menu-end">
-          <DropdownItem tag="a" href="/#"> <BiUserCircle size={20} /> Profile info </DropdownItem>
+          <DropdownItem tag="a" href="/user-profile"> <BiUserCircle size={20} /> Profile info </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/#"> <SlBasketLoaded size={20} /> Orders </DropdownItem>
+          <DropdownItem tag="a" href="/user-orders"> <SlBasketLoaded size={20} /> Orders </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/#"> <MdFavoriteBorder size={20} /> Wishlist </DropdownItem>
+          <DropdownItem tag="a" href="/wishlist"> <MdFavoriteBorder size={20} /> Wishlist </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/#"> <BiMap size={20} /> Addresses </DropdownItem>
-          <div className="dropdown-divider" />
-          <DropdownItem tag="a" href="/#"> <CiCreditCard1 size={20} /> Payment method </DropdownItem>
+          <DropdownItem tag="a" href="/vendors"> <FaUserFriends size={20} /> Vendors </DropdownItem>
         </DropdownMenu>
+
       </Dropdown>
     </React.Fragment>
   )
