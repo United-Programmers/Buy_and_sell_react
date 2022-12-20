@@ -1,8 +1,13 @@
 import React from "react"
 import MetaTags from 'react-meta-tags';
-import { Col, Container, Row } from "reactstrap"
+import { Card, CardImg, Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
+import User from "../../../assets/images/users/avatar-2.jpg"
+import { AiTwotoneLike } from "react-icons/ai";
+import { BsReply } from "react-icons/bs";
+
+
 
 const AdminMessage = () => {
 
@@ -14,7 +19,56 @@ const AdminMessage = () => {
                 <PageWrapper>
                     <Breadcrumb default="/admin-message" defaultName="Message" title="my messages" />
 
-                    <h1 className="page-title">AdminMessage page</h1>
+                    <Card className="message p-4 border rounded p-2">
+                        <Row>
+                            <Col md={2}>
+                               <CardImg src={User} alt="user"className="rounded-circle avatar-lg"/>
+                            </Col>
+
+                            <Col md={10} className="rounded-sm message__card">
+                            <p><h4>John muleka</h4>  <p className="font-size-10"><AiTwotoneLike/> liked your post</p></p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                            <p><small>5 mins ago</small></p>
+                            <div className="text-start">
+                                <button className="btn btn-secondary"><BsReply/></button>
+                            </div>
+                            </Col>
+                        </Row>
+                    </Card>
+
+                    <Card className="message p-4 border rounded p-2">
+                        <Row>
+                            <Col md={2}>
+                               <CardImg src={User} alt="user"className="rounded-circle avatar-lg"/>
+                            </Col>
+
+                            <Col md={10} className="rounded-sm message__card">
+                            <p><h4>Deo muleka</h4>  <p className="font-size-10"><AiTwotoneLike/> liked your post</p></p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                            <p><small>5 mins ago</small></p>
+                            <div className="text-start">
+                                <button className="btn btn-secondary"><BsReply/></button>
+                            </div>
+                            </Col>
+                        </Row>
+                    </Card>
+
+                    <Card className="message p-4 border rounded p-2">
+                        <Row>
+                            <Col md={2}>
+                               <CardImg src={User} alt="user"className="rounded-circle avatar-lg"/>
+                            </Col>
+
+                            <Col md={10} className="rounded-sm message__card">
+                            <p><h4>John muleka</h4>  <p className="font-size-10"><AiTwotoneLike/> liked your post</p></p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                            <p><small>5 mins ago</small></p>
+                            <div className="text-start">
+                                <button className="btn btn-secondary"><BsReply/></button>
+                            </div>
+                            </Col>
+                        </Row>
+                    </Card>
                 </PageWrapper>
 
             </div>

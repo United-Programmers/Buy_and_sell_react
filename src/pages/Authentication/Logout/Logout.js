@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import MetaTags from 'react-meta-tags';
 import React from "react"
+import "./style.scss"
 import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap"
 import { connect } from "react-redux"
 import { withRouter, Link } from "react-router-dom"
@@ -15,13 +16,19 @@ const Logout = () => {
       <MetaTags>
         <title>Logout | Buy & sell</title>
       </MetaTags>
+      <div className='acount-pages'>
 
-      <div className="account-pages my-5 pt-sm-5">
-        <Container>
-          <Row className="justify-content-center">
-            <h1> Logout </h1>
-          </Row>
-        </Container>
+        <div className='logout__card'>
+          <Card className='p-3 text-center border rounded p-5'>
+            <h4 className='py-1'>Are you sure you want to logout?</h4>
+              <Row className="justify-content-center py-4 ">
+                <button className='btn  btn-primary w-25 me-5'>Logout</button>
+                <button className='btn btn-secondary w-25'>cancel</button>
+              </Row>           
+            <Link>Do you wanna go back?</Link>
+          </Card>
+        </div>
+
       </div>
     </React.Fragment>
   )
