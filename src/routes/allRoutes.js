@@ -22,6 +22,9 @@ import WishList from "../pages/Products/Wishlist/index"
 import Vendors from "../pages/Vendors/All-vendors/index"
 import VendorShop from "../pages/Vendors/Vendors-shops/index"
 import UserMessage from "../pages/Messages/User/index"
+import AdminMessage from "../pages/Messages/Admin/index"
+import DriversMessage from "../pages/Messages/Drivers/index"
+import VenorsMessage from "../pages/Messages/Vendors/index"
 
 
 const userRoutes = [
@@ -34,6 +37,9 @@ const userRoutes = [
   { path: "/vendors", component: Vendors },
   { path: "/vendor-shop/:id", component: VendorShop },
   { path: "/user-message", component: UserMessage },
+  { path: "/admin-message", component: AdminMessage },
+  { path: "/driver-message", component: DriversMessage },
+  { path: "/vendor-message", component: VenorsMessage },
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
 
