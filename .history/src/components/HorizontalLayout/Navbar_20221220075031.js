@@ -333,7 +333,7 @@ const Navbar = props => {
                   <div className={classname("dropdown-menu mega-dropdown-menu px-2 dropdown-menu-start dropdown-mega-menu-xl",
                     { show: ui })}>
                     <Row>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Clothes </Link>
                           <Link to="/" className="dropdown-item"> T-shirt </Link>
@@ -342,7 +342,7 @@ const Navbar = props => {
                           <Link to="/" className="dropdown-item"> Underwear </Link>
                         </div>
                       </Col>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
                           <Link to="/" className="dropdown-item"> Belt </Link>
@@ -370,7 +370,7 @@ const Navbar = props => {
                   <div className={classname("dropdown-menu mega-dropdown-menu px-2 dropdown-menu-start dropdown-mega-menu-xl",
                     { show: ui })}>
                     <Row>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Clothes </Link>
                           <Link to="/" className="dropdown-item"> T-shirt </Link>
@@ -379,7 +379,7 @@ const Navbar = props => {
                           <Link to="/" className="dropdown-item"> Underwear </Link>
                         </div>
                       </Col>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
                           <Link to="/" className="dropdown-item"> Belt </Link>
@@ -406,7 +406,7 @@ const Navbar = props => {
                   <div className={classname("dropdown-menu mega-dropdown-menu px-2 dropdown-menu-start dropdown-mega-menu-xl",
                     { show: ui })}>
                     <Row>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Clothes </Link>
                           <Link to="/" className="dropdown-item"> T-shirt </Link>
@@ -415,7 +415,7 @@ const Navbar = props => {
                           <Link to="/" className="dropdown-item"> Underwear </Link>
                         </div>
                       </Col>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
                           <Link to="/" className="dropdown-item"> Belt </Link>
@@ -449,6 +449,27 @@ const Navbar = props => {
                     <AiOutlineShop size={22} /> Others
                   </Link>
                   <div className={classname("dropdown-menu", { show: component })}>
+                    <div className="dropdown">
+                      <Link to="/#" className="dropdown-item dropdown-toggle arrow-none"
+                        onClick={e => {
+                          e.preventDefault()
+                          setemail(!email)
+                        }}>
+                        Fashion <div className="arrow-down"></div>
+                      </Link>
+                      <div className={classname("dropdown-menu", { show: email })}>
+                        <Row>
+                          <Col md={6}>
+                            <ul>
+                              <li> <Link to="/"> Shirt </Link> </li>
+                              <li> <Link to="/"> T-Shirt </Link> </li>
+                              <li> <Link to="/"> Pant </Link> </li>
+                              <li> <Link to="/"> Underwear </Link> </li>
+                            </ul>
+                          </Col>
+                        </Row>
+                      </div>
+                    </div>
 
                     <div className="dropdown">
                       <Link

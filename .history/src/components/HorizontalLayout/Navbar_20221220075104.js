@@ -333,7 +333,7 @@ const Navbar = props => {
                   <div className={classname("dropdown-menu mega-dropdown-menu px-2 dropdown-menu-start dropdown-mega-menu-xl",
                     { show: ui })}>
                     <Row>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Clothes </Link>
                           <Link to="/" className="dropdown-item"> T-shirt </Link>
@@ -342,7 +342,7 @@ const Navbar = props => {
                           <Link to="/" className="dropdown-item"> Underwear </Link>
                         </div>
                       </Col>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
                           <Link to="/" className="dropdown-item"> Belt </Link>
@@ -370,7 +370,7 @@ const Navbar = props => {
                   <div className={classname("dropdown-menu mega-dropdown-menu px-2 dropdown-menu-start dropdown-mega-menu-xl",
                     { show: ui })}>
                     <Row>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Clothes </Link>
                           <Link to="/" className="dropdown-item"> T-shirt </Link>
@@ -379,7 +379,7 @@ const Navbar = props => {
                           <Link to="/" className="dropdown-item"> Underwear </Link>
                         </div>
                       </Col>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
                           <Link to="/" className="dropdown-item"> Belt </Link>
@@ -406,7 +406,7 @@ const Navbar = props => {
                   <div className={classname("dropdown-menu mega-dropdown-menu px-2 dropdown-menu-start dropdown-mega-menu-xl",
                     { show: ui })}>
                     <Row>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Clothes </Link>
                           <Link to="/" className="dropdown-item"> T-shirt </Link>
@@ -415,7 +415,7 @@ const Navbar = props => {
                           <Link to="/" className="dropdown-item"> Underwear </Link>
                         </div>
                       </Col>
-                      <Col lg={3}>
+                      <Col lg={6}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
                           <Link to="/" className="dropdown-item"> Belt </Link>
