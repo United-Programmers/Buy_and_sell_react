@@ -1,0 +1,72 @@
+.heading2 {
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.container {
+    margin-top: 10pc;
+    .full {
+        border-radius: 50%;
+    }
+    .card-body {
+        // background-color: aliceblue;
+        // gap:50px;
+        .colors {
+            display: flex;
+            gap: 6px;
+            background-color: aliceblue;
+            margin-bottom: 10px;
+        }
+        .stock {
+            // border: 10 px solid gray;
+            border-color: rgb(175, 172, 172);
+            margin-top: 20px;
+            border-radius: 90px;
+            padding: 3px;
+            color: rgb(116, 116, 103);
+            // margin: 4px;
+            // border: 10px;
+            border-style: solid;
+            background-color: aliceblue;
+        }
+        .pink {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+        .red {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+        .purple {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+        .brown {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+    }
+    // background-color: aliceblue;
+    .display {
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-text {
+        background-color: aliceblue;
+    }
+    .plus {
+        float: right;
+        color: blueviolet;
+    }
+}
+
+.gap {
+    margin-top: 35px;
+    margin-bottom: 55px;
+}

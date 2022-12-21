@@ -22,4 +22,4 @@ const VendorShop = () => {
     )
 }
 
-export default VendorShop
+export default index
