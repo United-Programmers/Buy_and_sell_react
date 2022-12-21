@@ -1,16 +1,32 @@
-.heading2 {
+// * {
+//     background-color: rgba(224, 224, 224, 1);
+// }
+.heading {
     margin-top: 35px;
-    text-align: center;
+    text-align: left;
     margin-bottom: 55px;
 }
 
-.container {
+.vendor_container {
     .full {
         border-radius: 50%;
     }
+    .border {
+        border-radius: 50%;
+    }
     .card-body {
-        background-color: #ffffff;
-        // gap:50px;
+        background-color: white;
+        .phone {
+            background-color: white;
+        }
+        .divs {
+            display: flex;
+        }
+        .visitShop {
+            color: purple;
+            background-color: white;
+            float: right;
+        }
         .colors {
             display: flex;
             gap: 6px;
@@ -18,14 +34,11 @@
             margin-bottom: 10px;
         }
         .stock {
-            // border: 10 px solid gray;
             border-color: rgb(175, 172, 172);
             margin-top: 20px;
             border-radius: 90px;
             padding: 3px;
             color: rgb(116, 116, 103);
-            // margin: 4px;
-            // border: 10px;
             border-style: solid;
             background-color: white;
         }

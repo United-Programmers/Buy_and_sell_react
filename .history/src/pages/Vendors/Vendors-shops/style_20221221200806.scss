@@ -5,16 +5,17 @@
 }
 
 .container {
+    margin-top: 10pc;
     .full {
         border-radius: 50%;
     }
     .card-body {
-        background-color: #ffffff;
+        background-color: aliceblue;
         // gap:50px;
         .colors {
             display: flex;
             gap: 6px;
-            background-color: white;
+            background-color: aliceblue;
             margin-bottom: 10px;
         }
         .stock {
@@ -27,7 +28,7 @@
             // margin: 4px;
             // border: 10px;
             border-style: solid;
-            background-color: white;
+            background-color: aliceblue;
         }
         .pink {
             border-radius: 50px;
@@ -50,14 +51,14 @@
             width: 10px;
         }
     }
-    background-color: white;
+    background-color: aliceblue;
     .display {
-        background-color: white;
+        background-color: aliceblue;
         display: flex;
         justify-content: space-between;
     }
     .card-text {
-        background-color: white;
+        background-color: aliceblue;
     }
     .plus {
         float: right;

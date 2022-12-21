@@ -18,9 +18,7 @@ const PaymentDetails = () => {
 
                     <Card>
                         <CardBody>
-                            {/* Try to follow the structured so that it can be easy to maintain our code */}
-                            {/* ANY OTHER FILES PUT THEM UNDER COMPONENTS AND YOU IMPORT IT HERE */}
-                            {/* PLEASE PUT YOUR CODE HERE */}
+
                         </CardBody>
                     </Card>
 
