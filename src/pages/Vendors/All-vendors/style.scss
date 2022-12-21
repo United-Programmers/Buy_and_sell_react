@@ -14,19 +14,6 @@
     .border {
         border-radius: 50%;
     }
-    // background-color: rgba(206, 206, 206, 1);
-    // margin: auto;
-    // width: 70%;
-    // // height: 40px/;
-    // // border: 3px solid green;
-    // padding: 10px;
-    // top:30px;
-    // margin-top: 45px;
-    // display: flex;
-    // gap:10px;
-    // .card{
-    //     background-color: aliceblue;
-    // }
     .card-body {
         background-color: white;
         .phone {
@@ -40,7 +27,6 @@
             background-color: white;
             float: right;
         }
-        // gap:50px;
         .colors {
             display: flex;
             gap: 6px;
@@ -48,14 +34,11 @@
             margin-bottom: 10px;
         }
         .stock {
-            // border: 10 px solid gray;
             border-color: rgb(175, 172, 172);
             margin-top: 20px;
             border-radius: 90px;
             padding: 3px;
             color: rgb(116, 116, 103);
-            // margin: 4px;
-            // border: 10px;
             border-style: solid;
             background-color: white;
         }

@@ -9,7 +9,7 @@ const Products = () => {
       {
         Data.map((m, id) => {
           return (
-            <div className='col-sm-6 col-md-4 col-lg-3 full' >
+            <div className='col-sm-6 col-md-4 col-lg-3 full' key={id} >
               <div className="card" style={{ width: "18rem" }} >
                 <img className="card-img-top" src={m.imgL} alt="Card image cap" />
                 <div className="card-body">

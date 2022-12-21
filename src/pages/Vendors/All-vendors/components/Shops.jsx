@@ -10,10 +10,8 @@ import { shopData } from './shopData';
 const Shops = () => {
   return (
     <div>
-      <div className='row gy my-3 gap '>
-        <div className='heading'>
-          <h1>All Shops</h1>
-        </div>
+      <div className='row gy my-3 gap'>
+        <div className='heading'> <h1>All Shops</h1> </div>
         {
           shopData.map((m, id) => {
             return (
