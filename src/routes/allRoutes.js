@@ -30,6 +30,8 @@ import UserMessage from "../pages/Messages/User/index"
 import AdminMessage from "../pages/Messages/Admin/index"
 import DriversMessage from "../pages/Messages/Drivers/index"
 import VendorsMessage from "../pages/Messages/Vendors/index"
+import Account from "../pages/User-Account/Profile-info/Account"
+import Register from "../pages/Authentication/Register/Register"
 
 
 // * VENDORS PAGES 
@@ -41,6 +43,7 @@ import VendorAddProduct from "../pages/Vendors/Profile-account/Add-Products/inde
 import VendorProducts from "../pages/Vendors/Profile-account/My-Products/index"
 import VendorOrders from "../pages/Vendors/Profile-account/Orders/index"
 import VendorAccountSettings from "../pages/Vendors/Profile-account/Account-settings/index"
+
 
 const userRoutes = [
 
@@ -93,6 +96,7 @@ const authRoutes = [
   { path: "/admin-register", component: AdminRegister }, //* Admin Register
   { path: "/driver-register", component: DriverRegister }, //* Driver Register
   { path: "/sellers-register", component: SellerRegister }, //* Vendor Register
+
 ]
 
 export { userRoutes, authRoutes }
