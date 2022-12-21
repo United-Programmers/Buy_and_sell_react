@@ -1,15 +1,17 @@
-import PropTypes from 'prop-types'
-import MetaTags from 'react-meta-tags';
-import React from "react"
+import PropTypes from "prop-types"
+import MetaTags from "react-meta-tags"
+import React, { useState } from "react"
 import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap"
 import { connect } from "react-redux"
 import { withRouter, Link } from "react-router-dom"
 import { AvForm, AvField } from "availity-reactstrap-validation"
 import { loginUser, apiError } from "../../../store/actions"
+import Button from "components/Common/Button/Button"
+import "./style.scss"
 
 const Login = () => {
-
-
+  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("")
   return (
     <React.Fragment>
       <MetaTags>
@@ -21,6 +23,7 @@ const Login = () => {
             <Col md={8} lg={6} xl={4}>
               <Card className="overflow-hidden">
                 <CardBody className="p-4">
+                  <h3 className="text-center">Login</h3>
                   <div className="p-3">
                     <AvForm
                       className="form-horizontal mt-4"
@@ -28,25 +31,27 @@ const Login = () => {
                         handleValidSubmit(e, v)
                       }}
                     >
-                      <div className="mb-3">
+                      <div className="mb-3 myInput">
                         <AvField
                           name="email"
-                          label="Email"
-                          value="admin@themesbrand.com"
+                          label="Email Address"
+                          value={email}
                           className="form-control"
                           placeholder="Enter email"
                           type="email"
+                          onChange={e => setEmail(e.target.value)}
                           required
                         />
                       </div>
 
-                      <div className="mb-3">
+                      <div className="mb-3 myInput">
                         <AvField
                           name="password"
                           label="Password"
-                          value="123456"
+                          value={password}
                           type="password"
                           required
+                          onChange={e => setPassword(e.target.value)}
                           placeholder="Enter Password"
                         />
                       </div>
@@ -54,17 +59,23 @@ const Login = () => {
                       <Row className="mb-3">
                         <Col sm={6}>
                           <div className="form-check">
-                            <input type="checkbox" className="form-check-input" id="customControlInline" />
-                            <label className="form-check-label" htmlFor="customControlInline">Remember me</label>
+                            <input
+                              type="checkbox"
+                              className="form-check-input"
+                              id="customControlInline"
+                            />
+                            <label
+                              className="form-check-label"
+                              htmlFor="customControlInline"
+                            >
+                              Remember me
+                            </label>
                           </div>
                         </Col>
                         <Col sm={6} className="text-end">
-                          <button
-                            className="btn btn-primary w-md waves-effect waves-light"
-                            type="submit"
-                          >
-                            Log In
-                          </button>
+                          <Button type="submit" btnType="my-default">
+                            Login
+                          </Button>
                         </Col>
                       </Row>
 
@@ -76,7 +87,6 @@ const Login = () => {
                           </Link>
                         </div>
                       </Row>
-
                     </AvForm>
                   </div>
                 </CardBody>
@@ -84,16 +94,14 @@ const Login = () => {
               <div className="mt-5 text-center">
                 <p>
                   Don&#39;t have an account ?
-                  <Link
-                    to="register"
-                    className="fw-medium text-primary"
-                  >
+                  <Link to="register" className="fw-medium text-primary">
                     Signup now
                   </Link>
                 </p>
                 <p>
-                  © {new Date().getFullYear()}  Crafted with
-                  <i className="mdi mdi-heart text-danger" /> by The united programmers
+                  © {new Date().getFullYear()} Crafted with
+                  <i className="mdi mdi-heart text-danger" /> by The united
+                  programmers
                 </p>
               </div>
             </Col>
