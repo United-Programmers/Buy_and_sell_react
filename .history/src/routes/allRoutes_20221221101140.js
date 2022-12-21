@@ -1,7 +1,6 @@
 import React from "react"
 import { Redirect } from "react-router-dom"
 
-
 //* AUTHENTICATION OR  PAGES
 import Login from "../pages/Authentication/Login/Login"
 import Logout from "../pages/Authentication/Logout/Logout"
@@ -19,19 +18,16 @@ import ProductDetail from "../pages/Products/Products-Details/index"
 import ShoppingCart from "../pages/Products/Shopping-Cart/index"
 import WishList from "../pages/Products/Wishlist/index"
 
-
 // * USER OR BUYERS PAGES
 import Account from "../pages/User-Account/Profile-info/Account"
 import UserOrders from "../pages/User-Account/Orders/index"
 import ProfileInfo from "../pages/User-Account/Profile-info/index"
-
 
 //* PAGE MESSAGES
 import UserMessage from "../pages/Messages/User/index"
 import AdminMessage from "../pages/Messages/Admin/index"
 import DriversMessage from "../pages/Messages/Drivers/index"
 import VendorsMessage from "../pages/Messages/Vendors/index"
-
 
 // * VENDORS PAGES 
 import Vendors from "../pages/Vendors/All-vendors/index"
@@ -65,7 +61,6 @@ const userRoutes = [
   { path: "/user-message", component: UserMessage },
   { path: "/admin-message", component: AdminMessage },
   { path: "/driver-message", component: DriversMessage },
-  { path: "/vendor-message", component: VendorsMessage },
   // * END
 
 
@@ -80,14 +75,15 @@ const userRoutes = [
   { path: "/vendor-account-settings", component: VendorAccountSettings },
   //* END
 
+
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
 
 const authRoutes = [
-  { path: "/logout", component: Logout }, //* logout
-  { path: "/login", component: Login }, //* login
-  { path: "/reset-password", component: ResetPassword }, //* reset password
-  { path: "/forgot-password", component: ForgetPwd }, //* forgot password
+  { path: "/logout", component: Logout },
+  { path: "/login", component: Login },
+  { path: "/reset-password", component: ResetPassword },
+  { path: "/forgot-password", component: ForgetPwd },
 
   { path: "/user-register", component: UserRegister }, //* user Register
   { path: "/admin-register", component: AdminRegister }, //* Admin Register

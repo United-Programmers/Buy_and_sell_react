@@ -15,14 +15,17 @@ const VendorAccount = () => {
                 <PageWrapper>
                     <Breadcrumb default="/vendor-account" defaultName="Account" title="my account" />
 
+
                     {/* WRITE YOUR CODE HERE */}
-                    <p> <Link to="/vendor-dashboard"> Dashboard </Link> </p>
-                    <p> <Link to="/vendor-addProduct"> Add new products </Link> </p>
-                    <p> <Link to="/vendor-products"> My Products </Link> </p>
-                    <p> <Link to="/vendor-orders"> Orders </Link> </p>
-                    <p> <Link to="/vendor-account-settings"> Account settings </Link> </p>
+
+                    <p> <Link to="/"> Dashboard </Link> </p>
+                    <p> <Link to="/"> Add new products </Link> </p>
+                    <p> <Link to="/"> My Products </Link> </p>
+                    <p> <Link to="/"> Orders </Link> </p>
+                    <p> <Link to="/"> Account settings </Link> </p>
 
                 </PageWrapper>
+
             </div>
         </React.Fragment>
     )

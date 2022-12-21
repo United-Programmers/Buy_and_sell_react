@@ -21,7 +21,6 @@ const VendorAccount = () => {
                     <p> <Link to="/vendor-products"> My Products </Link> </p>
                     <p> <Link to="/vendor-orders"> Orders </Link> </p>
                     <p> <Link to="/vendor-account-settings"> Account settings </Link> </p>
-
                 </PageWrapper>
             </div>
         </React.Fragment>
