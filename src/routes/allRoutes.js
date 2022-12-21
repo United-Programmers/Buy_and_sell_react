@@ -30,8 +30,8 @@ import UserMessage from "../pages/Messages/User/index"
 import AdminMessage from "../pages/Messages/Admin/index"
 import DriversMessage from "../pages/Messages/Drivers/index"
 import VendorsMessage from "../pages/Messages/Vendors/index"
-import Account from "../pages/User-Account/Profile-info/Account"
-import Register from "../pages/Authentication/Register/Register"
+// import Account from "../pages/User-Account/Profile-info/Account"
+// import Register from "../pages/Authentication/Register/Register"
 
 
 // * VENDORS PAGES 
@@ -69,7 +69,7 @@ const userRoutes = [
 
   { path: "/vendor-message", component: VendorsMessage },
   // * END
-  
+
 
   //* VENDORS ROUTES
   { path: "/vendors", component: Vendors },
@@ -81,7 +81,7 @@ const userRoutes = [
   { path: "/vendor-orders", component: VendorOrders },
   { path: "/vendor-account-settings", component: VendorAccountSettings },
   //* END
-  
+
 
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
