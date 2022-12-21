@@ -12,6 +12,7 @@ import SellerRegister from "../pages/Authentication/Sellers/SellerRegister"
 import ForgetPwd from "../pages/Authentication/Forgot password/ForgetPassword"
 import ResetPassword from "../pages/Authentication/Reset password/ResetPassword"
 
+
 //* DASHBOARD PAGES
 import Products from "../pages/Products/Home-Products/index"
 import ProductDetail from "../pages/Products/Products-Details/index"
@@ -42,6 +43,7 @@ import VendorProducts from "../pages/Vendors/Profile-account/My-Products/index"
 import VendorOrders from "../pages/Vendors/Profile-account/Orders/index"
 import VendorAccountSettings from "../pages/Vendors/Profile-account/Account-settings/index"
 
+
 const userRoutes = [
 
   //* DASHBOARD PAGES
@@ -63,10 +65,9 @@ const userRoutes = [
   { path: "/user-message", component: UserMessage },
   { path: "/admin-message", component: AdminMessage },
   { path: "/driver-message", component: DriversMessage },
-
   { path: "/vendor-message", component: VendorsMessage },
   // * END
-  
+
 
   //* VENDORS ROUTES
   { path: "/vendors", component: Vendors },
@@ -78,7 +79,6 @@ const userRoutes = [
   { path: "/vendor-orders", component: VendorOrders },
   { path: "/vendor-account-settings", component: VendorAccountSettings },
   //* END
-  
 
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]

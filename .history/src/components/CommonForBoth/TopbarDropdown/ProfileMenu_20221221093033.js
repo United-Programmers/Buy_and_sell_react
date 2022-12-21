@@ -26,7 +26,7 @@ const ProfileMenu = () => {
         </DropdownToggle>
 
         <DropdownMenu className="dropdown-menu-end">
-          <DropdownItem tag="a"> <Link to="/account" className="text-dark">  <BiUserCircle size={20} /> Buyer Account </Link> </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/account" className="text-dark">  <BiUserCircle size={20} /> Account </Link> </DropdownItem>
           <div className="dropdown-divider" />
           <DropdownItem tag="a"> <Link to="/vendor-account" className="text-dark">  <BiUserCircle size={20} /> Vendor Account </Link> </DropdownItem>
           <div className="dropdown-divider" />
