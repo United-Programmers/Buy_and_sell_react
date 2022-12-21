@@ -25,6 +25,7 @@ import AdminMessage from "../pages/Messages/Admin/index"
 import DriversMessage from "../pages/Messages/Drivers/index"
 import VendorsMessage from "../pages/Messages/Vendors/index"
 import Account from "../pages/User-Account/Profile-info/Account"
+import Register from "../pages/Authentication/Register/Register"
 
 const userRoutes = [
   { path: "/home", component: Products },
@@ -45,6 +46,7 @@ const userRoutes = [
 const authRoutes = [
   { path: "/logout", component: Logout },
   { path: "/login", component: Login },
+  { path: "/register", component: Register },
   { path: "/reset-password", component: ResetPassword },
   { path: "/forgot-password", component: ForgetPwd },
   { path: "/user-register", component: UserRegister },
