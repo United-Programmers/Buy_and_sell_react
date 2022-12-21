@@ -11,7 +11,6 @@ import SellerRegister from "../pages/Authentication/Sellers/SellerRegister"
 import ForgetPwd from "../pages/Authentication/Forgot password/ForgetPassword"
 import ResetPassword from "../pages/Authentication/Reset password/ResetPassword"
 
-
 //* DASHBOARD PAGES
 import Products from "../pages/Products/Home-Products/index"
 import ProductDetail from "../pages/Products/Products-Details/index"
@@ -27,7 +26,6 @@ import DriversMessage from "../pages/Messages/Drivers/index"
 import VendorsMessage from "../pages/Messages/Vendors/index"
 import Account from "../pages/User-Account/Profile-info/Account"
 
-
 const userRoutes = [
   { path: "/home", component: Products },
   { path: "/details/:id", component: ProductDetail },
@@ -40,7 +38,7 @@ const userRoutes = [
   { path: "/user-message", component: UserMessage },
   { path: "/admin-message", component: AdminMessage },
   { path: "/driver-message", component: DriversMessage },
-  { path: "/account", component: Account },
+
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
 
