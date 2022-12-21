@@ -1,8 +1,10 @@
 import React from "react"
+import "./style.scss"
 import MetaTags from 'react-meta-tags';
 import { Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
+import Products from "./components/Products";
 
 const VendorShop = () => {
 
@@ -13,8 +15,7 @@ const VendorShop = () => {
 
                 <PageWrapper>
                     <Breadcrumb default="/vendor-shop" defaultName="Vendor-Shop" title="shops" />
-
-                    <h1 className="page-title">VendorShop pages</h1>
+                    <Products />
                 </PageWrapper>
 
             </div>

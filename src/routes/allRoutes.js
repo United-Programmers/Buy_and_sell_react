@@ -24,6 +24,7 @@ import WishList from "../pages/Products/Wishlist/index"
 import Account from "../pages/User-Account/Profile-info/Account"
 import UserOrders from "../pages/User-Account/Orders/index"
 import ProfileInfo from "../pages/User-Account/Profile-info/index"
+import PaymentDetails from "../pages/User-Account/Payments/index"
 
 
 //* PAGE MESSAGES
@@ -42,6 +43,7 @@ import VendorAddProduct from "../pages/Vendors/Profile-account/Add-Products/inde
 import VendorProducts from "../pages/Vendors/Profile-account/My-Products/index"
 import VendorOrders from "../pages/Vendors/Profile-account/Orders/index"
 import VendorAccountSettings from "../pages/Vendors/Profile-account/Account-settings/index"
+
 
 
 const userRoutes = [
@@ -66,6 +68,7 @@ const userRoutes = [
   { path: "/admin-message", component: AdminMessage },
   { path: "/driver-message", component: DriversMessage },
   { path: "/vendor-message", component: VendorsMessage },
+  { path: "/payment-details", component: PaymentDetails },
   // * END
 
 

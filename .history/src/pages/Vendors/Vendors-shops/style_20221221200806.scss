@@ -1,50 +1,21 @@
-// * {
-//     background-color: rgba(224, 224, 224, 1);
-// }
-.heading {
+.heading2 {
     margin-top: 35px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 55px;
 }
 
-.vendor_container {
+.container {
+    margin-top: 10pc;
     .full {
         border-radius: 50%;
     }
-    .border {
-        border-radius: 50%;
-    }
-    // background-color: rgba(206, 206, 206, 1);
-    // margin: auto;
-    // width: 70%;
-    // // height: 40px/;
-    // // border: 3px solid green;
-    // padding: 10px;
-    // top:30px;
-    // margin-top: 45px;
-    // display: flex;
-    // gap:10px;
-    // .card{
-    //     background-color: aliceblue;
-    // }
     .card-body {
-        background-color: white;
-        .phone {
-            background-color: white;
-        }
-        .divs {
-            display: flex;
-        }
-        .visitShop {
-            color: purple;
-            background-color: white;
-            float: right;
-        }
+        background-color: aliceblue;
         // gap:50px;
         .colors {
             display: flex;
             gap: 6px;
-            background-color: white;
+            background-color: aliceblue;
             margin-bottom: 10px;
         }
         .stock {
@@ -57,7 +28,7 @@
             // margin: 4px;
             // border: 10px;
             border-style: solid;
-            background-color: white;
+            background-color: aliceblue;
         }
         .pink {
             border-radius: 50px;
@@ -80,14 +51,14 @@
             width: 10px;
         }
     }
-    background-color: white;
+    background-color: aliceblue;
     .display {
-        background-color: white;
+        background-color: aliceblue;
         display: flex;
         justify-content: space-between;
     }
     .card-text {
-        background-color: white;
+        background-color: aliceblue;
     }
     .plus {
         float: right;

@@ -1,20 +1,21 @@
 import React from "react"
+import "./style.scss"
 import MetaTags from 'react-meta-tags';
 import { Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
+import Shops from "./components/Shops";
 
-const Vendors = () => {
+const VendorShop = () => {
 
     return (
         <React.Fragment>
             <div className="page-content">
-                <MetaTags title_sco="Vendors page | Buy and sell" />
+                <MetaTags title_sco="Vendor Shop page | Buy and sell" />
 
                 <PageWrapper>
-                    <Breadcrumb default="/vendors" defaultName="Vendors" title="all vendors" />
-
-                    <h1 className="page-title">Vendors pages</h1>
+                    <Breadcrumb default="/vendor-shop" defaultName="Vendor-Shop" title="shops" />
+                    <Shops />
                 </PageWrapper>
 
             </div>
@@ -22,4 +23,4 @@ const Vendors = () => {
     )
 }
 
-export default Vendors
+export default VendorShop
