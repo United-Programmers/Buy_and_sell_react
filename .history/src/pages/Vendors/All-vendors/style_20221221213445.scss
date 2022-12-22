@@ -1,0 +1,101 @@
+// * {
+//     background-color: rgba(224, 224, 224, 1);
+// }
+.heading {
+    margin-top: 35px;
+    text-align: left;
+    margin-bottom: 55px;
+}
+
+.vendor_container {
+    .full {
+        border-radius: 50%;
+    }
+    .border {
+        border-radius: 50%;
+    }
+    // background-color: rgba(206, 206, 206, 1);
+    // margin: auto;
+    // width: 70%;
+    // // height: 40px/;
+    // // border: 3px solid green;
+    // padding: 10px;
+    // top:30px;
+    // margin-top: 45px;
+    // display: flex;
+    // gap:10px;
+    // .card{
+    //     background-color: aliceblue;
+    // }
+    .card-body {
+        // background-color: white;
+        .phone {
+            background-color: white;
+        }
+        .divs {
+            display: flex;
+        }
+        .visitShop {
+            color: purple;
+            background-color: white;
+            float: right;
+        }
+        // gap:50px;
+        .colors {
+            display: flex;
+            gap: 6px;
+            background-color: white;
+            margin-bottom: 10px;
+        }
+        .stock {
+            // border: 10 px solid gray;
+            border-color: rgb(175, 172, 172);
+            margin-top: 20px;
+            border-radius: 90px;
+            padding: 3px;
+            color: rgb(116, 116, 103);
+            // margin: 4px;
+            // border: 10px;
+            border-style: solid;
+            background-color: white;
+        }
+        .pink {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+        .red {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+        .purple {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+        .brown {
+            border-radius: 50px;
+            height: 10px;
+            width: 10px;
+        }
+    }
+    background-color: white;
+    .display {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-text {
+        background-color: white;
+    }
+    .plus {
+        float: right;
+        color: blueviolet;
+    }
+}
+
+.gap {
+    margin-top: 35px;
+    margin-bottom: 55px;
+}
