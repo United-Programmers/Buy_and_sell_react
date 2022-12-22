@@ -12,7 +12,7 @@ import Breadcrumb from "components/Common/Breadcrumb"
 import PageWrapper from "components/PageWrapper"
 
 const Account = () => {
-    const userName = "John Doe";
+    const userName = "John";
 
   return (
     <React.Fragment>
