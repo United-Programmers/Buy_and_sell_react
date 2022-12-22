@@ -35,6 +35,7 @@ import VendorsMessage from "../pages/Messages/Vendors/index"
 
 // * VENDORS PAGES 
 import Vendors from "../pages/Vendors/All-vendors/index"
+import VendorList from "../pages/Vendors/List-of-vendors/index"
 import VendorShop from "../pages/Vendors/Vendors-shops/index"
 import VendorAccount from "../pages/Vendors/Profile-account/index"
 import VendorDashboard from "../pages/Vendors/Profile-account/Dashboard/index"
@@ -74,6 +75,7 @@ const userRoutes = [
 
   //* VENDORS ROUTES
   { path: "/vendors", component: Vendors },
+  { path: "/vendor-list", component: VendorList },
   { path: "/vendor-shop/:id", component: VendorShop },
   { path: "/vendor-account", component: VendorAccount },
   { path: "/vendor-dashboard", component: VendorDashboard },
