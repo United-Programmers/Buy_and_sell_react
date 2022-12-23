@@ -15,6 +15,7 @@ import { BsCart4 } from 'react-icons/bs';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
 
+
 const Header = props => {
 
   function toggleFullscreen() {
@@ -85,24 +86,26 @@ const Header = props => {
 
 
           <div className="d-flex">
-          <div className="px-5">
-            <RegisterOption />
+
+            <div className="px-5">
+              <RegisterOption />
             </div>
-            
-           <Link to="/shopping-cart" className="mt-2 pt-1 text-dark">
+
+
+            <Link to="/shopping-cart" className="mt-2 pt-1 text-dark">
               <BsCart4 size={25} />
               <span className="badge bg-danger rounded-pill">3</span>
-           </Link>
+            </Link>
 
-           <Link to="/wishlist" className="mt-2 mx-4 pt-1 text-dark">
+            <Link to="/wishlist" className="mt-2 mx-4 pt-1 text-dark">
               <AiOutlineHeart size={25} />
               <span className="badge bg-primary rounded-pill">0</span>
-           </Link>
+            </Link>
 
-           <Link to="/user-message" className="mt-2  pt-1 text-dark">
+            <Link to="/user-message" className="mt-2  pt-1 text-dark">
               <IoMdNotificationsOutline size={25} />
               <span className="badge bg-danger rounded-pill">2</span>
-           </Link>
+            </Link>
 
             <ProfileMenu />
           </div>
