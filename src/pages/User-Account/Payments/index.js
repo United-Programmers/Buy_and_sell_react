@@ -1,9 +1,10 @@
 import React from "react"
-import "./style.scss";
+
 import MetaTags from 'react-meta-tags';
 import { Card, CardBody, CardImg, Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
+import Pay from "./components/Pay";
 
 
 const PaymentDetails = () => {
@@ -18,9 +19,7 @@ const PaymentDetails = () => {
 
                     <Card>
                         <CardBody>
-                            {/* Try to follow the structured so that it can be easy to maintain our code */}
-                            {/* ANY OTHER FILES PUT THEM UNDER COMPONENTS AND YOU IMPORT IT HERE */}
-                            {/* PLEASE PUT YOUR CODE HERE */}
+                           <Pay/>
                         </CardBody>
                     </Card>
 
