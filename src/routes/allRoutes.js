@@ -17,6 +17,8 @@ import Products from "../pages/Products/Home-Products/index"
 import ProductDetail from "../pages/Products/Products-Details/index"
 import ShoppingCart from "../pages/Products/Shopping-Cart/index"
 import WishList from "../pages/Products/Wishlist/index"
+import DeliverOption from "../pages/Products/Deliver-Option/DeliverOption"
+import DeliverAddress from "../pages/Products/Deliver-Option/DeliverAddress"
 
 
 // * USER OR BUYERS PAGES
@@ -53,6 +55,9 @@ const userRoutes = [
   { path: "/details/:id", component: ProductDetail },
   { path: "/shopping-cart", component: ShoppingCart },
   { path: "/wishlist", component: WishList },
+  { path: "/deliver-option", component: DeliverOption },
+  { path: "/deliver-address-details", component: DeliverAddress },
+
   //*END 
 
 
