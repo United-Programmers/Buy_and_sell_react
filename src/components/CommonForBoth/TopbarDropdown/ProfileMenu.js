@@ -34,7 +34,7 @@ const ProfileMenu = () => {
           <div className="dropdown-divider" />
           <DropdownItem tag="a"> <Link to="/wishlist" className="text-dark"> <MdFavoriteBorder size={20} /> Wishlist </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a"> <Link to="/vendors" className="text-dark"> <HiOutlineUsers size={20} /> Vendors </Link> </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/vendors-list" className="text-dark"> <HiOutlineUsers size={20} /> Vendors </Link> </DropdownItem>
           <div className="dropdown-divider" />
           <DropdownItem tag="a"> <Link to="/user-message" className="text-dark"> <AiOutlineMessage size={20} /> Message </Link> </DropdownItem>
         </DropdownMenu>
