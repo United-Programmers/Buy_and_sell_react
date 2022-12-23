@@ -1,29 +1,171 @@
 import React from "react"
-import MetaTags from 'react-meta-tags';
-import { Col, Container, Row } from "reactstrap"
-import Breadcrumb from "components/Common/Breadcrumb";
-import PageWrapper from "components/PageWrapper";
+import MetaTags from "react-meta-tags"
+import {
+  Col,
+  Container,
+  Row,
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardTitle,
+  CardText,
+} from "reactstrap"
+import Breadcrumb from "components/Common/Breadcrumb"
+import { withRouter, Link } from "react-router-dom"
+import PageWrapper from "components/PageWrapper"
 
 const Account = () => {
+  const userName = "John"
 
-    return (
-        <React.Fragment>
-            <div className="page-content">
-                <MetaTags title_sco="Account page | Buy and sell" />
+  return (
+    <React.Fragment>
+      <div className="page-content">
+        <MetaTags title_sco="Account page | Buy and sell" />
 
-                <PageWrapper>
-                    <Breadcrumb default="/account" defaultName="Account" title="account" />
+        <PageWrapper>
+          <Breadcrumb
+            default="/account"
+            defaultName="Account"
+            title="account"
+          />
 
+          {/* WRITE YOUR CODE HERE */}
+          <div>
+            <Card inverse>
+              <CardImg
+                className="rounded"
+                alt="Card image cap"
+                src="https://www.wallpaperup.com/uploads/wallpapers/2013/12/12/193670/63bad3beee18eef1a2767ad7fee9b8fb-700.jpg"
+                style={{
+                  height: 200,
+                }}
+                width="100%"
+              />
+              <CardImgOverlay>
+                <CardTitle className="text-white">
+                  <h1>Hi {userName} </h1>
+                </CardTitle>
+              </CardImgOverlay>
+            </Card>
 
-                    {/* WRITE YOUR CODE HERE */}
-                    <h1 className="page-title">Account page pages</h1>
+            <Row className="gy-2 my-3">
+              <Col xs="4">
+                <Link to="/user-orders">
+                  <Card sm className="p-2 border rounded">
+                    <Row className="gy-2 align-items-center">
+                      <Col xs="3">
+                        <CardImg
+                          className="rounded-circle me-1"
+                          alt="Card image cap"
+                          src="https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
+                          style={{
+                            height: 70,
+                            width: 70,
+                          }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <CardTitle className="text-muted">
+                          <h4>Your Order</h4>
+                        </CardTitle>
+                        <CardText className="text-muted">
+                          Track, Return or Buy again
+                        </CardText>
+                      </Col>
+                    </Row>
+                  </Card>
+                </Link>
+              </Col>
 
+              <Col xs="4">
+                <Link to="/user-profile">
+                  <Card sm className="p-2 border rounded">
+                    <Row className="gy-2 align-items-center">
+                      <Col xs="3">
+                        <CardImg
+                          className="rounded-circle"
+                          alt="Card image cap"
+                          src="https://images.pexels.com/photos/2928232/pexels-photo-2928232.jpeg?auto=compress&cs=tinysrgb&w=400"
+                          style={{
+                            height: 70,
+                            width: 70,
+                          }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <CardTitle className="text-muted">
+                          <h4>Your Profile</h4>
+                        </CardTitle>
+                        <CardText className="text-muted">
+                          View and manage your profile
+                        </CardText>
+                      </Col>
+                    </Row>
+                  </Card>
+                </Link>
+              </Col>
 
-                </PageWrapper>
+              <Col xs="4">
+                <Link to="/user-message">
+                  <Card sm className="p-2 border rounded">
+                    <Row className="gy-2 align-items-center">
+                      <Col xs="3">
+                        <CardImg
+                          className="rounded-circle"
+                          alt="Card image cap"
+                          src="https://images.pexels.com/photos/177707/pexels-photo-177707.jpeg?auto=compress&cs=tinysrgb&w=400"
+                          style={{
+                            height: 70,
+                            width: 70,
+                          }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <CardTitle className="text-muted">
+                          <h4>Your Messages</h4>
+                        </CardTitle>
+                        <CardText className="text-muted">
+                          Talk directly to the vendors
+                        </CardText>
+                      </Col>
+                    </Row>
+                  </Card>
+                </Link>
+              </Col>
 
-            </div>
-        </React.Fragment>
-    )
+              <Col xs="4">
+                <Link to="/payment-details">
+                  <Card sm className="p-2 border rounded">
+                    <Row className="gy-2 align-items-center">
+                      <Col xs="3">
+                        <CardImg
+                          className="rounded-circle"
+                          alt="Card image cap"
+                          src="https://images.pexels.com/photos/177707/pexels-photo-177707.jpeg?auto=compress&cs=tinysrgb&w=400"
+                          style={{
+                            height: 70,
+                            width: 70,
+                          }}
+                        />
+                      </Col>
+                      <Col xs="9">
+                        <CardTitle className="text-muted">
+                          <h4>Payments</h4>
+                        </CardTitle>
+                        <CardText className="text-muted">
+                          Payment methods
+                        </CardText>
+                      </Col>
+                    </Row>
+                  </Card>
+                </Link>
+              </Col>
+            </Row>
+          </div>
+        </PageWrapper>
+      </div>
+    </React.Fragment>
+  )
 }
 
 export default Account
