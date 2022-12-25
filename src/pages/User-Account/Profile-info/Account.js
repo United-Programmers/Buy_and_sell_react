@@ -15,7 +15,7 @@ import { withRouter, Link } from "react-router-dom"
 import PageWrapper from "components/PageWrapper"
 
 const Account = () => {
-  const userName = "John"
+  const userName = "User Name"
 
   return (
     <React.Fragment>
@@ -49,7 +49,7 @@ const Account = () => {
             </Card>
 
             <Row className="gy-2 my-3">
-              <Col xs="4">
+              <Col xs="6" lg="4">
                 <Link to="/user-orders">
                   <Card sm className="p-2 border rounded">
                     <Row className="gy-2 align-items-center">
@@ -77,7 +77,7 @@ const Account = () => {
                 </Link>
               </Col>
 
-              <Col xs="4">
+              <Col xs="6" lg="4">
                 <Link to="/user-profile">
                   <Card sm className="p-2 border rounded">
                     <Row className="gy-2 align-items-center">
@@ -105,7 +105,7 @@ const Account = () => {
                 </Link>
               </Col>
 
-              <Col xs="4">
+              <Col xs="6" lg="4">
                 <Link to="/user-message">
                   <Card sm className="p-2 border rounded">
                     <Row className="gy-2 align-items-center">
@@ -133,7 +133,7 @@ const Account = () => {
                 </Link>
               </Col>
 
-              <Col xs="4">
+              <Col xs="6" lg="4">
                 <Link to="/payment-details">
                   <Card sm className="p-2 border rounded">
                     <Row className="gy-2 align-items-center">
