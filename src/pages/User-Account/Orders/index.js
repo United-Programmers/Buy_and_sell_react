@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import MetaTags from "react-meta-tags"
 import {
   Col,
@@ -10,142 +10,202 @@ import {
   Button,
   Badge,
   CardText,
+  Collapse,
+  Nav,
+  NavItem,
+  NavLink,
+  TabContent,
+  TabPane,
 } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb"
 import { withRouter, Link } from "react-router-dom"
 import PageWrapper from "components/PageWrapper"
+import classnames from "classnames"
+import NewOrders from "./components/NewOrders"
+import ShippedOrder from "./components/ShippedOrder"
+import CancelledOrders from "./components/CancelledOrders"
+import ReturnOrder from "./components/ReturnOrder"
+import { MdAddTask, MdCancelPresentation } from "react-icons/md"
+import { TbTruckReturn, TbTruckDelivery } from "react-icons/tb"
 
-const Orders = () => {
-  const orderDetails = [
-    {
-      orderId: "#SK2540",
-      productName:
-        "https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-      productInfo: "MacBook air M2",
-      price: "$400",
-      link: "#",
-    },
-    {
-      id: "customCheck3",
-      orderId: "#SK2541",
-      productName:
-        "https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-      productInfo: "MacBook air M2",
-      price: "$380",
-      link: "#",
-    },
-    {
-      id: "customCheck4",
-      orderId: "#SK2542",
-      productName:
-        "https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-      productInfo: "MacBook air M2",
-      price: "$384",
-      link: "#",
-    },
-    {
-      id: "customCheck5",
-      orderId: "#SK2543",
-      productName:
-        "https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-      productInfo: "MacBook air M2",
-      price: "$412",
-      link: "#",
-    },
-    {
-      id: "customCheck6",
-      orderId: "#SK2544",
-      productName:
-        "https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-      productInfo: "MacBook air M2",
-      price: "$404",
-      link: "#",
-    },
-    {
-      id: "customCheck7",
-      orderId: "#SK2545",
-      productName:
-        "https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load",
-      productInfo: "MacBook air M2",
-      price: "$392",
-      link: "#",
-    },
-  ]
+class UiTabsAccordions extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      activeTab: "1",
+      activeTab1: "5",
+      activeTab2: "9",
+      activeTab3: "13",
+      verticalActiveTab: "1",
+      customActiveTab: "1",
+      activeTabJustify: "5",
+    }
+  }
 
-  return (
-    <React.Fragment>
-      <div className="page-content">
-        <MetaTags title_sco="Orders page | Buy and sell" />
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab,
+      })
+    }
+  }
 
-        <PageWrapper>
-          <Breadcrumb
-            default="/orders"
-            defaultName="Products"
-            title="all product"
-          />
+  toggle1(tab) {
+    if (this.state.activeTab1 !== tab) {
+      this.setState({
+        activeTab1: tab,
+      })
+    }
+  }
 
-          <Card>
-            <CardBody>
-              <CardTitle className="mb-4">New Orders</CardTitle>
-              <div className="table-responsive">
-                <table className="table align-middle table-nowrap mb-0">
-                  <thead className="table-light">
-                    <tr>
-                      <th className="align-middle">Order ID</th>
-                      <th className="align-middle">Product image</th>
-                      <th className="align-middle">Product Details</th>
-                      <th className="align-middle">Price</th>
-                      <th className="align-middle"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {orderDetails.map((orderDetails, key) => (
-                      <tr key={"_tr_" + key}>
-                        <td>
-                          <Link to="#" className="text-body fw-bold">
-                            {" "}
-                            {orderDetails.orderId}{" "}
-                          </Link>{" "}
-                        </td>
+  toggle2(tab) {
+    if (this.state.activeTab2 !== tab) {
+      this.setState({
+        activeTab2: tab,
+      })
+    }
+  }
 
-                        {/* product image */}
-                        <td>
-                          <img
-                            src="https://images.pexels.com/photos/14018171/pexels-photo-14018171.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
-                            style={{
-                              height: 50,
-                              width: 50,
-                            }}
-                          />
-                        </td>
+  toggle3(tab) {
+    if (this.state.activeTab3 !== tab) {
+      this.setState({
+        activeTab3: tab,
+      })
+    }
+  }
 
-                        {/* product info */}
-                        <td>{orderDetails.productInfo}</td>
+  toggleVertical(tab) {
+    if (this.state.verticalActiveTab !== tab) {
+      this.setState({
+        verticalActiveTab: tab,
+      })
+    }
+  }
 
-                        {/* product price */}
-                        <td>{orderDetails.price}</td>
+  toggleCustom(tab) {
+    if (this.state.customActiveTab !== tab) {
+      this.setState({
+        customActiveTab: tab,
+      })
+    }
+  }
 
-                        <td className="align-end">
-                          <Button
-                            type="button"
-                            color="primary"
-                            size="sm"
-                            className="btn-rounded waves-effect waves-light"
-                          >
-                            Remove
-                          </Button>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </CardBody>
-          </Card>
-        </PageWrapper>
-      </div>
-    </React.Fragment>
-  )
+  render() {
+    return (
+      <React.Fragment>
+        <div className="page-content">
+          <MetaTags title_sco="Orders page | Buy and sell" />
+
+          <PageWrapper>
+            <Breadcrumb
+              default="/orders"
+              defaultName="Products"
+              title="all product"
+            />
+
+            <div>
+              <Nav tabs justified className="nav-tabs-custom mt-3">
+                <NavItem>
+                  <NavLink
+                    style={{ cursor: "pointer" }}
+                    className={classnames({
+                      active: this.state.customActiveTab === "5",
+                    })}
+                    onClick={() => {
+                      this.toggleCustom("5")
+                    }}
+                  >
+                    <span className="d-none d-sm-block">
+                      <MdAddTask size={24}/>  New Orders
+                    </span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    style={{ cursor: "pointer" }}
+                    className={classnames({
+                      active: this.state.customActiveTab === "6",
+                    })}
+                    onClick={() => {
+                      this.toggleCustom("6")
+                    }}
+                  >
+                    <span className="d-none d-sm-block">
+                      <TbTruckDelivery size={24}/> Shipped Orders
+                    </span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    style={{ cursor: "pointer" }}
+                    className={classnames({
+                      active: this.state.customActiveTab === "7",
+                    })}
+                    onClick={() => {
+                      this.toggleCustom("7")
+                    }}
+                  >
+                    <span className="d-none d-sm-block">
+                      <MdCancelPresentation size={24}/> Cancelled Orders
+                    </span>
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    style={{ cursor: "pointer" }}
+                    className={classnames({
+                      active: this.state.customActiveTab === "8",
+                    })}
+                    onClick={() => {
+                      this.toggleCustom("8")
+                    }}
+                  >
+                    <span className="d-none d-sm-block">
+                      <TbTruckReturn size={24}/> Returned Orders
+                    </span>
+                  </NavLink>
+                </NavItem>
+              </Nav>
+
+              <TabContent
+                activeTab={this.state.customActiveTab}
+                className="text-muted mt-5"
+              >
+                <TabPane tabId="5">
+                  <Row>
+                    <Col sm="12">
+                      <NewOrders />
+                    </Col>
+                  </Row>
+                </TabPane>
+                <TabPane tabId="6">
+                  <Row>
+                    <Col sm="12">
+                      <ShippedOrder />
+                    </Col>
+                  </Row>
+                </TabPane>
+                <TabPane tabId="7">
+                  <Row>
+                    <Col sm="12">
+                      <CancelledOrders />
+                    </Col>
+                  </Row>
+                </TabPane>
+                <TabPane tabId="8">
+                  <Row>
+                    <Col sm="12">
+                      <ReturnOrder />
+                    </Col>
+                  </Row>
+                </TabPane>
+              </TabContent>
+            </div>
+          </PageWrapper>
+        </div>
+      </React.Fragment>
+    )
+  }
 }
 
-export default Orders
+export default UiTabsAccordions
