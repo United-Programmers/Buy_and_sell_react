@@ -17,12 +17,15 @@ import Products from "../pages/Products/Home-Products/index"
 import ProductDetail from "../pages/Products/Products-Details/index"
 import ShoppingCart from "../pages/Products/Shopping-Cart/index"
 import WishList from "../pages/Products/Wishlist/index"
+import DeliverOption from "../pages/Products/Deliver-Option/DeliverOption"
+import DeliverAddress from "../pages/Products/Deliver-Option/DeliverAddress"
 
 
 // * USER OR BUYERS PAGES
 import Account from "../pages/User-Account/Profile-info/Account"
 import UserOrders from "../pages/User-Account/Orders/index"
 import ProfileInfo from "../pages/User-Account/Profile-info/index"
+import PaymentDetails from "../pages/User-Account/Payments/index"
 
 
 //* PAGE MESSAGES
@@ -34,6 +37,7 @@ import VendorsMessage from "../pages/Messages/Vendors/index"
 
 // * VENDORS PAGES 
 import Vendors from "../pages/Vendors/All-vendors/index"
+import VendorList from "../pages/Vendors/List-of-vendors/index"
 import VendorShop from "../pages/Vendors/Vendors-shops/index"
 import VendorAccount from "../pages/Vendors/Profile-account/index"
 import VendorDashboard from "../pages/Vendors/Profile-account/Dashboard/index"
@@ -42,6 +46,8 @@ import VendorProducts from "../pages/Vendors/Profile-account/My-Products/index"
 import VendorOrders from "../pages/Vendors/Profile-account/Orders/index"
 import VendorAccountSettings from "../pages/Vendors/Profile-account/Account-settings/index"
 
+
+
 const userRoutes = [
 
   //* DASHBOARD PAGES
@@ -49,6 +55,9 @@ const userRoutes = [
   { path: "/details/:id", component: ProductDetail },
   { path: "/shopping-cart", component: ShoppingCart },
   { path: "/wishlist", component: WishList },
+  { path: "/deliver-option", component: DeliverOption },
+  { path: "/deliver-address-details", component: DeliverAddress },
+
   //*END 
 
 
@@ -65,11 +74,13 @@ const userRoutes = [
   { path: "/driver-message", component: DriversMessage },
 
   { path: "/vendor-message", component: VendorsMessage },
+  { path: "/payment-details", component: PaymentDetails },
   // * END
-  
+
 
   //* VENDORS ROUTES
   { path: "/vendors", component: Vendors },
+  { path: "/vendors-list", component: VendorList },
   { path: "/vendor-shop/:id", component: VendorShop },
   { path: "/vendor-account", component: VendorAccount },
   { path: "/vendor-dashboard", component: VendorDashboard },
@@ -78,7 +89,7 @@ const userRoutes = [
   { path: "/vendor-orders", component: VendorOrders },
   { path: "/vendor-account-settings", component: VendorAccountSettings },
   //* END
-  
+
 
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
 ]
@@ -93,6 +104,7 @@ const authRoutes = [
   { path: "/admin-register", component: AdminRegister }, //* Admin Register
   { path: "/driver-register", component: DriverRegister }, //* Driver Register
   { path: "/sellers-register", component: SellerRegister }, //* Vendor Register
+
 ]
 
 export { userRoutes, authRoutes }
