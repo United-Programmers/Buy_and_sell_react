@@ -4,14 +4,18 @@
 
 .footer {
     bottom: 0;
-    padding: 20px calc(#{$grid-gutter-width} / 2);
-    position: absolute;
+    // padding: 20px calc(#{$grid-gutter-width} / 2);
+    padding: 10px calc(#{$grid-gutter-width} / 2);
+    // position: absolute;
     right: 0;
-    text-align: center;
-    color: $footer-color;
+    // text-align: center;
+    // color: $footer-color;
+    color: white;
     left: 240px;
-    height: $footer-height;
-    background-color: $footer-bg;
+    // height: $footer-height;
+    min-height: 10vh;
+    // background-color: $footer-bg;
+    background-color: #9A00C0;
 }
   
 @media (max-width: 992px) {
@@ -31,4 +35,7 @@ body[data-layout="horizontal"] {
     .footer {
         left: 0 !important;
     }  
+}
+.background{
+    border: 2px solid red;
 }
