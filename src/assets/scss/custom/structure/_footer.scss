@@ -4,8 +4,9 @@
 
 .footer {
     bottom: 0;
-    padding: 20px calc(#{$grid-gutter-width} / 2);
-    position: absolute;
+    // padding: 20px calc(#{$grid-gutter-width} / 2);
+    padding: 10px calc(#{$grid-gutter-width} / 2);
+    // position: absolute;
     right: 0;
     // text-align: center;
     // color: $footer-color;
