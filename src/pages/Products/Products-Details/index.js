@@ -4,6 +4,7 @@ import { Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb"
 import PageWrapper from "components/PageWrapper"
 import ProductViewDetail from "./components/ProductDetails"
+import ReviewTab from "./components/ReviewTab"
 
 const ProductDetails = () => {
   return (
@@ -15,6 +16,7 @@ const ProductDetails = () => {
           <Breadcrumb default="/home" defaultName="Products" title="Details" />
           {/* <h1 className="page-title">Product details page</h1> */}
           <ProductViewDetail />
+          <ReviewTab />
         </PageWrapper>
       </div>
     </React.Fragment>
