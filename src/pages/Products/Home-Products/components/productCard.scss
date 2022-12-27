@@ -1,0 +1,149 @@
+$background: #f0f0f0;
+$white: #fff;
+$black: #000;
+$grey: #666;
+$primary: #9a00c0;
+
+$font-bold: 700;
+
+$time: 0.3s;
+$easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin shadow {
+  box-shadow: 0 30px 25px -20px rgba($black, 0.15);
+}
+
+@mixin shadow-dark {
+  box-shadow: 0 36px 28px -20px rgba($black, 0.2);
+}
+
+%caps {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: $font-bold;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, ".SFNSText-Regular", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  color: $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $background;
+  // -webkit-filter: hue-rotate(-90deg);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  width: 30px;
+  background-color: $black;
+  margin: 22px 0 20px;
+}
+
+Button {
+  text-decoration: none;
+  color: inherit;
+}
+.product_container {
+  padding: 15px;
+}
+.product__summary {
+  margin: 0 0 1em 0;
+  font-size: 12px;
+  text-align: justify;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: $white;
+  text-align: center;
+  padding: 1.75em 3.5em;
+  white-space: nowrap;
+  border-radius: 5px;
+  @extend %caps;
+}
+
+.product {
+  position: relative;
+  width: 250px;
+  min-height: 350px;
+  padding: 40px;
+  border-radius: 8px;
+  background-color: $white;
+  transition: box-shadow $time $easing;
+  @include shadow;
+  margin-bottom: 15px;
+}
+
+.product__image {
+  width: 250px;
+  margin-left: -25%;
+  margin-right: -40%;
+  margin-top: -5px;
+  margin-bottom: 30px;
+  max-width: none;
+}
+
+.product__title {
+  font-size: 18px;
+  color: $black;
+  margin: 0 0 0.5em 0;
+  line-height: 1.1;
+}
+
+.product__price {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -20px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background-color: $primary !important;
+  color: $white;
+  border-radius: 50%;
+  @extend %caps;
+}
+
+.product__category {
+  display: block;
+  color: $primary;
+  margin-bottom: 1em;
+  @extend %caps;
+}
+
+.product__btn {
+  position: absolute;
+  text-decoration: none;
+  bottom: 20px;
+  right: 30px;
+  background-color: $primary !important;
+  color: $white !important;
+  transition: background-color $time $easing, box-shadow $time $easing;
+  @include shadow;
+
+  &:hover {
+    @include shadow-dark;
+    background-color: mix($primary, $black, 95%);
+  }
+}
