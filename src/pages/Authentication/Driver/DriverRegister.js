@@ -16,6 +16,7 @@ import {
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
 import MetaTagComp from "components/MetaTag"
+import "./style.scss"
 
 const DriverRegister = () => {
   return (
@@ -36,17 +37,16 @@ const DriverRegister = () => {
                       }}
                     >
                       <Row>
-                        <Col sm={4}>
-                          <div className="mb-3 fs-6">
+                        <Col sm={4} className="radio-div">
+                          <div className="mb-3">
                             <AvRadioGroup
                               inline
                               name="vehicle"
                               label="Do you have a vehicle to drive?"
-                              className="fs-6"
                               required
                               errorMessage="Pick one!"
                             >
-                              <AvRadio label="Yes" value="Yes" checked />
+                              <AvRadio label="Yes" value="Yes" />
                               <AvRadio label="No" value="No" />
                             </AvRadioGroup>
                           </div>
@@ -58,7 +58,7 @@ const DriverRegister = () => {
                               required
                               errorMessage="Pick one!"
                             >
-                              <AvRadio label="Yes" value="Yes" checked />
+                              <AvRadio label="Yes" value="Yes" />
                               <AvRadio label="No" value="No" />
                             </AvRadioGroup>
                           </div>
@@ -66,12 +66,11 @@ const DriverRegister = () => {
                             <AvRadioGroup
                               inline
                               name="record"
-                              label="
-Consent to a criminal record check?"
+                              label="Consent to a criminal record check?"
                               required
                               errorMessage="Pick one!"
                             >
-                              <AvRadio label="Yes" value="Yes" checked />
+                              <AvRadio label="Yes" value="Yes" />
                               <AvRadio label="No" value="No" />
                             </AvRadioGroup>
                           </div>
@@ -83,7 +82,7 @@ Consent to a criminal record check?"
                               required
                               errorMessage="Pick one!"
                             >
-                              <AvRadio label="Yes" value="Yes" checked />
+                              <AvRadio label="Yes" value="Yes" />
                               <AvRadio label="No" value="No" />
                             </AvRadioGroup>
                           </div>
@@ -95,7 +94,7 @@ Consent to a criminal record check?"
                               required
                               errorMessage="Pick one!"
                             >
-                              <AvRadio label="Yes" value="Yes" checked />
+                              <AvRadio label="Yes" value="Yes" />
                               <AvRadio label="No" value="No" />
                             </AvRadioGroup>
                           </div>
@@ -162,9 +161,9 @@ Consent to a criminal record check?"
                         <Col sm={4}>
                           <div className="mb-3">
                             <AvField
-                              id="firstName"
-                              name="firstName"
-                              label="First Name"
+                              id="passport"
+                              name="passport"
+                              label="ID number / Passport"
                               className="form-control"
                               placeholder="Enter First"
                               type="text"
@@ -173,9 +172,9 @@ Consent to a criminal record check?"
                           </div>
                           <div className="mb-3">
                             <AvField
-                              id="lastName"
-                              name="lastName"
-                              label="Last Name"
+                              id="license"
+                              name="license"
+                              label="License disk  picture"
                               className="form-control"
                               placeholder="Enter Last"
                               type="text"
@@ -184,9 +183,9 @@ Consent to a criminal record check?"
                           </div>
                           <div className="mb-3">
                             <AvField
-                              id="email"
-                              name="email"
-                              label="Email"
+                              id="picture"
+                              name="picture"
+                              label="Driver license picture"
                               className="form-control"
                               placeholder="Enter email"
                               type="email"
@@ -195,9 +194,9 @@ Consent to a criminal record check?"
                           </div>
                           <div className="mb-3">
                             <AvField
-                              id="mobileNumber"
-                              name="mobileNumber"
-                              label="Mobile Number"
+                              id="document"
+                              name="document"
+                              label="Proof of address document"
                               className="form-control"
                               placeholder="Enter Number"
                               type="text"
@@ -206,9 +205,9 @@ Consent to a criminal record check?"
                           </div>
                           <div className="mb-3">
                             <AvField
-                              id="firstName"
-                              name="firstName"
-                              label="Choose work region"
+                              id="upload"
+                              name="upload"
+                              label="Upload profile image"
                               className="form-control"
                               placeholder="Choose"
                               type="text"
@@ -218,32 +217,21 @@ Consent to a criminal record check?"
                         </Col>
                       </Row>
 
-                      <div className="mb-3 row">
-                        <div className="col-12 text-end">
+                      <div className=" row mt-5">
+                        <div className="col-12 text-center btn-color">
                           <button
                             className="btn btn-primary w-md waves-effect waves-light"
                             type="submit"
                           >
-                            Register
+                            Create Account
                           </button>
-                        </div>
-                      </div>
-
-                      <div className="mt-2 mb-0 row">
-                        <div className="col-12 mt-4">
-                          <p className="mb-0">
-                            By registering you agree to the Veltrix{" "}
-                            <Link to="#" className="text-primary">
-                              Terms of Use
-                            </Link>
-                          </p>
                         </div>
                       </div>
                     </AvForm>
                   </div>
                 </CardBody>
               </Card>
-              <div className="mt-5 text-center">
+              <div className=" text-center">
                 <p>
                   Already have an account ?
                   <Link to="/login" className="fw-medium text-primary">
