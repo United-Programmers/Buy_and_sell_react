@@ -3,6 +3,7 @@ import MetaTags from 'react-meta-tags';
 import { Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
+import Wishlist from "./components/Wishlist";
 
 const WishList = () => {
 
@@ -14,7 +15,8 @@ const WishList = () => {
                 <PageWrapper>
                     <Breadcrumb default="/wishlist" defaultName="Wishlist" title="my wishlist" />
 
-                    <h1 className="page-title">WishList pages</h1>
+                    <Wishlist />
+                    
                 </PageWrapper>
 
             </div>
