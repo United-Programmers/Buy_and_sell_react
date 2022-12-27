@@ -99,13 +99,13 @@ const Footer = () => {
                 </div>
 
                 <div>
-                  <a href="" className="text-white me-4">
+                  <a href="https://www.facebook.com/chadrack.kyungu.77" className="text-white me-4">
                     <BsFacebook size={25} />
                   </a>
-                  <a href="" className="text-white me-4">
+                  <a href="https://twitter.com/chadrack_code" className="text-white me-4">
                     <FaTwitter size={25} />
                   </a>
-                  <a href="" class="text-white me-4">
+                  <a href="https://www.instagram.com/chadrack_code/" class="text-white me-4">
                     <AiFillInstagram size={25} />
                   </a>
                   <a href="" className="text-white me-4">

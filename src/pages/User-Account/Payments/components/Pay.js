@@ -4,7 +4,7 @@ const Pay = () => {
   return (
     <>
         <div className='container'>
-      <h4><span className='payme'>Payme</span>nt Method</h4>
+      <h4>Payment Method</h4>
                            <div className="methods">
                             <div className="cardd">
                                 <h6 className='p'>Card</h6>
@@ -26,12 +26,12 @@ const Pay = () => {
                                
                             </div>
                             <div className='inputFlex'>
-                             <input type="text" className="col-xs-3 form-control" placeholder="Username" aria-label="Username" />
-                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+                             <input type="text" className="col-xs-3 form-control" placeholder="Enter Card Number" aria-label="Username" />
+                              <input type="text" class="form-control" placeholder="Card Holder Name" aria-label="Username" aria-describedby="basic-addon1"/>
                             </div>
                             <div className='inputFlex'>
-                             <input type="text" className="col-xs-3 form-control" placeholder="Username" aria-label="Username" />
-                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+                             <input type="text" className="col-xs-3 form-control" placeholder="Add Gift Card or a VIP code" aria-label="Username" />
+                              <input type="text" class="form-control" placeholder="CVC" aria-label="Username" aria-describedby="basic-addon1"/>
                               </div>
                               <div class="form-check checkB">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"/>
