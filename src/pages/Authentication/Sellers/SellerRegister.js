@@ -42,32 +42,21 @@ const SellerRegister = () => {
                         />
                       </div>
 
-                      <div className="mb-3 row">
-                        <div className="col-12 text-end">
+                      <div className="mb-1 row">
+                        <div className="col-12 text-center btn-color">
                           <button
                             className="btn btn-primary w-md waves-effect waves-light"
                             type="submit"
                           >
-                            Register
+                            Create Account
                           </button>
-                        </div>
-                      </div>
-
-                      <div className="mt-2 mb-0 row">
-                        <div className="col-12 mt-4">
-                          <p className="mb-0">
-                            By registering you agree to the Veltrix{" "}
-                            <Link to="#" className="text-primary">
-                              Terms of Use
-                            </Link>
-                          </p>
                         </div>
                       </div>
                     </AvForm>
                   </div>
                 </CardBody>
               </Card>
-              <div className="mt-5 text-center">
+              <div className="mt-1 text-center">
                 <p>
                   Already have an account ?
                   <Link to="/login" className="fw-medium text-primary">
