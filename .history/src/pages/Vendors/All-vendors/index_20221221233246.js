@@ -1,22 +1,20 @@
 import React from "react"
+import "./style.scss"
 import MetaTags from 'react-meta-tags';
-import { Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
-import Wishlist from "./components/Wishlist";
+import Shops from "./components/Shops";
 
-const WishList = () => {
+const VendorShop = () => {
 
     return (
         <React.Fragment>
             <div className="page-content">
-                <MetaTags title_sco="Wishlist page | Buy and sell" />
+                <MetaTags title_sco="Vendor Shop page | Buy and sell" />
 
                 <PageWrapper>
-                    <Breadcrumb default="/wishlist" defaultName="Wishlist" title="my wishlist" />
-
-                    <Wishlist />
-                    
+                    <Breadcrumb default="/vendor-shop" defaultName="Vendor-Shop" title="shops" />
+                    <Shops />
                 </PageWrapper>
 
             </div>
@@ -24,4 +22,4 @@ const WishList = () => {
     )
 }
 
-export default WishList
+export default VendorShop
