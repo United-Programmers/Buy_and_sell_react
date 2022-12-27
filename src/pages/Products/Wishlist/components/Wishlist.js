@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Card, Row, Col, CardBody, CardImg } from 'reactstrap'
 import img1 from "../../../../assets/images/product/img-7.png";
 import img2 from "../../../../assets/images/product/img-4.png";
