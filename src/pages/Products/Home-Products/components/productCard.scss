@@ -91,7 +91,7 @@ Button {
   background-color: $white;
   transition: box-shadow $time $easing;
   @include shadow;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .product__image {
