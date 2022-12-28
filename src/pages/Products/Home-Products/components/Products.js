@@ -1,6 +1,6 @@
 import React from "react"
 import "./productCard.scss"
-import { Button, Col, Container, Row, CardBody, Card } from "reactstrap"
+import { Button, Container, Row, Col, CardBody, Card } from "reactstrap"
 
 function Products() {
   return (
@@ -24,6 +24,7 @@ function Products() {
           </Button>
         </div>
       </Col>
+
       <Col md={4} className="product_wrapper">
         <div className="product">
           <span className="product__price">$120</span>
@@ -43,6 +44,7 @@ function Products() {
           </Button>
         </div>
       </Col>
+
       <Col md={4} className="product_wrapper">
         <div className="product">
           <span className="product__price">$120</span>

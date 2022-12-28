@@ -83,7 +83,6 @@ Button {
   @extend %caps;
 }
 .product_wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +142,12 @@ Button {
 .product__btn {
   position: absolute;
   text-decoration: none;
-  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  bottom: 15px;
   right: 30px;
   background-color: $primary !important;
   color: $white !important;
