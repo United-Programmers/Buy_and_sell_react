@@ -60,7 +60,8 @@ Button {
   color: inherit;
 }
 .product_container {
-  padding: 15px;
+  width: 100%;
+  margin: 10px;
 }
 .product__summary {
   margin: 0 0 1em 0;
@@ -81,22 +82,29 @@ Button {
   border-radius: 5px;
   @extend %caps;
 }
-
+.product_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
 .product {
   position: relative;
-  width: 250px;
+  width: 280px;
   min-height: 350px;
   padding: 40px;
   border-radius: 8px;
   background-color: $white;
   transition: box-shadow $time $easing;
   @include shadow;
-  margin-bottom: 20px;
 }
 
 .product__image {
   width: 250px;
-  margin-left: -25%;
+  height: 180px;
+  object-fit: contain;
+  margin-left: -15%;
   margin-right: -40%;
   margin-top: -5px;
   margin-bottom: 30px;

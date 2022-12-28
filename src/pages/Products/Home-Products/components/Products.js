@@ -5,7 +5,7 @@ import { Button, Col, Container, Row, CardBody, Card } from "reactstrap"
 function Products() {
   return (
     <Row className="product_container">
-      <Col md={3}>
+      <Col md={4} className="product_wrapper">
         <div className="product">
           <span className="product__price">$120</span>
           <img
@@ -24,7 +24,7 @@ function Products() {
           </Button>
         </div>
       </Col>
-      <Col md={3}>
+      <Col md={4} className="product_wrapper">
         <div className="product">
           <span className="product__price">$120</span>
           <img
@@ -43,7 +43,7 @@ function Products() {
           </Button>
         </div>
       </Col>
-      <Col md={3}>
+      <Col md={4} className="product_wrapper">
         <div className="product">
           <span className="product__price">$120</span>
           <img
@@ -62,7 +62,7 @@ function Products() {
           </Button>
         </div>
       </Col>
-      <Col md={3}>
+      <Col md={4} className="product_wrapper">
         <div className="product">
           <span className="product__price">$120</span>
           <img

@@ -32,11 +32,10 @@ const Home = () => {
           </div>
 
           <Row>
-            <Col md={3}>
+            <Col md={2}>
               <SideBar />
             </Col>
-
-            <Col md={9}>
+            <Col md={10}>
               <Products />
             </Col>
           </Row>
