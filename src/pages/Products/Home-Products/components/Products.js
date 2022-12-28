@@ -17,7 +17,7 @@ function Products() {
           <p className="product__summary">
             The Nike Roshe One Print Men's Shoe offers breathability,
             lightweight cushioning and bold style with an injected unit midsole
-            and colorful mesh upper.
+            and colorful mesh.
           </p>
           <Button href="#" className="product__btn btn">
             Buy Now
