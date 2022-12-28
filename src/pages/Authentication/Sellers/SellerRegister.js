@@ -41,6 +41,17 @@ const SellerRegister = () => {
                           required
                         />
                       </div>
+                      <div className="mb-3">
+                        <AvField
+                          id="email"
+                          name="email"
+                          label="Email"
+                          className="form-control"
+                          placeholder="Enter email"
+                          type="email"
+                          required
+                        />
+                      </div>
 
                       <div className="mb-1 row">
                         <div className="col-12 text-center btn-color">
