@@ -2,7 +2,12 @@ import PropTypes from "prop-types"
 import React, { useEffect } from "react"
 import MetaTags from "react-meta-tags"
 import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap"
-import { AvForm, AvField } from "availity-reactstrap-validation"
+import {
+  AvForm,
+  AvField,
+  AvRadioGroup,
+  AvRadio,
+} from "availity-reactstrap-validation"
 import {
   registerUser,
   apiError,
@@ -20,38 +25,126 @@ const SellerRegister = () => {
       <div className="account-pages my-5 pt-sm-5">
         <Container>
           <Row className="justify-content-center">
-            <Col md={8} lg={6} xl={4}>
+            <h1 className="text-center">Create Account</h1>
+            <Col>
               <Card className="overflow-hidden">
                 <CardBody className="p-4">
                   <div className="p-3">
                     <AvForm
-                      className="mt-4"
+                      className="mt-2"
                       onValidSubmit={(e, v) => {
                         handleValidSubmit(e, v)
                       }}
                     >
-                      <div className="mb-3">
-                        <AvField
-                          id="email"
-                          name="email"
-                          label="Email"
-                          className="form-control"
-                          placeholder="Enter email"
-                          type="email"
-                          required
-                        />
-                      </div>
-                      <div className="mb-3">
-                        <AvField
-                          id="email"
-                          name="email"
-                          label="Email"
-                          className="form-control"
-                          placeholder="Enter email"
-                          type="email"
-                          required
-                        />
-                      </div>
+                      <Row>
+                        <Col sm={4}>
+                          <div className="mb-3">
+                            <AvField
+                              id="firstName"
+                              name="firstName"
+                              label="First Name"
+                              className="form-control"
+                              placeholder="Enter First"
+                              type="text"
+                              required
+                            />
+                          </div>
+                          <div className="mb-3">
+                            <AvField
+                              id="email"
+                              name="email"
+                              label="Email"
+                              className="form-control"
+                              placeholder="Enter email"
+                              type="email"
+                              required
+                            />
+                          </div>
+                          <div className="mb-3">
+                            <AvField
+                              id="website"
+                              name="website"
+                              label="Website"
+                              className="form-control"
+                              placeholder="Enter Website"
+                              type="text"
+                              required
+                            />
+                          </div>
+                        </Col>
+
+                        <Col sm={4}>
+                          <div className="mb-3">
+                            <AvField
+                              id="lastName"
+                              name="lastName"
+                              label="Last Name"
+                              className="form-control"
+                              placeholder="Enter Last"
+                              type="text"
+                              required
+                            />
+                          </div>
+                          <div className="mb-3">
+                            <AvField
+                              id="phoneNumber"
+                              name="phoneNumber"
+                              label="Phone Number"
+                              className="form-control"
+                              placeholder="Enter email"
+                              type="number"
+                              required
+                            />
+                          </div>
+                          <div className="mb-3">
+                            <AvField
+                              id="social"
+                              name="social"
+                              label="Social"
+                              className="form-control"
+                              placeholder="Enter Social"
+                              type="text"
+                              required
+                            />
+                          </div>
+                        </Col>
+
+                        <Col sm={4} className="radio-flex">
+                          <div className="mb-3">
+                            <AvField
+                              id="company"
+                              name="company"
+                              label="Company Name"
+                              className="form-control"
+                              placeholder="Enter Company"
+                              type="text"
+                              required
+                            />
+                          </div>
+                          <div className="mb-3">
+                            <AvField
+                              id="category"
+                              name="category"
+                              label="Category"
+                              className="form-control"
+                              placeholder="Enter Category"
+                              type="text"
+                              required
+                            />
+                          </div>
+                          <div className="mb-3 ">
+                            <AvRadioGroup
+                              inline
+                              name="vat"
+                              label="Are you VAT registered ?"
+                              required
+                            >
+                              <AvRadio label="Yes" value="Yes" />
+                              <AvRadio label="No" value="No" />
+                            </AvRadioGroup>
+                          </div>
+                        </Col>
+                      </Row>
 
                       <div className="mb-1 row">
                         <div className="col-12 text-center btn-color">
