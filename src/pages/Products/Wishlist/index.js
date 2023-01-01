@@ -16,7 +16,7 @@ const WishList = () => {
                     <Breadcrumb default="/wishlist" defaultName="Wishlist" title="my wishlist" />
 
                     <Wishlist />
-                    
+
                 </PageWrapper>
 
             </div>
