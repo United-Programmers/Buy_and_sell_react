@@ -22,12 +22,16 @@ const DeliverAddress = () => {
 
                     {/* <Card>
                         <CardBody> */}
-                    <div style={{ width: "60pc" }} className="container">
+                    <div  className="container">
                         <div className="header">
                             <div className="heading1"> <h3> DELIVERY<span style={{ color: "rgb(170, 179, 179)" }}>/ PAYMENT/CONFIRMATION </span></h3></div>
                             <div className="grocery" style={{ color: "rgba(169, 65, 194, 1)" }}><MdLocalGroceryStore /><a>Go to Cart</a></div>
                         </div>
+                      
+                             
                         <div className="second">
+                             {/* <Row> */}
+                            {/* <Col xs={8}> */}
                             <div className="deliBox">
                                 <div className="deliInfo">
                                     <div className="deliH">
@@ -49,6 +53,8 @@ const DeliverAddress = () => {
 
                                 </div>
                             </div>
+                            {/* </Col> */}
+                            {/* <Col xs={4}> */}
                             <div className="summary">
                                 <div className='summaryDesc'>
                                     <h4>Order Summary</h4>
@@ -60,7 +66,11 @@ const DeliverAddress = () => {
                                     <p><AiTwotoneLock style={{ marginBottom: "4px" }} /> <b>Secure Checkout</b></p>
                                 </div>
                             </div>
+                            {/* </Col> */}
+                        {/* </Row> */}
                         </div>
+                        
+                        
 
                     </div>
 
@@ -71,8 +81,10 @@ const DeliverAddress = () => {
                 </PageWrapper>
 
             </div>
+            
         </React.Fragment>
     )
 }
 
 export default DeliverAddress
+
