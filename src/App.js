@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import React from "react"
+import React, { useEffect } from "react"
 import { Switch, BrowserRouter as Router } from "react-router-dom"
 import { connect } from "react-redux"
 import { userRoutes, authRoutes } from "./routes/allRoutes"
@@ -11,7 +11,18 @@ import "./assets/scss/theme.scss"
 import fakeBackend from "./helpers/AuthType/fakeBackend"
 fakeBackend()
 
-const App = props => {
+import { useDispatch_2, useSelector_2 } from './index'
+import { calculateTotals } from './Redux/Slices/cartSlice';
+
+const App = () => {
+
+  const dispatch = useDispatch_2();
+  const { cartItems, isLoading } = useSelector_2((store) => store.cart);
+
+  useEffect(() => {
+    dispatch(calculateTotals());
+  }, [cartItems]);
+
   return (
     <React.Fragment>
       <Router>
