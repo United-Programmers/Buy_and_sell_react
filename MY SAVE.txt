@@ -7,3 +7,7 @@ To fix Babel-eslint
 $ git rm --cached
 $ git commit --amend -CHEAD
 $ git push
+
+
+to push to github 
+git merge main
