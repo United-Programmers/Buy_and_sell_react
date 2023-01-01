@@ -11,7 +11,31 @@ import "./assets/scss/theme.scss"
 import fakeBackend from "./helpers/AuthType/fakeBackend"
 fakeBackend()
 
+
+import { useDispatch_2, useSelector_2 } from './index';
+import { calculateTotals, getCartItems } from './Redux/Slices/cartSlice';
+
 const App = props => {
+
+  const { cartItem, isLoading } = useSelector_2((store) => store.cart);
+  const dispatch = useDispatch_2();
+
+  React.useEffect(() => {
+    dispatch(calculateTotals());
+  }, [cartItem]);
+
+  // React.useEffect(() => {
+  //   dispatch(getCartItems('random'));
+  // }, []);
+
+  // if (isLoading) {
+  //   return (
+  //     <div className='loading'>
+  //       <h1>Loading...</h1>
+  //     </div>
+  //   );
+  // }
+
   return (
     <React.Fragment>
       <Router>
