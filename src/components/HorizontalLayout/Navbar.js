@@ -159,38 +159,38 @@ const Navbar = props => {
                     <Row>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Clothes </Link>
-                          <Link to="/" className="dropdown-item"> T-shirt </Link>
-                          <Link to="/" className="dropdown-item"> shirt </Link>
-                          <Link to="/" className="dropdown-item"> Pant </Link>
-                          <Link to="/" className="dropdown-item"> Underwear </Link>
+                          <Link className="dropdown-item font-weight-bold"> Smart Phones </Link>
+                          <Link to="/" className="dropdown-item"> Apple iPhones </Link>
+                          <Link to="/" className="dropdown-item">Huawei Mobiles </Link>
+                          <Link to="/" className="dropdown-item"> Samsung Mobiles </Link>
+                          <Link to="/" className="dropdown-item"> Vivo Mobiles </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
                           <Link className="dropdown-item font-weight-bold"> Accessories </Link>
-                          <Link to="/" className="dropdown-item"> Belt </Link>
-                          <Link to="/" className="dropdown-item"> Hat </Link>
-                          <Link to="/" className="dropdown-item"> Sunglasses </Link>
-                          <Link to="/" className="dropdown-item"> Watches </Link>
+                          <Link to="/" className="dropdown-item"> Phone Cases </Link>
+                          <Link to="/" className="dropdown-item"> Power Banks </Link>
+                          <Link to="/" className="dropdown-item"> Wireless Chargers </Link>
+                          <Link to="/" className="dropdown-item"> Handfrees </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Shoes </Link>
-                          <Link to="/" className="dropdown-item"> Sneakers </Link>
-                          <Link to="/" className="dropdown-item"> Sandals </Link>
-                          <Link to="/" className="dropdown-item"> Formal </Link>
-                          <Link to="/" className="dropdown-item"> Casual </Link>
+                          <Link className="dropdown-item font-weight-bold"> Gaming Consoles </Link>
+                          <Link to="/" className="dropdown-item"> PlayStation Consoles </Link>
+                          <Link to="/" className="dropdown-item"> PlayStation Games </Link>
+                          <Link to="/" className="dropdown-item"> PlayStation Controllers </Link>
+                          <Link to="/" className="dropdown-item"> Xbox Games </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Bags </Link>
-                          <Link to="/" className="dropdown-item"> Backpack </Link>
-                          <Link to="/" className="dropdown-item"> Crossbody Bags </Link>
-                          <Link to="/" className="dropdown-item"> Side Bags </Link>
-                          <Link to="/" className="dropdown-item"> Slides </Link>
+                          <Link className="dropdown-item font-weight-bold"> Cameras& Drones </Link>
+                          <Link to="/" className="dropdown-item"> Video Camera </Link>
+                          <Link to="/" className="dropdown-item"> DSLR </Link>
+                          <Link to="/" className="dropdown-item"> Drones </Link>
+                          <Link to="/" className="dropdown-item"> IP Security Camera </Link>
                         </div>
                       </Col>
                     </Row>
@@ -217,38 +217,38 @@ const Navbar = props => {
                     <Row>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Clothes </Link>
-                          <Link to="/" className="dropdown-item"> T-shirt </Link>
-                          <Link to="/" className="dropdown-item"> shirt </Link>
-                          <Link to="/" className="dropdown-item"> Pant </Link>
-                          <Link to="/" className="dropdown-item"> Underwear </Link>
+                          <Link className="dropdown-item font-weight-bold"> Bath & Body </Link>
+                          <Link to="/" className="dropdown-item"> Body & Massage Oils </Link>
+                          <Link to="/" className="dropdown-item"> Body Soaps & Shower Gels </Link>
+                          <Link to="/" className="dropdown-item"> Foot Care </Link>
+                          <Link to="/" className="dropdown-item"> Body Moisturizers </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Accessories </Link>
-                          <Link to="/" className="dropdown-item"> Belt </Link>
-                          <Link to="/" className="dropdown-item"> Hat </Link>
-                          <Link to="/" className="dropdown-item"> Sunglasses </Link>
-                          <Link to="/" className="dropdown-item"> Watches </Link>
+                          <Link className="dropdown-item font-weight-bold"> Beauty Tools </Link>
+                          <Link to="/" className="dropdown-item"> Curling Irons </Link>
+                          <Link to="/" className="dropdown-item"> Multi-Stylers </Link>
+                          <Link to="/" className="dropdown-item"> Hair Dryers </Link>
+                          <Link to="/" className="dropdown-item"> Slimming & Electric Messagers </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Shoes </Link>
-                          <Link to="/" className="dropdown-item"> Sneakers </Link>
-                          <Link to="/" className="dropdown-item"> Sandals </Link>
-                          <Link to="/" className="dropdown-item"> Formal </Link>
-                          <Link to="/" className="dropdown-item"> Casual </Link>
+                          <Link className="dropdown-item font-weight-bold"> Hair Care </Link>
+                          <Link to="/" className="dropdown-item"> Shampoo </Link>
+                          <Link to="/" className="dropdown-item"> Hair Treatments </Link>
+                          <Link to="/" className="dropdown-item"> Hair Coloring </Link>
+                          <Link to="/" className="dropdown-item"> Hair Brushes </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Bags </Link>
-                          <Link to="/" className="dropdown-item"> Backpack </Link>
-                          <Link to="/" className="dropdown-item"> Crossbody Bags </Link>
-                          <Link to="/" className="dropdown-item"> Side Bags </Link>
-                          <Link to="/" className="dropdown-item"> Slides </Link>
+                          <Link className="dropdown-item font-weight-bold"> Skin Care </Link>
+                          <Link to="/" className="dropdown-item"> Serum & Essence </Link>
+                          <Link to="/" className="dropdown-item"> Facial Cleansers </Link>
+                          <Link to="/" className="dropdown-item"> Face Masks </Link>
+                          <Link to="/" className="dropdown-item"> Moisturizers and Cream </Link>
                         </div>
                       </Col>
                     </Row>
@@ -278,38 +278,38 @@ const Navbar = props => {
                     <Row>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Clothes </Link>
-                          <Link to="/" className="dropdown-item"> T-shirt </Link>
-                          <Link to="/" className="dropdown-item"> shirt </Link>
-                          <Link to="/" className="dropdown-item"> Pant </Link>
-                          <Link to="/" className="dropdown-item"> Underwear </Link>
+                          <Link className="dropdown-item font-weight-bold"> Beverages </Link>
+                          <Link to="/" className="dropdown-item"> Coffee </Link>
+                          <Link to="/" className="dropdown-item"> Tea </Link>
+                          <Link to="/" className="dropdown-item"> Juices </Link>
+                          <Link to="/" className="dropdown-item"> Soft Drinks </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Accessories </Link>
-                          <Link to="/" className="dropdown-item"> Belt </Link>
-                          <Link to="/" className="dropdown-item"> Hat </Link>
-                          <Link to="/" className="dropdown-item"> Sunglasses </Link>
-                          <Link to="/" className="dropdown-item"> Watches </Link>
+                          <Link className="dropdown-item font-weight-bold"> Breakfast & Snacks </Link>
+                          <Link to="/" className="dropdown-item"> Biscuit </Link>
+                          <Link to="/" className="dropdown-item"> Chocolate </Link>
+                          <Link to="/" className="dropdown-item"> Oatmeals </Link>
+                          <Link to="/" className="dropdown-item"> Jam,Honey & Spreads </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Shoes </Link>
-                          <Link to="/" className="dropdown-item"> Sneakers </Link>
-                          <Link to="/" className="dropdown-item"> Sandals </Link>
-                          <Link to="/" className="dropdown-item"> Formal </Link>
-                          <Link to="/" className="dropdown-item"> Casual </Link>
+                          <Link className="dropdown-item font-weight-bold"> Fresh Products </Link>
+                          <Link to="/" className="dropdown-item"> Fresh Fruits </Link>
+                          <Link to="/" className="dropdown-item"> Fresh Vegetables </Link>
+                          <Link to="/" className="dropdown-item"> Bread </Link>
+                          <Link to="/" className="dropdown-item"> Dry Fruits </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Bags </Link>
-                          <Link to="/" className="dropdown-item"> Backpack </Link>
-                          <Link to="/" className="dropdown-item"> Crossbody Bags </Link>
-                          <Link to="/" className="dropdown-item"> Side Bags </Link>
-                          <Link to="/" className="dropdown-item"> Slides </Link>
+                          <Link className="dropdown-item font-weight-bold"> Food Staples </Link>
+                          <Link to="/" className="dropdown-item"> Canned Food </Link>
+                          <Link to="/" className="dropdown-item"> Grains,Beans & Pulses </Link>
+                          <Link to="/" className="dropdown-item"> Rice </Link>
+                          <Link to="/" className="dropdown-item"> Noodles </Link>
                         </div>
                       </Col>
                     </Row>
@@ -335,20 +335,20 @@ const Navbar = props => {
                     <Row>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Clothes </Link>
-                          <Link to="/" className="dropdown-item"> T-shirt </Link>
-                          <Link to="/" className="dropdown-item"> shirt </Link>
-                          <Link to="/" className="dropdown-item"> Pant </Link>
-                          <Link to="/" className="dropdown-item"> Underwear </Link>
+                          <Link className="dropdown-item font-weight-bold"> Cat </Link>
+                          <Link to="/" className="dropdown-item"> Cat Food </Link>
+                          <Link to="/" className="dropdown-item"> Beds, Mats & Houses </Link>
+                          <Link to="/" className="dropdown-item"> Gromming </Link>
+                          <Link to="/" className="dropdown-item"> Carriers </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Accessories </Link>
-                          <Link to="/" className="dropdown-item"> Belt </Link>
-                          <Link to="/" className="dropdown-item"> Hat </Link>
-                          <Link to="/" className="dropdown-item"> Sunglasses </Link>
-                          <Link to="/" className="dropdown-item"> Watches </Link>
+                          <Link className="dropdown-item font-weight-bold"> Dog </Link>
+                          <Link to="/" className="dropdown-item"> Dog Food </Link>
+                          <Link to="/" className="dropdown-item"> Cages </Link>
+                          <Link to="/" className="dropdown-item"> Leashes & Collars</Link>
+                          <Link to="/" className="dropdown-item"> Bowls & Feeders </Link>
                         </div>
                       </Col>
                     </Row>
@@ -372,20 +372,20 @@ const Navbar = props => {
                     <Row>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Clothes </Link>
-                          <Link to="/" className="dropdown-item"> T-shirt </Link>
-                          <Link to="/" className="dropdown-item"> shirt </Link>
-                          <Link to="/" className="dropdown-item"> Pant </Link>
-                          <Link to="/" className="dropdown-item"> Underwear </Link>
+                          <Link className="dropdown-item font-weight-bold"> Bath Toys </Link>
+                          <Link to="/" className="dropdown-item"> Building Block Toys </Link>
+                          <Link to="/" className="dropdown-item"> Crib Toys </Link>
+                          <Link to="/" className="dropdown-item"> Rattles </Link>
+                          <Link to="/" className="dropdown-item"> Push & Pulls Toys</Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Accessories </Link>
-                          <Link to="/" className="dropdown-item"> Belt </Link>
-                          <Link to="/" className="dropdown-item"> Hat </Link>
-                          <Link to="/" className="dropdown-item"> Sunglasses </Link>
-                          <Link to="/" className="dropdown-item"> Watches </Link>
+                          <Link className="dropdown-item font-weight-bold"> Remote Control & Vehicles </Link>
+                          <Link to="/" className="dropdown-item"> Die-Cast cars </Link>
+                          <Link to="/" className="dropdown-item"> RC Vehicles & Batteries </Link>
+                          <Link to="/" className="dropdown-item"> toy drones </Link>
+                          <Link to="/" className="dropdown-item"> toy drones </Link>
                         </div>
                       </Col>
                     </Row>
@@ -408,20 +408,20 @@ const Navbar = props => {
                     <Row>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Clothes </Link>
-                          <Link to="/" className="dropdown-item"> T-shirt </Link>
-                          <Link to="/" className="dropdown-item"> shirt </Link>
-                          <Link to="/" className="dropdown-item"> Pant </Link>
-                          <Link to="/" className="dropdown-item"> Underwear </Link>
+                          <Link className="dropdown-item font-weight-bold"> Sound Accessories </Link>
+                          <Link to="/" className="dropdown-item"> Portable Speakers </Link>
+                          <Link to="/" className="dropdown-item"> Bluetooth Handsets </Link>
+                          <Link to="/" className="dropdown-item"> Mono Headsets </Link>
+                          <Link to="/" className="dropdown-item"> Wireless Earbuds </Link>
                         </div>
                       </Col>
                       <Col lg={3}>
                         <div>
-                          <Link className="dropdown-item font-weight-bold"> Accessories </Link>
-                          <Link to="/" className="dropdown-item"> Belt </Link>
-                          <Link to="/" className="dropdown-item"> Hat </Link>
-                          <Link to="/" className="dropdown-item"> Sunglasses </Link>
-                          <Link to="/" className="dropdown-item"> Watches </Link>
+                          <Link className="dropdown-item font-weight-bold"> Music </Link>
+                          <Link to="/" className="dropdown-item"> Subscription Vouchers </Link>
+                          <Link to="/" className="dropdown-item"> amplifiers </Link>
+                          <Link to="/" className="dropdown-item"> Guitar & Bass Accessories </Link>
+                          <Link to="/" className="dropdown-item"> General Accessories </Link>
                         </div>
                       </Col>
                     </Row>
