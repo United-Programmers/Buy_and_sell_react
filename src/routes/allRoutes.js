@@ -15,6 +15,7 @@ import ResetPassword from "../pages/Authentication/Reset password/ResetPassword"
 //* DASHBOARD PAGES
 import Products from "../pages/Products/Home-Products/index"
 import ProductDetail from "../pages/Products/Products-Details/index"
+import RelatedProducts from "../pages/Products/Products-Details/components/RelatedProducts"
 import ShoppingCart from "../pages/Products/Shopping-Cart/index"
 import WishList from "../pages/Products/Wishlist/index"
 import DeliverOption from "../pages/Products/Deliver-Option/DeliverOption"
@@ -53,6 +54,7 @@ const userRoutes = [
   //* DASHBOARD PAGES
   { path: "/home", component: Products },
   { path: "/details/:id", component: ProductDetail },
+  { path: "/related-products", component: RelatedProducts},
   { path: "/shopping-cart", component: ShoppingCart },
   { path: "/wishlist", component: WishList },
   { path: "/deliver-option", component: DeliverOption },

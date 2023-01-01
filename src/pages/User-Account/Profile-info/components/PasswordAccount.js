@@ -16,6 +16,7 @@ import { GoLock } from 'react-icons/go';
 import { MdLocationCity } from 'react-icons/md';
 import CustomBtn from 'components/CustomBtn';
 
+
 function PasswordAccount() {
     return (
         <div className='card-container card-container-2'>
@@ -27,7 +28,7 @@ function PasswordAccount() {
                     }}
                 >
                     <div className="mb-3 myInput">
-                        <span className="icon"><GoLock /></span>
+                        <span className="icon-one"><GoLock /></span>
                         <AvField
 
                             name="password"
@@ -40,7 +41,7 @@ function PasswordAccount() {
                     </div>
 
                     <div className="mb-3 myInput">
-                        <span className="icon"><GoLock /></span>
+                        <span className="icon-one"><GoLock /></span>
                         <AvField
                             name="Password"
                             label="New password"
@@ -50,7 +51,7 @@ function PasswordAccount() {
                         />
                     </div>
                     <div className="mb-3 myInput">
-                        <span className="icon"><GoLock /></span>
+                        <span className="icon-one"><GoLock /></span>
                         <AvField
                             name="Password"
                             label="Confirm password"
@@ -60,7 +61,8 @@ function PasswordAccount() {
                         />
                     </div>
 
-                    <CustomBtn btnName="Update password" />
+                    <Row className='btn__grp'><Col><Button className="update__btn ">Update address</Button></Col></Row>
+
                 </AvForm>
             </CardBody>
         </div>
