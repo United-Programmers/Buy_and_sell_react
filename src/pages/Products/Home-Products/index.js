@@ -7,6 +7,7 @@ import PageWrapper from "components/PageWrapper"
 import Slide from "./components/Slide"
 import SideBar from "./components/SideBar"
 import Products from "./components/Products"
+import Products2 from "./components/Products2"
 import FilterProduct from "./components/FilterProduct"
 
 const Home = () => {
@@ -37,7 +38,8 @@ const Home = () => {
             </Col>
 
             <Col md={9}>
-              <Products />
+              {/* <Products /> */}
+              <Products2 />
             </Col>
           </Row>
         </PageWrapper>
