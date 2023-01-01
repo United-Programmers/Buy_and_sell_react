@@ -14,9 +14,12 @@ import logolightImg from "../../assets/images/logo-light.png";
 import { BsCart4 } from 'react-icons/bs';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { IoMdNotificationsOutline } from 'react-icons/io';
+import { useSelector_2 } from "index"
+import { amount } from '../../Redux/Slices/cartSlice';
 
 
 const Header = props => {
+  const amountDet = useSelector_2(amount);
 
   function toggleFullscreen() {
     if (
@@ -94,7 +97,7 @@ const Header = props => {
 
             <Link to="/shopping-cart" className="mt-2 pt-1 text-dark">
               <BsCart4 size={25} />
-              <span className="badge bg-danger rounded-pill">3</span>
+              <span className="badge bg-danger rounded-pill"> {amountDet} </span>
             </Link>
 
             <Link to="/wishlist" className="mt-2 mx-4 pt-1 text-dark">
