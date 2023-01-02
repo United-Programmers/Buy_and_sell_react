@@ -17,11 +17,11 @@ const AdminMessage = () => {
 
             <Card className="message p-4 border rounded p-2">
                 <Row>
-                    <Col md={4}>
+                    <Col md={3}>
                         <CardImg src={User} alt="user" className="rounded-circle avatar-lg" />
                     </Col>
 
-                    <Col md={8} className="rounded-sm message__card">
+                    <Col md={9} className="rounded-sm message__card">
                         <div>
                             <p><h4>John muleka</h4>  <p className="font-size-10"><AiTwotoneLike /> liked your post</p></p>
                             <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
