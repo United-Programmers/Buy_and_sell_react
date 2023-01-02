@@ -8,6 +8,8 @@ import { AvForm, AvField } from "availity-reactstrap-validation"
 import { loginUser, apiError } from "../../../store/actions"
 import Button from "components/Common/Button/Button"
 import "./style.scss"
+import CustomBtn from "components/CustomBtn"
+import { CiLogin } from "react-icons/ci"
 
 const Register = () => {
   const [password, setPassword] = useState("")
@@ -121,13 +123,11 @@ const Register = () => {
                         </div>
                       </Col>
                     </Row>
-                    <Row className="mb-3 ">
-                      <Col className=" d-flex justify-content-center ">
-                        <Button type="submit" btnType="my-default">
-                          Register
-                        </Button>
-                      </Col>
-                    </Row>
+
+                    <div className="text-center">
+                      <CustomBtn btnName="Submit" icon={<CiLogin size={28} />} />
+                    </div>
+
                   </AvForm>
                 </CardBody>
               </Card>

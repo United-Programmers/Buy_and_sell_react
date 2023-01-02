@@ -310,3 +310,19 @@ label {
 .active {
     color: #9A00C0 !important;
 }
+
+.btn-custom-primary:hover {
+    background-color: #a8039aab !important;
+    color: white;
+}
+
+.active {
+    color: #9A00C0 !important;
+}
+
+//* for the input style
+.myInput .form-group input {
+    height: 50px;
+    background-color: #f6f6f6;
+    border: none;
+}
