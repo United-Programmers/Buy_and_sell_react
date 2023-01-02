@@ -30,10 +30,11 @@ import PaymentDetails from "../pages/User-Account/Payments/index"
 
 
 //* PAGE MESSAGES
-import UserMessage from "../pages/Messages/User/index"
-import AdminMessage from "../pages/Messages/Admin/index"
-import DriversMessage from "../pages/Messages/Drivers/index"
-import VendorsMessage from "../pages/Messages/Vendors/index"
+import Messages from "../pages/Messages/index"
+// import UserMessage from "../pages/Messages/User/index"
+// import AdminMessage from "../pages/Messages/Admin/index"
+// import DriversMessage from "../pages/Messages/Drivers/index"
+// import VendorsMessage from "../pages/Messages/Vendors/index"
 
 
 // * VENDORS PAGES 
@@ -71,11 +72,13 @@ const userRoutes = [
 
 
   //* MESSAGE ROUTES
-  { path: "/user-message", component: UserMessage },
-  { path: "/admin-message", component: AdminMessage },
-  { path: "/driver-message", component: DriversMessage },
+     { path: "/messages", component: Messages },
+  // { path: "/user-message", component: UserMessage },
+  // { path: "/admin-message", component: AdminMessage },
+  // { path: "/driver-message", component: DriversMessage },
+  // { path: "/vendor-message", component: VendorsMessage },
 
-  { path: "/vendor-message", component: VendorsMessage },
+
   { path: "/payment-details", component: PaymentDetails },
   // * END
 
