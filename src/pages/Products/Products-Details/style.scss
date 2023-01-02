@@ -1,3 +1,71 @@
+
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+ 
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.swiper-horizontal>
+.swiper-pagination-bullets, 
+.swiper-pagination-bullets
+.swiper-pagination-horizontal,
+ .swiper-pagination-custom,
+  .swiper-pagination-fraction{
+    position: relative;
+    margin-bottom:50px;
+  }
+
+.swiper-pagination{
+ bottom: 0 !important;
+ top: 30px;
+}
+
+
+
+
 .master__header img{
   object-fit: cover;
   width: 100%;
@@ -26,13 +94,15 @@ padding: 0;
 .swiper {
 width: 100%;
 height: 100%;
-margin-bottom: 3rem;
+
 }
 
 .swiper-slide {
 text-align: center;
 font-size: 18px;
 background: #fff;
+max-width: 250px;
+margin: auto;
 
 /* Center slide text vertically */
 display: -webkit-box;
@@ -132,26 +202,11 @@ color: #555;
 
 
 
-.swiper-container {
-width: 540px;
 
-}
 
-@media screen and (min-width: 100px) {
-.swiper-container {
-  width: 500px;
-}
-}
 @media screen and (min-width: 992px) {
 .top__header{
   margin-top: 6rem;
 }
 }
 
-/*
-@media screen and (min-width: 768px) {
-.swiper-container {
-  width: 500px;
-}
-}
-*/

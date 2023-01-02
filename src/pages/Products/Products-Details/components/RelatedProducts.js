@@ -1,28 +1,21 @@
 
-import { Card, CardBody } from "reactstrap"
-
-import "swiper/css"
-import "swiper/css/pagination"
-
-import "../style.scss"
 import imgTop from "./images/welc2.jpg";
+
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "../style.scss"
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import "../style.scss";
+import "swiper/css/navigation";
 import { itemData } from "./itemData";
-
+import { Card,Row, CardBody } from "reactstrap"
 import { AiTwotoneStar } from 'react-icons/ai';
 import { MdShoppingCart } from 'react-icons/md';
-import { Button, Row } from "reactstrap";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 function RelatedProducts() {
   return (
@@ -35,35 +28,20 @@ function RelatedProducts() {
         <h4 className="my-4 ms-4">Costomers Also Bought </h4>
        
         <>
-          <Swiper
-            slidesPerView={2}
-            spaceBetween={30}
-            freeMode={true}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[FreeMode, Pagination]}
-            className="mySwiper"
-            breakpoints={{
-              // when window width is >= 640px
-              100: {
-                width: 500,
-                slidesPerView: 2,
-              },
-              // when window width is >= 768px
-              768: {
-                width: 500,
-                slidesPerView: 2,
-                
-              },  
-            }}
-          
-          
-          
-          >
-            
-            
-            {
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        slidesPerGroup={1}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {
               itemData.map((item,i)=>{
                 return (
           <SwiperSlide className="swipe__item">
@@ -80,10 +58,10 @@ function RelatedProducts() {
                 )
               })
             }
-            
-            
-          </Swiper>
+        
+      </Swiper>
     </>
+      
       </CardBody>
     </div>
   )
