@@ -106,7 +106,7 @@ const Account = () => {
               </Col>
 
               <Col xs="6" lg="4">
-                <Link to="/user-message">
+                <Link to="/messages">
                   <Card sm className="p-2 border rounded">
                     <Row className="gy-2 align-items-center">
                       <Col xs="3">

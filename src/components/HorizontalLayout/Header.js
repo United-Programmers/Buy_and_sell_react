@@ -105,7 +105,7 @@ const Header = props => {
               <span className="badge bg-primary rounded-pill">0</span>
             </Link>
 
-            <Link to="/user-message" className="mt-2  pt-1 text-dark">
+            <Link to="/messages" className="mt-2  pt-1 text-dark">
               <IoMdNotificationsOutline size={25} />
               <span className="badge bg-danger rounded-pill">2</span>
             </Link>

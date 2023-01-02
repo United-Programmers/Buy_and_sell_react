@@ -1,83 +1,33 @@
 import React from "react"
 import MetaTags from 'react-meta-tags';
-import { Card, Col, Container, Row, CardImg } from "reactstrap"
+import { Card, Col, Container, Row, CardImg, Button } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
 import User from "../../../assets/images/users/avatar-1.jpg";
+import { AiTwotoneLike } from "react-icons/ai";
+import { BsReply } from "react-icons/bs";
 
 const UserMessage = () => {
 
     return (
         <React.Fragment>
-            <div className="page-content">
-                <MetaTags title_sco="Message page | Buy and sell" />
+            <Card className="message p-4 border rounded p-2">
+                <Row>
+                    <Col md={3}>
+                        <CardImg src={User} alt="user" className="rounded-circle avatar-lg" />
+                    </Col>
 
-                <PageWrapper>
-                    <Breadcrumb default="/user-message" defaultName="Message" title="my messages" />
-                    
-                    <Card className="message p-4">
+                    <Col md={9} className="rounded-sm message__card">
+                        <div>
+                            <p><h4>John muleka</h4>  <p className="font-size-10"><AiTwotoneLike /> liked your post</p></p>
+                            <p className="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorem.</p>
+                            <p><small>5 mins ago</small></p>
+                            <Button color="primary" outline> <BsReply />  Reply </Button>
+                        </div>
 
-                        <Row>
-                            <Col md={2}>
-                                <CardImg src={User} alt="user"className="rounded-circle avatar-lg"/>
-                            </Col>
-
-                            <Col md={10} className="rounded-sm">
-                                <p><b>John Muleka</b>  react to your post</p>
-                                <p className="text-muted">inspirational designs, illustrations, and graphic elements from the world’s best designers.
-                                Want more inspiration? Browse our search results...</p>
-                                <p className="text-muted"><small>10 mins ago</small></p>
-
-                                <div className="text-end">
-                                 <button className="btn btn-primary">Reply</button>
-                                </div>
-                            </Col>                         
-                        </Row>
-                    </Card>
-
-                    <Card className="message p-4">
-
-                        <Row>
-                            <Col md={2}>
-                                <CardImg src={User} alt="user"className="rounded-circle avatar-lg"/>
-                            </Col>
-
-                            <Col md={10} className="rounded-sm message__card">
-                                <p><b>John Muleka</b>  react to your post</p>
-                                <p className="text-muted font-size-15">inspirational designs, illustrations, and graphic elements from the world’s best designers.
-                                Want more inspiration? Browse our search results...</p>
-                                <p className="text-muted font-size-10"><small>10 mins ago</small></p>
-
-                                <div className="text-end">
-                                 <button className="btn btn-primary">Reply</button>
-                                </div>
-                            </Col>                         
-                        </Row>
-                    </Card>
-
-                    <Card className="message p-4">
-
-                        <Row>
-                            <Col md={2}>
-                                <CardImg src={User} alt="user"className="rounded-circle avatar-lg"/>
-                            </Col>
-
-                            <Col md={10} className="rounded-sm message__card">
-                                <p><b>John Muleka</b>  react to your post</p>
-                                <p className="text-muted">inspirational designs, illustrations, and graphic elements from the world’s best designers.
-                                Want more inspiration? Browse our search results...</p>
-                                <p className="text-muted"><small>10 mins ago</small></p>
-
-                                <div className="text-end">
-                                 <button className="btn btn-primary">Reply</button>
-                                </div>
-                                
-                            </Col>                      
-                        </Row>
-                    </Card>                  
-
-                </PageWrapper>
-            </div>
+                    </Col>
+                </Row>
+            </Card>
         </React.Fragment>
     )
 }
