@@ -1,0 +1,74 @@
+.body-wrapper{
+    max-width: 370px;
+    margin: auto;
+}
+.card-body {  
+    padding: 1.25rem 0.25rem !important;
+}
+.btn-secondary{
+    border: 0 !important;
+    padding: 10px 0;
+    margin-top: 0;  
+    outline: 0 !important ;
+    color:#fff !important;
+    background-color:#cc51eb !important ;
+    width: 100% !important ;
+    margin: auto ;
+    height: 50px;
+    white-space: nowrap;
+}
+.button{
+    padding: 0 !important;
+}
+.myInput{
+    position: relative;
+}
+
+.icon-one{
+    position: absolute;
+    top: 37px;
+    left:7px;
+}
+
+
+
+.myInput .form-group input{
+    padding-left: 30px;
+    
+}
+
+/*Address Page*/
+
+
+input[type=checkbox] {
+    accent-color: #9a00c0;
+    margin-left: 12px;
+    margin-right: 8px;
+  }
+
+  .inCheckbox {
+    background: #f6f6f6;
+    padding-top: 10px;
+    height: 40px;
+    border-radius: 0.25rem;
+  }
+
+  
+  /*media queries*/
+  @media screen and (min-width: 768px) {
+    .body-wrapper-2{
+        max-width: 850px;
+        margin: auto;
+    }
+    .myInput{
+        max-width: 350px;
+        margin: auto;  
+    }
+    .btn-block{
+        max-width: 350px;
+        margin: auto;  
+    }
+  }
+  @media screen and (min-width: 768px) {
+    
+  }

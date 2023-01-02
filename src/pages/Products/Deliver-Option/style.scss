@@ -4,7 +4,7 @@
             display: flex;
             justify-content: space-between;
     }
-    background-color: rgba(234, 237, 237, 1);
+    // background-color: rgba(234, 237, 237, 1);
     height: 30pc;
     
     .second {
@@ -13,13 +13,17 @@
             gap:10px;
             .deliBox
             {
-                background-color: white;
-            
+                background-color:rgba(234, 237, 237, 1);
+            // .deliH, .AddBut
+            // {
+            //     background-color: rgba(234, 237, 237, 1);
+            // }
+
             .deliInfo{
                 display: flex;
-                background-color: white;
+        background-color: rgba(234, 237, 237, 1);
                 justify-content: space-between;
-                width: 40pc;
+                width: 50pc;
                 height: 3.8pc;
                 margin: 15px;
                 .continue {
@@ -38,7 +42,7 @@
                 {
                     
                     display: flex;
-                background-color: rgba(238, 227, 240, 1);
+                // background-color: rgba(238, 227, 240, 1);
                 align-items: center;
                 gap:20px;
                 width: 40pc;
@@ -64,8 +68,9 @@
             .summary
     {
         
-        background-color: white;
-        width: auto;
+        background-color: rgba(234, 237, 237, 1);
+        width: 20pc;
+        // margin-left: 10pc;
         
         .summaryDesc
         {
@@ -103,7 +108,7 @@
                 border-radius: 30px;
                 width: 9pc;
     }
-    background-color: rgba(234, 237, 237, 1);
+    // background-color: rgba(234, 237, 237, 1);
     height: 20pc;
         
 .contents

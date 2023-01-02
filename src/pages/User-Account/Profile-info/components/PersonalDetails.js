@@ -1,6 +1,6 @@
 import React from 'react'
 import { AvForm, AvField } from "availity-reactstrap-validation"
-import { CardBody } from "reactstrap"
+import { CardBody,Row,Col,Button } from "reactstrap"
 import "../style.scss";
 import { FaUser } from 'react-icons/fa';
 import { MdOutlineMarkEmailRead } from 'react-icons/md';
@@ -19,8 +19,8 @@ function PersonalDetails() {
                     }}
                 >
                     <div className="mb-3 myInput">
-                        <span className="icon">< MdOutlineMarkEmailRead /></span>
-                        <AvField
+                        <span className="icon-one">< MdOutlineMarkEmailRead /></span>
+                        <AvField 
 
                             name="email"
                             label="Email Address"
@@ -32,7 +32,7 @@ function PersonalDetails() {
                     </div>
 
                     <div className="mb-3 myInput">
-                        <span className="icon">< FaUser /></span>
+                        <span className="icon-one">< FaUser /></span>
                         <AvField
                             name="Phone Number"
                             label="Phone Number"
@@ -42,7 +42,8 @@ function PersonalDetails() {
                         />
                     </div>
 
-                    <CustomBtn btnName="Update personal details" />
+                    
+                    <Row className='btn__grp'><Col><Button className="update__btn ">Update address</Button></Col></Row>
                 </AvForm>
             </CardBody>
         </div>
