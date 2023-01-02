@@ -81,15 +81,11 @@ const Navbar = props => {
               id="topnav-menu-content"
             >
               <ul className="navbar-nav">
-                <li className="nav-item">
-                  <Link className="nav-link" to="home">
+                <li className="nav-item dropdown mega-dropdown">
+                  <Link className="nav-link dropdown-toggle arrow-none" to="/#">
                     <AiOutlineHome size={20} />  Home
                   </Link>
                 </li>
-
-
-
-
 
                 <li className="nav-item dropdown mega-dropdown">
                   <Link to="/#" onClick={e => {
@@ -428,85 +424,6 @@ const Navbar = props => {
                   </div>
                 </li>
 
-
-
-
-
-
-                <li className="nav-item dropdown">
-                  <Link to="/#" className="nav-link dropdown-toggle arrow-none"
-                    onClick={e => {
-                      e.preventDefault()
-                      setcomponent(!component)
-                    }}
-                  >
-                    <AiOutlineShop size={22} /> Others
-                  </Link>
-                  <div className={classname("dropdown-menu", { show: component })}>
-
-                    <div className="dropdown">
-                      <Link
-                        to="/#"
-                        className="dropdown-item dropdown-toggle arrow-none"
-                        onClick={e => {
-                          e.preventDefault()
-                          seticon(!icon)
-                        }}
-                      >
-                        {props.t("Icons")} <div className="arrow-down"></div>
-                      </Link>
-                      <div
-                        className={classname("dropdown-menu", { show: icon })}
-                      >
-                        <Link
-                          to="/"
-                          className="dropdown-item"
-                        >
-                          {props.t("Material Design")}
-                        </Link>
-                        <Link to="/" className="dropdown-item">
-                          {props.t("Font awesome")}{" "}
-                        </Link>
-
-                        <Link to="/" className="dropdown-item">Ion Icons</Link>
-
-                        <Link to="/" className="dropdown-item">Themify Icons</Link>
-
-                        <Link to="/" className="dropdown-item">
-                          {props.t("Dripicons")}
-                        </Link>
-
-                        <Link to="/" className="dropdown-item">Typicons Icons</Link>
-
-                      </div>
-                    </div>
-                    <div className="dropdown">
-                      <Link
-                        to="/#"
-                        className="dropdown-item dropdown-toggle arrow-none"
-                        onClick={e => {
-                          e.preventDefault()
-                          setmap(!map)
-                        }}
-                      >
-                        {props.t("Maps")} <div className="arrow-down"></div>
-                      </Link>
-                      <div
-                        className={classname("dropdown-menu", { show: map })}
-                      >
-                        <Link to="/" className="dropdown-item">
-                          {props.t("Google Maps")}{" "}
-                        </Link>
-                        <Link to="/" className="dropdown-item">
-                          {props.t("Vector Maps")}{" "}
-                        </Link>
-                        <Link to="/" className="dropdown-item">
-                          {props.t("Leaflet Maps")}{" "}
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </li>
 
               </ul>
             </Collapse>
