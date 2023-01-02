@@ -54,7 +54,7 @@ const userRoutes = [
   //* DASHBOARD PAGES
   { path: "/home", component: Products },
   { path: "/details/:id", component: ProductDetail },
-  { path: "/related-products", component: RelatedProducts},
+  { path: "/related-products", component: RelatedProducts },
   { path: "/shopping-cart", component: ShoppingCart },
   { path: "/wishlist", component: WishList },
   { path: "/deliver-option", component: DeliverOption },
@@ -94,9 +94,10 @@ const userRoutes = [
 
 
   { path: "/", exact: true, component: () => <Redirect to="/home" /> },
-]
 
-const authRoutes = [
+
+
+
   { path: "/logout", component: Logout }, //* logout
   { path: "/login", component: Login }, //* login
   { path: "/reset-password", component: ResetPassword }, //* reset password
@@ -106,7 +107,19 @@ const authRoutes = [
   { path: "/admin-register", component: AdminRegister }, //* Admin Register
   { path: "/driver-register", component: DriverRegister }, //* Driver Register
   { path: "/sellers-register", component: SellerRegister }, //* Vendor Register
+]
 
+const authRoutes = [
+
+  // { path: "/logout", component: Logout }, //* logout
+  // { path: "/login", component: Login }, //* login
+  // { path: "/reset-password", component: ResetPassword }, //* reset password
+  // { path: "/forgot-password", component: ForgetPwd }, //* forgot password
+
+  // { path: "/user-register", component: UserRegister }, //* user Register
+  // { path: "/admin-register", component: AdminRegister }, //* Admin Register
+  // { path: "/driver-register", component: DriverRegister }, //* Driver Register
+  // { path: "/sellers-register", component: SellerRegister }, //* Vendor Register
 ]
 
 export { userRoutes, authRoutes }

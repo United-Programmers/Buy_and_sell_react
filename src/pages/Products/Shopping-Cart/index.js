@@ -1,10 +1,29 @@
 import React from "react"
+import "./style.scss"
 import MetaTags from 'react-meta-tags';
 import { Col, Container, Row } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
+import { useDispatch_2, useSelector_2 } from '../../../index';
+import { getCartItems } from './../../../Redux/Slices/cartSlice';
+import CartContainer from "./components/CartContainer";
 
 const ShoppingCart = () => {
+
+    const { cartItem, amount, total } = useSelector_2((store) => store.cart);
+    const dispatch = useDispatch_2();
+    React.useEffect(() => { dispatch(getCartItems()) }, [])
+
+    if (amount < 1) {
+        return (
+            <section className='cart'>
+                <header>
+                    <h2>your bag</h2>
+                    <h4 className='empty-cart'>is currently empty</h4>
+                </header>
+            </section>
+        );
+    }
 
     return (
         <React.Fragment>
@@ -13,8 +32,7 @@ const ShoppingCart = () => {
 
                 <PageWrapper>
                     <Breadcrumb default="/shopping-cart" defaultName="shopping-cart" title="my cart" />
-
-                    <h1 className="page-title">Shopping cart pages</h1>
+                    <CartContainer cartItem={cartItem} />
                 </PageWrapper>
 
             </div>
