@@ -8,6 +8,8 @@ import { registerUser, apiError, registerUserFailed } from "../../../store/actio
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
 import MetaTagComp from "components/MetaTag";
+import CustomBtn from "components/CustomBtn";
+import { CiLogin } from "react-icons/ci";
 
 
 const UserRegister = () => {
@@ -17,14 +19,15 @@ const UserRegister = () => {
     <React.Fragment>
       <MetaTagComp title_sco="User register page | Buy and sell" />
 
-      <div className="account-pages my-5 pt-sm-5">
-        <Row className="justify-content-center">
+      <div className="page-content account-pages my-5 pt-sm-5">
+        <Row className="justify-content-center mt-5">
           <Col md={8} lg={6} xl={8}>
             <Card className="overflow-hidden">
               <CardBody className="p-4">
+                <h5 className="text-center">Register as a buyer</h5>
                 <div className="p-3">
                   <AvForm
-                    className="form-horizontal mt-4 d-flex flex-column g-5"
+                    className="form-horizontal mt-4 d-flex flex-column"
                     onValidSubmit={(e, v) => {
                       handleValidSubmit(e, v)
                     }}
@@ -92,29 +95,25 @@ const UserRegister = () => {
                         </div>
                       </Col>
                     </Row>
-                    <Row className="mb-3 ">
-                      <Col className=" d-flex justify-content-center ">
-                        <Button type="submit" btnType="my-default">
-                          Register
-                        </Button>
-                      </Col>
-                    </Row>
+
+                    <div className="text-start">
+                      <p>
+                        Already have an account ?
+                        <Link to="/login" className="fw-medium text-primary">
+                          Login
+                        </Link>
+                      </p>
+                    </div>
+
+                    <div className="text-center">
+                      <CustomBtn btnName="Submit" icon={<CiLogin size={28} />} />
+                    </div>
+
                   </AvForm>
                 </div>
               </CardBody>
             </Card>
-            <div className="mt-5 text-center">
-              <p>
-                Already have an account ?
-                <Link to="/login" className="fw-medium text-primary">
-                  Login
-                </Link>
-              </p>
-              <p>
-                © {new Date().getFullYear()}  Crafted with
-                <i className="mdi mdi-heart text-danger" /> by The united programmers
-              </p>
-            </div>
+
           </Col>
         </Row>
       </div>
