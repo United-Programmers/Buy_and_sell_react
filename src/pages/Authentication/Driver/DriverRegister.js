@@ -7,6 +7,8 @@ import { registerUser, apiError, registerUserFailed } from "../../../store/actio
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
 import MetaTagComp from "components/MetaTag";
+import CustomBtn from "components/CustomBtn"
+import { CiLogin } from "react-icons/ci"
 
 
 const DriverRegister = () => {
@@ -16,16 +18,16 @@ const DriverRegister = () => {
         <React.Fragment>
             <MetaTagComp title_sco="Driver register page | Buy and sell" />
 
-            <div className="account-pages my-5 pt-sm-5">
-                <Container>
-                    <Row className="justify-content-center">
+            <div className="page-content account-pages my-5 pt-sm-5">
+                    <Row className="justify-content-center mt-5">
                         <Col md={8} lg={6} xl={4}>
                             <Card className="overflow-hidden">
                                 <CardBody className="p-4">
+                                <h5 className="text-center">Register as an admin</h5>
                                     <div className="p-3">
                                         <AvForm className="mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
 
-                                            <div className="mb-3">
+                                            <div className="mb-3 myInput">
                                                 <AvField
                                                     id="email"
                                                     name="email"
@@ -37,46 +39,23 @@ const DriverRegister = () => {
                                                 />
                                             </div>
 
-                                            <div className="mb-3 row">
-                                                <div className="col-12 text-end">
-                                                    <button
-                                                        className="btn btn-primary w-md waves-effect waves-light"
-                                                        type="submit"
-                                                    >
-                                                        Register
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div className="mt-2 mb-0 row">
-                                                <div className="col-12 mt-4">
-                                                    <p className="mb-0">
-                                                        By registering you agree to the Veltrix{" "}
-                                                        <Link to="#" className="text-primary">
-                                                            Terms of Use
-                                                        </Link>
-                                                    </p>
-                                                </div>
+                                            <div className="text-center me-3">
+                                                <CustomBtn btnName="Submit" icon={<CiLogin size={28} />} />
                                             </div>
                                         </AvForm>
-                                    </div>
-                                </CardBody>
-                            </Card>
-                            <div className="mt-5 text-center">
+                            <div className="mt-5 text-start">
                                 <p>
                                     Already have an account ?
                                     <Link to="/login" className="fw-medium text-primary">
                                         Login
                                     </Link>
                                 </p>
-                                <p>
-                                    © {new Date().getFullYear()}  Crafted with
-                                    <i className="mdi mdi-heart text-danger" /> by The united programmers
-                                </p>
                             </div>
+                                    </div>
+                                </CardBody>
+                            </Card>
                         </Col>
                     </Row>
-                </Container>
             </div>
         </React.Fragment>
     )
