@@ -4,6 +4,7 @@ import { Button, Col, Container, Row, CardBody, Card } from "reactstrap"
 import { AiTwotoneStar } from 'react-icons/ai';
 import { MdShoppingCart } from 'react-icons/md';
 import { HiInformationCircle } from 'react-icons/hi';
+import {HiCamera } from 'react-icons/hi';
 import Zoom from "./images/zoom.webp";
 
 function Products() {
@@ -13,6 +14,16 @@ function Products() {
                 <Col md={3}>
                     <div className="product-2  d-flex swipe__item pro__image text-center align-items-center ">
                         <img src={Zoom} alt="" />
+                        <span className="pro__camera"><HiCamera/></span>
+                        <span className="pro__new">
+                          New
+                        </span>    
+                        <span className="pro__off">
+                          <span>20%</span>
+                          <span>OFF</span>
+
+                        </span>    
+                          
                         <Row className="item__content mt-3">
                             <h6>Cooler Master Compact Home And Business Core i3 Pro Desktop Computer</h6>
                             <h6 className="label__item">Cooler Master</h6>
