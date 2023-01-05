@@ -1,0 +1,40 @@
+// @import "../../../../assets/scss/tables/table";
+.card {
+    border-radius: 15px !important;
+}
+
+.card-title {
+    border-bottom: 0.5px solid #f1f1f1;
+    padding: 0 0 2em 0;
+}
+
+.table_header {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    padding: 1em 0;
+}
+
+thead {
+    border-bottom: 0.5px solid #f1f1f1 !important;
+}
+
+.btn__view {
+    background: #9A00C0 !important;
+}
+
+.table__btn {
+    color: white !important;
+}
+
+.table__content_data {
+    border-bottom: 0.5px solid #f1f1f1;
+    padding: 0.8em 0;
+}
+
+.current {
+    background: #9A00C0 !important;
+    padding: 0.5em;
+    color: white;
+    border-radius: 5px;
+}
