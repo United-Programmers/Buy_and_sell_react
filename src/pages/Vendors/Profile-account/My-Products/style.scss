@@ -32,9 +32,33 @@ thead {
     padding: 0.8em 0;
 }
 
+.pagination-box {
+    display: inline-block;
+    gap: 1em
+}
+
+.pagination-box span {
+    display: inline-block;
+    gap: 1em;
+    margin-top: 0.4em
+}
+
 .current {
     background: #9A00C0 !important;
     padding: 0.5em;
     color: white;
     border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.not_current {
+    background: #e8e8e8 !important;
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 0.3em;
+}
+.not_current:hover {
+    background: #9A00C0 !important;
 }
