@@ -29,21 +29,22 @@
 /*product 2 */
 .product-2{
     position: relative;
+    background: #ffffff !important;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    
+    padding: 1rem; 
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
     transition: all 0.3s ease-in-out 0s;
-    width: 270px;
-    margin: 1rem 1rem !important;
+    max-width: 19.875em;
+    height: 33em;
+    margin: auto;
 }
 .product-2:hover{ 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
  }
 
 .pro__image img{
-    width: 170px !important;
+    width:  10.625em !important;
     height: 180px !important;
     object-fit:cover;
     }
@@ -61,12 +62,12 @@
     font-weight:300 !important;
     font-size: 0.8rem;
     margin-left: 0.3rem;
-    color: #adadad;
+    color: #adadad !important;
 }
 
 .i-icon{
     padding-bottom: 1rem !important;
-    color: #adadad;
+    color: #adadad !important;
     font-size: 1rem;
 }
 .pro__stock{
@@ -80,11 +81,16 @@
     padding: 0 0.3rem;
     padding-bottom: 0.1rem;
     font-size: 0.7rem;
+    color: #878484 !important;
       
 }
 
+
 .view__btn{
-    padding: 0.4rem 3.5rem !important;
+    margin-top: 0 !important;
+    padding: 0.4rem 2em  !important;
+    width: 100% !important;
+    display: inline-block !important;  
 }
 
 .pro__camera{
@@ -101,7 +107,7 @@
 .pro__new{
     position: absolute;
     background: #9a00c0;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,10 +148,64 @@
     top: 50px;
     left: 10px;
 }
-
+.pro__love{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    color: #db7bf3;
+}
 .col-md, .col-md-9{
     padding: 0 !important;
 }
 
+ 
+
+/*update*/
+.box {
+    display: grid !important;
+    grid-template-columns: repeat(1fr) !important;
+    gap: 1.5rem !important;
+   
+  }
+  .content__container{
+    max-width: 270px;
+    margin: auto;
+   
+  }
+
+@media screen and (min-width: 500px) {
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       
+      }
+  
+  }
+@media screen and (min-width: 992px) {
+    .box {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+       
+      }
+  }
+@media screen and (min-width: 1396px) {
+    .box {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+       
+      }
+  }
+@media screen and (min-width: 1440px) {
+    .view__btn{
+        
+        padding: 0.4rem 3.3em  !important;
+         
+    }
     
-    
+  }
+
+  .box .row span {
+    color: 0 !important;
+}
+  
