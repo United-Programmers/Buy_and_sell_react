@@ -1,31 +1,29 @@
-import React from "react"
+import React from 'react';
 import MetaTags from 'react-meta-tags';
-import { Col, Container, Row } from "reactstrap"
-import Breadcrumb from "components/Common/Breadcrumb";
-import PageWrapper from "components/PageWrapper";
-import { Link } from "react-router-dom";
+import { Col, Row, Card, CardBody, Container } from "reactstrap"
+import "./style.scss"
+import SidebarContent from 'components/HorizontalLayout/SidebarContent';
+import PageWrapper from 'components/PageWrapper';
 
-const VendorAccount = () => {
+function Layout(props) {
 
     return (
         <React.Fragment>
             <div className="page-content">
-                <MetaTags title_sco="Vendor page | Buy and sell" />
-
                 <PageWrapper>
-                    <Breadcrumb default="/vendor-account" defaultName="Account" title="my account" />
+                    <Row className='Account-container mt-4'>
+                        <Col md={3} className='sidebar'>
+                            <SidebarContent />
+                        </Col>
 
-                    {/* WRITE YOUR CODE HERE */}
-                    <p> <Link to="/vendor-dashboard"> Dashboard </Link> </p>
-                    <p> <Link to="/vendor-addProduct"> Add new products </Link> </p>
-                    <p> <Link to="/vendor-products"> My Products </Link> </p>
-                    <p> <Link to="/vendor-orders"> Orders </Link> </p>
-                    <p> <Link to="/vendor-account-settings"> Account settings </Link> </p>
-
+                        <Col m={9}>
+                            {props.children}
+                        </Col>
+                    </Row>
                 </PageWrapper>
             </div>
         </React.Fragment>
     )
 }
 
-export default VendorAccount
+export default Layout
