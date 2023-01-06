@@ -1,26 +1,4 @@
-// import React from "react"
-// import MetaTags from 'react-meta-tags';
-// import { Col, Container, Row } from "reactstrap"
-// import Breadcrumb from "components/Common/Breadcrumb";
-// import PageWrapper from "components/PageWrapper";
-// import { Link } from "react-router-dom";
-// import Layout from "../../Layout"
-
-// const VendorAccount = () => {
-
-//     return (
-//         <Layout>
-
-//         </Layout>
-//     )
-// }
-
-// export default VendorAccount
-
-
-
 import React from 'react';
-// import "./../Styles.scss"
 import MetaTags from 'react-meta-tags';
 import { Col, Row, Card, CardBody, Container } from "reactstrap"
 import "./style.scss"

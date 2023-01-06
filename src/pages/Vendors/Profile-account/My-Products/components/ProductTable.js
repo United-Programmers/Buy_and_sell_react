@@ -105,17 +105,18 @@ const ProfileDatatable = () => {
                                             }
                                         >
                                             <Link className="paginate_button previous disabled" style={{ padding: "10px 20px" }} to="#">
-                                                Previous
+                                                Prev
                                             </Link>
                                         </li>
+
                                         <span>
                                             {jobPagination.map((number, i) => (
                                                 <Link
                                                     key={i}
-                                                    to="/table-datatable-basic"
+                                                    // to="/table-datatable-basic"
                                                     className={`paginate_button  ${activePag.current === i
                                                         ? "current"
-                                                        : ""
+                                                        : "not_current"
                                                         }`}
                                                     onClick={() => onClick(i)}
                                                 >
