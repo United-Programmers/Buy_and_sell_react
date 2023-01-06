@@ -1,0 +1,72 @@
+thead {
+    border-bottom: 0.5px solid #f1f1f1 !important;
+}
+
+.dataTables_wrapper tbody{
+    border-bottom: none !important
+}
+
+.card {
+    border-radius: 15px !important;
+}
+
+.table-card-title {
+    border-bottom: 0.5px solid #f1f1f1;
+    padding: 0 0 2em 0;
+}
+
+.table_header {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    padding: 1em 0;
+}
+
+.btn__view {
+    background: #9A00C0 !important;
+}
+
+.table__btn {
+    color: white !important;
+}
+
+.table__content_data {
+    border-bottom: 0.5px solid #f1f1f1;
+    padding: 0.8em 0;
+}
+
+.pagination-box {
+    display: inline-block;
+    gap: 1em
+}
+
+.pagination-box span {
+    display: inline-block;
+    gap: 1em;
+    margin-top: 0.4em
+}
+
+.current {
+    background: #9A00C0 !important;
+    padding: 0.5em;
+    color: white;
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.not_current {
+    background: #e8e8e8 !important;
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 0.3em;
+}
+
+.not_current:hover {
+    background: #F3C5FF !important;
+    color: white;
+}
+.footer__border{
+    border: none !important;
+}
