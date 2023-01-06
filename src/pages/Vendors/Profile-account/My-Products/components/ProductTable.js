@@ -38,7 +38,7 @@ const ProfileDatatable = () => {
     return (
         <div className="col-12">
             <Card className="p-4">
-                <h4 className="card-title">My Products</h4>
+                <h4 className="table-card-title">My Products</h4>
                 <div>
                     <Table responsive className="w-100">
                         <div id="example_wrapper" className="dataTables_wrapper">
@@ -87,7 +87,7 @@ const ProfileDatatable = () => {
                                 </tbody>
                             </table>
 
-                            <div className="d-sm-flex text-center justify-content-between align-items-center mt-3">
+                            <div className="d-sm-flex text-center justify-content-between align-items-center mt-3 footer__border">
 
                                 <div className="dataTables_info">
                                     Showing {activePag.current * sort + 1} to {data.profileTable.data.length < (activePag.current + 1) * sort ? data.profileTable.data.length

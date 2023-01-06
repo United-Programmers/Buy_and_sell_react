@@ -1,9 +1,16 @@
-// @import "../../../../assets/scss/tables/table";
+thead {
+    border-bottom: 0.5px solid #f1f1f1 !important;
+}
+
+.dataTables_wrapper tbody{
+    border-bottom: none !important
+}
+
 .card {
     border-radius: 15px !important;
 }
 
-.card-title {
+.table-card-title {
     border-bottom: 0.5px solid #f1f1f1;
     padding: 0 0 2em 0;
 }
@@ -13,10 +20,6 @@
     text-transform: uppercase;
     color: black;
     padding: 1em 0;
-}
-
-thead {
-    border-bottom: 0.5px solid #f1f1f1 !important;
 }
 
 .btn__view {
@@ -59,6 +62,11 @@ thead {
     padding: 8px 16px;
     margin: 0 0.3em;
 }
+
 .not_current:hover {
-    background: #9A00C0 !important;
+    background: #F3C5FF !important;
+    color: white;
+}
+.footer__border{
+    border: none !important;
 }
