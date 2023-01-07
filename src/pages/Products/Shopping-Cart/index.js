@@ -7,6 +7,7 @@ import PageWrapper from "components/PageWrapper";
 import { useDispatch_2, useSelector_2 } from '../../../index';
 import { getCartItems } from './../../../Redux/Slices/cartSlice';
 import CartContainer from "./components/CartContainer";
+import RelatedProducts from "./components/RelatedProducts";
 
 const ShoppingCart = () => {
 
@@ -33,6 +34,7 @@ const ShoppingCart = () => {
                 <PageWrapper>
                     <Breadcrumb default="/shopping-cart" defaultName="shopping-cart" title="my cart" />
                     <CartContainer cartItem={cartItem} />
+                    <RelatedProducts />
                 </PageWrapper>
 
             </div>
