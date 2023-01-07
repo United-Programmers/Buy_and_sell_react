@@ -202,6 +202,19 @@
 //         grid-template-columns: repeat(4, 1fr) !important;
 //     }
 // }
+.side__bar {
+    background: white;
+    box-shadow: 9px 7px 12px -11px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow: 9px 7px 12px -11px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 9px 7px 12px -11px rgba(0, 0, 0, 0.32);
+}
+
+.Accordion__container {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0 !important;
+}
+
 @media screen and (min-width: 1440px) {
     .view__btn {
         padding: 0.4rem 3.3em !important;
