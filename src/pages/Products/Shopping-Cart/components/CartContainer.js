@@ -3,6 +3,7 @@ import { ClearCart } from "Redux/Slices/cartSlice"
 import CartBox from "./CartBox"
 import { Card, Col, Row } from "reactstrap"
 import { CardBody } from "reactstrap"
+import { Link } from "react-router-dom"
 
 const CartContainer = ({ cartItem }) => {
   const { total } = useSelector_2(store => store.cart)
@@ -29,12 +30,12 @@ const CartContainer = ({ cartItem }) => {
                 <h5>Total:</h5>
                 <span className="h4">${total.toFixed(2)}</span>
               </div>
-              <button
+              <Link to="/deliver-address-details"
                 className="btn mt-3 bg-primary text-white text-center rounded py-2"
                 style={{ width: "100%" }}
               >
                 Proceed to Checkout
-              </button>
+              </Link>
               <button
                 className="btn clear-btn mt-3 bg-white border border-primary text-center text-primary rounded py-2"
                 onClick={() => dispatch(ClearCart())}

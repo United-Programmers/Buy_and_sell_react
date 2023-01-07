@@ -4,7 +4,9 @@ import { products } from "./data"
 import Colors from "./Colors"
 import DetailsThumb from "./DetailsThumb"
 import Size from "./Size"
-import { Card } from "reactstrap"
+import { Card, Col, Row } from "reactstrap"
+import { Link } from "react-router-dom"
+import { MdShoppingCart } from "react-icons/md"
 
 const ProductDetails = () => {
   const myRef = useRef()
@@ -28,19 +30,28 @@ const ProductDetails = () => {
         <div className="details" key={item._id}>
           <div className="big-img">
             <img src={item.src[index]} alt="" />
+            <DetailsThumb images={item.src} tab={handleTab} myRef={myRef} />
           </div>
 
           <div className="box">
-            <div className="row">
-              <h2>{item.title}</h2>
-              <span>${item.price}</span>
+            <Row>
+              <Col md={8}><h2>{item.title}</h2> </Col>
+              <Col md={4}> <h3>${item.price}</h3> </Col>
+            </Row>
+            <Row>
+              <Col md={8}>
+                Choose color : <Colors colors={item.colors} /> </Col>
+              <Col md={4}> Select Size: <Size sizes={item.size} /> </Col>
+            </Row>
+            <div>
+              <p>Availability: In stock(55)</p>
+              <p>Product code: 0405689</p>
+              <p>Brand: Lee</p>
+              <p>{item.description}</p>
+              <p>{item.content}</p>
             </div>
-            <Colors colors={item.colors} />
-            <Size sizes={item.size} />
-            <p>{item.description}</p>
-            <p>{item.content}</p>
-            <DetailsThumb images={item.src} tab={handleTab} myRef={myRef} />
-            <button className="cart">Add to cart</button>
+
+            <Link to={`/shopping-cart`} className="btn-grp "><button className="cart__btn view__btn w-50"><span className="icon"><MdShoppingCart /></span> + Add to cart </button></Link>
           </div>
         </div>
       ))}
