@@ -9,6 +9,7 @@ import {
   removeItem,
 } from "./../../../../Redux/Slices/cartSlice"
 import { MdDeleteOutline } from "react-icons/md"
+import { RiDeleteBin6Line } from 'react-icons/ri';
 
 function CartBox({ items }) {
   const dispatch = useDispatch_2()
@@ -22,7 +23,6 @@ function CartBox({ items }) {
           <div className="text-start">
             <h5>{title}</h5>
             <p>
-              {" "}
               Got this to help during loadshedding with alarm system - 3 point pronk
               cannot easily insert
             </p>
@@ -42,7 +42,7 @@ function CartBox({ items }) {
               </button>
               <p className="amount mx-3">{amount}</p>
               <button
-                className="amount-btn me-1 bg-primary text-light p-1 rounded" style={{ width: "auto" }}
+                className="amount-btn me-1 btn-custom-primary text-light p-1 rounded" style={{ width: "auto" }}
                 onClick={() => dispatch(increase({ id }))}
               >
                 <IoAddOutline size={22} />
@@ -54,10 +54,9 @@ function CartBox({ items }) {
         <Col xs={3}>
           <div className="d-flex flex-column">
             <button className="remove-btn text-danger mb-5 text-end" onClick={() => dispatch(removeItem(id))}>
-              {" "}
-              <MdDeleteOutline size={30} />
+              <RiDeleteBin6Line size={20} /> Remove
             </button>
-            <h4 className="item-price mt-2 text-end">${price}</h4>
+            <h5 className="item-price mt-2 text-end">R{price}</h5>
           </div>
         </Col>
       </Row>
