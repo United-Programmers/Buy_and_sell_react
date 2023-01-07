@@ -2,9 +2,11 @@ import React, { Component } from "react";
 
 const Colors = ({ colors }) => {
   return (
-    <div className="colors">
+    <div className="colors d-flex">
       {colors.map((color, index) => (
-        <button style={{ background: color }} key={index}></button>
+        <div className="form-check">
+          <input className="form-check-input" style={{ background: color, padding: "1em" }} type="checkbox" value="" id="flexCheckDefault" required />
+        </div>
       ))}
     </div>
   );

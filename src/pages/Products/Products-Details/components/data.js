@@ -11,7 +11,7 @@ export const products = [
     content:
       "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
     price: 23,
-    colors: ["red", "black", "crimson", "teal"],
+    colors: ["red", "black", "blue", "teal"],
     size: ["sm", "md", "xl", "lg"],
     count: 1,
   },
