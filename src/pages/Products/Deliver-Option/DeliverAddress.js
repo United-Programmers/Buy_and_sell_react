@@ -63,7 +63,7 @@ const DeliverAddress = () => {
                                     <hr />
                                     <p>TO PAY: &emsp;&emsp;&emsp;<b style={{ color: "rgba(169, 65, 194, 1)" }}>R15,247</b></p>
                                     <hr />
-                                    <Link to="/deliver-option">   <CustomBtn icon={<AiOutlineDeliveredProcedure size={20} fullWidth="btn-block" />} btnName="Continue" /> </Link>
+                                    <Link to="/deliver-option">   <CustomBtn icon={<FaAmazonPay size={20} fullWidth="btn-block" />} btnName="Proceed to Checkout" /> </Link>
                                     <p className="my-3"><AiTwotoneLock /> <b>Secure Checkout</b></p>
                                 </CardBody>
                             </Card>
