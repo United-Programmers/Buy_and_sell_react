@@ -1,16 +1,8 @@
-import React, { Component } from "react"
+import React, { useState } from "react"
 import MetaTags from "react-meta-tags"
 import {
   Col,
-  Container,
   Row,
-  Card,
-  CardBody,
-  CardTitle,
-  Button,
-  Badge,
-  CardText,
-  Collapse,
   Nav,
   NavItem,
   NavLink,
@@ -18,7 +10,6 @@ import {
   TabPane,
 } from "reactstrap"
 import Breadcrumb from "components/Common/Breadcrumb"
-import { withRouter, Link } from "react-router-dom"
 import PageWrapper from "components/PageWrapper"
 import classnames from "classnames"
 import NewOrders from "./components/NewOrders"
@@ -28,69 +19,12 @@ import ReturnOrder from "./components/ReturnOrder"
 import { MdAddTask, MdCancelPresentation } from "react-icons/md"
 import { TbTruckReturn, TbTruckDelivery } from "react-icons/tb"
 
-class UiTabsAccordions extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      activeTab: "1",
-      activeTab1: "5",
-      activeTab2: "9",
-      activeTab3: "13",
-      verticalActiveTab: "1",
-      customActiveTab: "1",
-      activeTabJustify: "5",
-    }
-  }
+const ordersTab = () => {
 
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab,
-      })
-    }
-  }
+  const [customActiveTab, setCustomActiveTab] = useState("1")
+  const toggleCustom = (tab) => customActiveTab !== tab ? setCustomActiveTab(tab) : null
 
-  toggle1(tab) {
-    if (this.state.activeTab1 !== tab) {
-      this.setState({
-        activeTab1: tab,
-      })
-    }
-  }
-
-  toggle2(tab) {
-    if (this.state.activeTab2 !== tab) {
-      this.setState({
-        activeTab2: tab,
-      })
-    }
-  }
-
-  toggle3(tab) {
-    if (this.state.activeTab3 !== tab) {
-      this.setState({
-        activeTab3: tab,
-      })
-    }
-  }
-
-  toggleVertical(tab) {
-    if (this.state.verticalActiveTab !== tab) {
-      this.setState({
-        verticalActiveTab: tab,
-      })
-    }
-  }
-
-  toggleCustom(tab) {
-    if (this.state.customActiveTab !== tab) {
-      this.setState({
-        customActiveTab: tab,
-      })
-    }
-  }
-
-  render() {
+ 
     return (
       <React.Fragment>
         <div className="page-content">
@@ -109,10 +43,10 @@ class UiTabsAccordions extends Component {
                   <NavLink
                     style={{ cursor: "pointer" }}
                     className={classnames({
-                      active: this.state.customActiveTab === "5",
+                      active: customActiveTab === "5",
                     })}
                     onClick={() => {
-                      this.toggleCustom("5")
+                     toggleCustom("5")
                     }}
                   >
                     <span className="d-none d-sm-block">
@@ -124,10 +58,10 @@ class UiTabsAccordions extends Component {
                   <NavLink
                     style={{ cursor: "pointer" }}
                     className={classnames({
-                      active: this.state.customActiveTab === "6",
+                      active: customActiveTab === "6",
                     })}
                     onClick={() => {
-                      this.toggleCustom("6")
+                     toggleCustom("6")
                     }}
                   >
                     <span className="d-none d-sm-block">
@@ -139,10 +73,10 @@ class UiTabsAccordions extends Component {
                   <NavLink
                     style={{ cursor: "pointer" }}
                     className={classnames({
-                      active: this.state.customActiveTab === "7",
+                      active: customActiveTab === "7",
                     })}
                     onClick={() => {
-                      this.toggleCustom("7")
+                     toggleCustom("7")
                     }}
                   >
                     <span className="d-none d-sm-block">
@@ -154,10 +88,10 @@ class UiTabsAccordions extends Component {
                   <NavLink
                     style={{ cursor: "pointer" }}
                     className={classnames({
-                      active: this.state.customActiveTab === "8",
+                      active: customActiveTab === "8",
                     })}
                     onClick={() => {
-                      this.toggleCustom("8")
+                    toggleCustom("8")
                     }}
                   >
                     <span className="d-none d-sm-block">
@@ -168,7 +102,7 @@ class UiTabsAccordions extends Component {
               </Nav>
 
               <TabContent
-                activeTab={this.state.customActiveTab}
+                activeTab={customActiveTab}
                 className="text-muted mt-5"
               >
                 <TabPane tabId="5">
@@ -206,6 +140,5 @@ class UiTabsAccordions extends Component {
       </React.Fragment>
     )
   }
-}
 
-export default UiTabsAccordions
+export default ordersTab
