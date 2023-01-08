@@ -56,7 +56,9 @@ const AccountSettings = () => {
 
                 <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
                    <SeetingsForm />
-                    <CustomBtn  btnName="Update profile" />
+                   <div className="bb">
+                  <button >Save Changes</button>
+                   </div>
                 </AvForm>
            </Row>
            </CardBody>
@@ -65,7 +67,9 @@ const AccountSettings = () => {
            <Card>
                 <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
            <PasswordForm />
-                    <CustomBtn  btnName="Update profile" />
+                  <div style={{margin:"15px"}} className="bb">
+                  <button >Save Changes</button>
+                   </div>
                 </AvForm>
                 </Card>
 
