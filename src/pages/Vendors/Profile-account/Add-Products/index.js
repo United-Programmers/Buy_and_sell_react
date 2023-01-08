@@ -54,7 +54,9 @@ const AddProducts = () => {
 
                 <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
                    <ProductForm />
-                    <CustomBtn  btnName="Ad product" />
+                   <div className="bb">
+                  <button >Save Product</button>
+                   </div>
                 </AvForm>
            </Row>
            </CardBody>
