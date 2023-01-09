@@ -7,9 +7,9 @@ import {Row, Card, Col} from "react-bootstrap";
 function Cards() {
     return (
         <div className='cards'>
-            <Row>
+            <Row className='align-items-center justify-content-center'>
                 <Col md>
-                    <Card>
+                    <Card className='card__wrapper'>
                         <div className='cards__container  '>
                             <div className="cards__account text-center ">
                                 <RxPerson/>
@@ -27,35 +27,43 @@ function Cards() {
                     </Card>
                 </Col>
                 <Col md>
-                    <Card >
-                        <div className='d-flex align-items-center ms-3'>
+                    <Card className='card__wrapper'>
+                        <div className='cards__container  '>
                             <div className="cards__account text-center ">
                                 <RxPerson/>
                             </div>
-                            <div className='mt-3 ms-2'>
-                                <h6>Ernings before taxes</h6>
+                            <div className='mt-2 ms-2'>
+                                <h6 className='cards__earning'>Earnings before taxes</h6>
                                 <span>
-                                    <span>$3045400.00</span><span>+2.5%</span>
+                                    <span className='cards__price'>R 30 400</span><span className='cards__tax'>+2.5%</span>
                                 </span>
+                            </div>
+                            <div className="cards__icome">
+                              <ImArrowDownLeft2/>
                             </div>
                         </div>
                     </Card>
                 </Col>
                 <Col md>
-                    <Card >
-                        <div className='d-flex align-items-center ms-3'>
+                    <Card className='card__wrapper'>
+                        <div className='cards__container  '>
                             <div className="cards__account text-center ">
                                 <RxPerson/>
                             </div>
-                            <div className='mt-3 ms-2'>
-                                <h6>Ernings before taxes</h6>
+                            <div className='mt-2 ms-2'>
+                                <h6 className='cards__earning'>Earnings before taxes</h6>
                                 <span>
-                                    <span>$3045400.00</span><span>+2.5%</span>
+                                    <span className='cards__price'>R 30 400</span><span className='cards__tax'>+2.5%</span>
                                 </span>
+                            </div>
+                            <div className="cards__icome">
+                              <ImArrowDownLeft2/>
                             </div>
                         </div>
                     </Card>
                 </Col>
+                
+                
             </Row>
             
         </div>

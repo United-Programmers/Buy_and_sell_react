@@ -1,9 +1,9 @@
 
-.card{
-    max-width: 400px;
+.card__wrapper{
+    max-width: 400px !important;
     height: 10rem !important;
     /*margin: auto !important;*/
-    margin: 0.7rem;
+    margin: 0.7rem ;
     
 }
 
@@ -11,16 +11,18 @@
     position: relative;
     display:flex;
     align-items:center;
-    margin-top: 2.3rem;
-    margin-left: 1.6rem;
+    margin-top: 2.6rem;
+    margin-left: 1.3rem;
     
 }
 .cards__account{
     width: 60px !important;
     height: 60px !important;
     border-radius: 30px;
-    background: #dccce1;
-    color: #9a00c0;
+    /*background: #e7e5e8;*/
+    background: #F2F2F2;
+    
+    color: #b870ca;
     font-size: 1.3rem;
     display: inline-flex;
     justify-content: center;
@@ -36,7 +38,7 @@
     font-weight: 500;
 }
 .cards__tax{
-    background: #b253ca;
+    background: #bf88cd;
     color: #fff;
     border-radius: 9px;
     margin: 0 0.5rem;
@@ -52,8 +54,9 @@
     text-align: center;
     position: absolute;
     right: 20px;
-    background: #e1d7e2;
-    color: #9a00c0;
+    background: #F2F2F2;
+    
+    color: #d076e6;
     width: 30px;
     height: 30px;
     font-size: 1rem;
