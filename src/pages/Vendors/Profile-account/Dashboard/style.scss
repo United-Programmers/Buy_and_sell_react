@@ -1,9 +1,19 @@
+*{
+    box-sizing: border-box; ;
+}
+ .cards__container-one{
+    display: grid !important;
+    // grid-template-columns: repeat(1fr) !important;
+    grid-template-columns: repeat(auto-fit, minmax( 25em, 1fr));
+    gap:  0.5rem !important;
+}
 
 .card__wrapper{
-    max-width: 400px !important;
-    height: 10rem !important;
-    /*margin: auto !important;*/
-    margin: 0.7rem ;
+    max-width: 25em !important;
+    height: 9rem !important;
+    /*margin: auto !important;
+    margin: 0.7rem ;*/
+    margin: auto;
     
 }
 
@@ -11,7 +21,8 @@
     position: relative;
     display:flex;
     align-items:center;
-    margin-top: 2.6rem;
+   
+   margin-top: 2.2rem;
     margin-left: 1.3rem;
     
 }
@@ -21,7 +32,7 @@
     border-radius: 30px;
     /*background: #e7e5e8;*/
     background: #F2F2F2;
-    
+    margin-bottom: 0.9rem;
     color: #b870ca;
     font-size: 1.3rem;
     display: inline-flex;
@@ -53,12 +64,45 @@
     align-items: center;
     text-align: center;
     position: absolute;
-    right: 20px;
+    right: 1.25em;
+    top: 10px;
     background: #F2F2F2;
-    
     color: #d076e6;
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
+    width: 1.875em;
+    height: 1.875em;
+    font-size: 1rem ;
     border-radius: 5px;
 }
+.arrow-icon{
+    font-size: 1.6rem !important;
+}
+
+.cards__month{
+    color: #dcbce3;
+}
+
+/*
+ <Row className='card__row align-items-center justify-content-center'>
+                <Col >
+                    <Card className='card__wrapper'>
+                        <div className='cards__container  '>
+                            <div className="cards__account text-center ">
+                                <RxPerson/>
+                            </div>
+                            <div className='mt-2 ms-2'>
+                                <h6 className='cards__earning'>Earnings before taxes</h6>
+                                <span>
+                                    <span className='cards__price'>R 30 400</span><span className='cards__tax'>+2.5%</span>
+                                </span>
+                            </div>
+                            <div className="cards__icome">
+                              <ImArrowDownLeft2/>
+                            </div>
+                        </div>
+                    </Card>
+                </Col>
+                
+                
+                
+            </Row>
+*/
