@@ -5,12 +5,12 @@
     display: grid !important;
     // grid-template-columns: repeat(1fr) !important;
     grid-template-columns: repeat(auto-fit, minmax( 25em, 1fr));
-    gap:  0.5rem !important;
+    gap:  1rem !important;
 }
 
 .card__wrapper{
     max-width: 25em !important;
-    height: 9rem !important;
+    height: 8rem !important;
     /*margin: auto !important;
     margin: 0.7rem ;*/
     margin: auto;
@@ -22,7 +22,7 @@
     display:flex;
     align-items:center;
    
-   margin-top: 2.2rem;
+   margin-top: 1.6rem;
     margin-left: 1.3rem;
     
 }
@@ -80,29 +80,11 @@
 .cards__month{
     color: #dcbce3;
 }
+.apexcharts-canvas{
+    width: 400px !important;
+    height: 420px !important;
+    
+    
+}
 
-/*
- <Row className='card__row align-items-center justify-content-center'>
-                <Col >
-                    <Card className='card__wrapper'>
-                        <div className='cards__container  '>
-                            <div className="cards__account text-center ">
-                                <RxPerson/>
-                            </div>
-                            <div className='mt-2 ms-2'>
-                                <h6 className='cards__earning'>Earnings before taxes</h6>
-                                <span>
-                                    <span className='cards__price'>R 30 400</span><span className='cards__tax'>+2.5%</span>
-                                </span>
-                            </div>
-                            <div className="cards__icome">
-                              <ImArrowDownLeft2/>
-                            </div>
-                        </div>
-                    </Card>
-                </Col>
-                
-                
-                
-            </Row>
-*/
+//apexchartstm73jopok apexcharts-theme-light
