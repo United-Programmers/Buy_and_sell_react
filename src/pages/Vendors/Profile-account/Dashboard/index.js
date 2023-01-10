@@ -12,7 +12,7 @@ const VendorDashboard = () => {
         <Layout>
             <h1 className="page-title mt-3 ms-4 mb-4 mt-lg-4  ms-lg-1"><span><MdOutlineDashboardCustomize/></span> Vendor Dashboard </h1>
             <Cards/>
-            <Card className="mt-4"><Charts/></Card>
+            <Charts/>
         </Layout>
     )
 }

@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import { Row, Card, Col } from "react-bootstrap";
 
-class areachart extends Component {
+class Charts extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             options: {
-                colors: ['#ccc', '#9a00c0', '#d076e6'],
+                colors: ['#AA7EB5', '#9a00c0', '#A110C6'],
                 chart: {
                     toolbar: {
                         show: false,
@@ -28,7 +29,7 @@ class areachart extends Component {
                     },
                 },
                 xaxis: {
-                    categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'],
+                    categories: ['Jan', 'Feb', 'Mar', 'Aprl', 'May', 'June', 'July','Aug','Sept','Oct','Nov','Dec'],
                     axisBorder: {
                         show: false
                     },
@@ -43,12 +44,12 @@ class areachart extends Component {
             series: [
                 {
                     name: 'Earned after Tax',
-                    data: [0, 150, 60, 180, 90, 75, 30, 50,180,60,120,39]
+                    data: [25, 150, 60, 180, 90, 75, 30, 50,180,60,120,39]
                 },
               
                 {
                     name: 'Earned before Tax',
-                    data: [0, 15, 195, 21, 360, 120, 30,60,190,76,160,90]
+                    data: [15, 15, 195, 21, 360, 120, 30,60,190,76,160,90]
                 }
             ],
         }
@@ -56,12 +57,13 @@ class areachart extends Component {
     render() {
         return (
             <React.Fragment >
-                <div className="mt-lg-5 p-lg-2">
-                    <ReactApexChart  options={this.state.options} series={this.state.series} type="area" height="400" />
-                </div>
+                <Card className="chartHeight" >
+                    {/* Default   => type="area" */}
+                    <ReactApexChart  options={this.state.options} series={this.state.series} type="bar"  height="250" />
+                </Card>
             </React.Fragment>
         );
     }
 }
 
-export default areachart;
+export default Charts

@@ -1,10 +1,11 @@
+
 *{
     box-sizing: border-box; ;
 }
  .cards__container-one{
     display: grid !important;
     // grid-template-columns: repeat(1fr) !important;
-    grid-template-columns: repeat(auto-fit, minmax( 25em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax( 15em, 1fr));
     gap:  1rem !important;
 }
 
@@ -27,8 +28,9 @@
     
 }
 .cards__account{
-    width: 60px !important;
-    height: 60px !important;
+    // width: 45px !important;
+    // height: 45px !important;
+    padding: .6em;
     border-radius: 30px;
     /*background: #e7e5e8;*/
     background: #F2F2F2;
@@ -38,13 +40,14 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1em
 }
 .cards__earning{
     margin-bottom: 0.2rem;
     color: rgb(157, 154, 154);
 }
 .cards__price{
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-top: 0;
     font-weight: 500;
 }
@@ -53,7 +56,7 @@
     color: #fff;
     border-radius: 9px;
     margin: 0 0.5rem;
-    padding: 4px 9px;
+    padding: 3px 5px;
     font-size: 0.5rem;
     
 }
@@ -68,8 +71,9 @@
     top: 10px;
     background: #F2F2F2;
     color: #d076e6;
-    width: 1.875em;
-    height: 1.875em;
+    // width: 1.875em;
+    // height: 1.875em;
+    padding:.2em;
     font-size: 1rem ;
     border-radius: 5px;
 }
@@ -86,5 +90,9 @@
     
     
 }
+.chartHeight{
+    height: 40%;
+}
 
 //apexchartstm73jopok apexcharts-theme-light
+
