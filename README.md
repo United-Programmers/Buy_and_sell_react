@@ -1,5 +1,7 @@
 # Buy_and_sell_react
-E-commerce website
+
+<h2>Description</h2>
+<p>E-commerce website</p>
 
 <h4>Run the application</h4>
 <p>npm install</p>
