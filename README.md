@@ -4,7 +4,8 @@
 <p>E-commerce website</p>
 
 <h4>Run the application</h4>
-<p>npm install</p>
-<p>npm start or </p>
-<p>npm start --force</p>
+<p>npm install OR</p>
+<p>npm install --force</p>
+<p>npm start  </p>
+
 
