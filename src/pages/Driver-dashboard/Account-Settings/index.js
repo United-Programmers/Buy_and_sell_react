@@ -8,9 +8,8 @@ import PageWrapper from "components/PageWrapper";
 import Layout from "../index"
 import { FcAddImage } from 'react-icons/fc';
 import CustomBtn from 'components/CustomBtn';
-import ProductForm from "./components/ProductForm"
 
-const AddProducts = () => {
+const AccountSettings = () => {
 
     const refFileUploadImageCover = useRef(null);
     const [imageCoverServer, setImageCoverServer] = useState();
@@ -33,13 +32,14 @@ const AddProducts = () => {
         }
     };
 
-
     return (
         <Layout>
-            <Card>
+            <div>
+
+              <Card>
             <CardBody>
            <Row>
-           <Col className="text-center margin-0">
+           <Col md={12} className="text-center margin-0">
                     <label>Upload 2000 * 1333 </label>
                     <div className="d-flex justify-content-center align-items-center border upload__img">
                         <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
@@ -50,19 +50,13 @@ const AddProducts = () => {
                         <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
                     </div>
                 </Col>
-
-
-                <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
-                   <ProductForm />
-                   <div className="bb">
-                  <button >Save Product</button>
-                   </div>
-                </AvForm>
            </Row>
            </CardBody>
            </Card>
+
+</div>
         </Layout>
     )
 }
 
-export default AddProducts
+export default AccountSettings

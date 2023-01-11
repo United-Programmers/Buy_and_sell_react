@@ -36,7 +36,7 @@ const ProfileDatatable = () => {
     };
 
     return (
-        <div className="col-12">
+        <div className="col-8">
             <Card className="p-4">
                 <h4 className="table-card-title">My Products</h4>
                 <div>
