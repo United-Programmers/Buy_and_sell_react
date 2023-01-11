@@ -1,4 +1,10 @@
 import Profile from "./images/profile.jpg"
+import Seller from "./images/seller.jpg"
+import Seller2 from "./images/seller2.jpg"
+
+import Seller4 from "./images/seller4.jpg"
+import Seller5 from "./images/seller5.webp"
+
 
 const profileTable={
     item:[
@@ -13,7 +19,7 @@ const profileTable={
             "R 4567"
         ],
         [
-            Profile,
+            Seller,
             "Diai Rios",
             "#565",
             "23/2/2023",
@@ -22,7 +28,7 @@ const profileTable={
             "R 4567"
         ],
         [
-            Profile,
+            Seller2,
             "Diai Rios",
             "#565",
             "23/2/2023",
@@ -31,7 +37,7 @@ const profileTable={
             "R 4567"
         ],
         [
-            Profile,
+            Seller4,
             "Diai Rios",
             "#565",
             "23/2/2023",
@@ -40,7 +46,7 @@ const profileTable={
             "R 4567"
         ],
         [
-            Profile,
+            Seller5,
             "Diai Rios",
             "#565",
             "23/2/2023",
@@ -58,7 +64,7 @@ const profileTable={
             "R 4567"
         ],
         [
-            Profile,
+            Seller,
             "Diai Rios",
             "#565",
             "23/2/2023",

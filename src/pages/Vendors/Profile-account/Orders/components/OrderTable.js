@@ -5,12 +5,14 @@ import items from "../components/items";
 import { Badge, Card } from 'reactstrap';
 import { AiOutlineEye } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { MdStarBorder } from 'react-icons/md';
 
 const ProfileDatatable = () => {
 
     const sort = 4;
     let jobPagination = Array(Math.ceil(items.profileTable.item.length / sort)).fill().map((_, i) => i + 1);
     const activePag = useRef(0);
+    console.log(jobPagination)
 
     const jobData = useRef(
         items.profileTable.item.slice(
@@ -38,7 +40,7 @@ const ProfileDatatable = () => {
     return (
         <div className="col-12">
             <Card className="p-4">
-                <h4 className="table-card-title">Order List</h4>
+                <h4 className="table-card-title"><span className="table-icon"><MdStarBorder/></span> Order List</h4>
                 <div>
                     <Table responsive className="table-container w-100">
                         <div id="example_wrapper" className="dataTables_wrapper">
