@@ -1,0 +1,25 @@
+.avatar-image{
+    object-fit: cover;
+}
+.table_header{
+    color:#464b52  !important;
+}
+.table-container{
+    font-weight: 500 !important;
+    color: rgb(155, 153, 153) !important;
+}
+.btn-outline-primary a{
+    color:#cc54ea !important ;
+}
+.btn-outline-primary {
+    color:#cc54ea !important ;
+    --bs-btn-border-color: #cc54ea !important;
+}
+.btn-outline-primary>a:hover {
+    color:#fff !important ;
+    
+}
+.btn-outline-primary:hover {
+    --bs-btn-border-color:none !important;
+    background: #cc54ea !important;
+}
