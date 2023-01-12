@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <Slide />
-      <div className="page-content">
+      <div className="page-content  Home__product__page">
         <MetaTags title_sco="Product page | Buy and sell" />
 
         <PageWrapper>
@@ -23,17 +23,14 @@ const Home = () => {
             <div className="text-center coming-soon-search-form pb-4">
               <form action="#">
                 <input type="text" placeholder="Search for your item" />
-                <button type="submit" className="btn btn-primary">
-                  {" "}
-                  Search{" "}
-                </button>
+                <button type="submit" className="btn btn-custom-primary ">  Search </button>
               </form>
             </div>
-            <FilterProduct />
+            {/* <FilterProduct /> */}
           </div>
 
           <Row>
-            <Col md={3}>
+            <Col md={3} className="Accordion__container">
               <SideBar />
             </Col>
 

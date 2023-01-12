@@ -49,6 +49,14 @@ import VendorOrders from "../pages/Vendors/Profile-account/Orders/index"
 import VendorAccountSettings from "../pages/Vendors/Profile-account/Account-settings/index"
 
 
+// * DRIVER PAGES 
+import DriverAccount from "../pages/Driver-dashboard/index"
+import DriverDashboard from "../pages/Driver-dashboard/Dashboard/index"
+import ProductToDeliver from "../pages/Driver-dashboard/Product-Delivered/index"
+import DeliverHistory from "../pages/Driver-dashboard/Deliver-History/index"
+import DriverAccountSettings from "../pages/Driver-dashboard/Account-Settings/index"
+
+
 
 const userRoutes = [
 
@@ -72,7 +80,7 @@ const userRoutes = [
 
 
   //* MESSAGE ROUTES
-     { path: "/messages", component: Messages },
+  { path: "/messages", component: Messages },
   // { path: "/user-message", component: UserMessage },
   // { path: "/admin-message", component: AdminMessage },
   // { path: "/driver-message", component: DriversMessage },
@@ -93,6 +101,16 @@ const userRoutes = [
   { path: "/vendor-products", component: VendorProducts },
   { path: "/vendor-orders", component: VendorOrders },
   { path: "/vendor-account-settings", component: VendorAccountSettings },
+  //* END
+
+
+
+  //* DRIVER ROUTES
+  { path: "/driver-account", component: DriverAccount },
+  { path: "/driver-dashboard", component: DriverDashboard },
+  { path: "/driver-products-delivery", component: ProductToDeliver },
+  { path: "/deliver-history", component: DeliverHistory },
+  { path: "/driver-account-settings", component: DriverAccountSettings },
   //* END
 
 

@@ -1,29 +1,19 @@
 import React from "react"
 import "./style.scss"
-import MetaTags from 'react-meta-tags';
-import { Col, Container, Row } from "reactstrap"
-import Breadcrumb from "components/Common/Breadcrumb";
-import PageWrapper from "components/PageWrapper";
+import Layout from "../index"
+import Cards from "./components/Cards"
+import Charts from "./components/Charts"
+import { MdOutlineDashboardCustomize } from "react-icons/md";
+import {Row, Card, Col} from "react-bootstrap";
 
 const VendorDashboard = () => {
 
     return (
-        <React.Fragment>
-            <div className="page-content">
-                <MetaTags title_sco="Dashboard page | Buy and sell" />
-
-                <PageWrapper>
-                    <Breadcrumb default="/vendor-dashboard" defaultName="Dashboard" title="my dashboard" />
-
-
-                    {/* WRITE YOUR CODE HERE */}
-                    <h1 className="page-title"> Vendor Dashboard </h1>
-
-
-                </PageWrapper>
-
-            </div>
-        </React.Fragment>
+        <Layout>
+            <h1 className="page-title mt-3 ms-4 mb-4 mt-lg-4  ms-lg-1"><span><MdOutlineDashboardCustomize/></span> Vendor Dashboard </h1>
+            <Cards/>
+            <Charts/>
+        </Layout>
     )
 }
 
