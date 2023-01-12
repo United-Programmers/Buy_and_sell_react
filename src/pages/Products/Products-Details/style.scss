@@ -1,179 +1,212 @@
-#app {
-    height: 100%
-}
 
+#app { height: 100% }
 html,
 body {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+ 
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets .swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
+
+.swiper-horizontal>
+.swiper-pagination-bullets, 
+.swiper-pagination-bullets
+.swiper-pagination-horizontal,
+ .swiper-pagination-custom,
+  .swiper-pagination-fraction{
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom:50px;
+  }
+
+.swiper-pagination{
+ bottom: 0 !important;
+ top: 30px;
 }
 
-.swiper-pagination {
-    bottom: 0 !important;
-    top: 30px;
+
+
+
+.master__header img{
+  object-fit: cover;
+  width: 100%;
+  margin-top: 4rem;
 }
 
-.master__header img {
-    object-fit: cover;
-    width: 100%;
-    margin-top: 4rem;
+
+
+#app { height: 100% }
+html,
+body {
+position: relative;
+height: 100%;
+
+}
+
+body {
+background: #eee;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #000;
+margin: 0;
+padding: 0;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+width: 100%;
+height: 100%;
+
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    max-width: 250px;
-    margin: auto;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    padding: 1.2rem;
+text-align: center;
+font-size: 18px;
+background: #fff;
+max-width: 250px;
+margin: auto;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+flex-direction: column;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+padding: 1.2rem  ;
 }
 
-.top__header {
-    margin-top: 3rem;
-    margin-bottom: 0;
+.top__header{
+  margin-top: 3rem;
+  margin-bottom: 0;
+ 
+}
+.top__header img{
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: bottom;
+  height:auto;
+ 
+  
+  object-fit: cover;
+}
+img{
+width: 100%;
+}
+.swipe__item img{
+width: 130px;
+height: 150px;
+object-fit:contain;
 }
 
-.top__header img {
-    max-width: 100%;
-    margin: auto;
-    object-fit: cover;
-    object-position: bottom;
-    height: auto;
-    object-fit: cover;
+.item__content{
+display: flex;
+align-items: center;
+justify-items: center;
+margin: auto;
+text-align:left;
+}
+.item__content h6{
+font-size: 1rem;
+font-weight: 400;
+
+}
+.item__content h5{
+margin-top: 1.2rem;
+font-size: 1.1rem;
+color:#000000;
 }
 
-img {
-    width: 100%;
+.star{
+
+color:#fbb600;
+}
+.star__content{
+margin-left: 0.5rem;
+font-size: 0.9rem;
+color: #555;
 }
 
-.swipe__item img {
-    width: 130px;
-    height: 150px;
-    object-fit: contain;
+
+.cart__btn{
+  border:1px solid #9a00c0;
+  padding: 0.4rem 2.6rem;
+  margin-top: 1rem;
+  background: none !important;
+  outline: 0;
+  color: #9a00c0;
+  white-space: nowrap;
+  font-size: 1rem;
+  transition: all 0.3s ease-in 0s ;
 }
 
-.item__content {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    margin: auto;
-    text-align: left;
+.cart__btn:hover{
+  background: #cb5ce6 !important;
+  color: #fff;
 }
 
-.item__content h6 {
-    font-size: 1rem;
-    font-weight: 400;
+.icon svg{
+  margin-right: 0.8rem;
+  padding-bottom: 0.2rem;
+  font-size: 1.1rem;
 }
 
-.item__content h5 {
-    margin-top: 1.2rem;
-    font-size: 1.1rem;
-    color: #000000;
-}
 
-.star {
-    color: #fbb600 !important;
-}
 
-.star__content {
-    margin-left: 0.5rem;
-    font-size: 0.9rem;
-    color: #555 !important;
-}
 
-.cart__btn {
-    border: 1px solid #9a00c0;
-    padding: 0.4rem 2.6rem;
-    margin-top: 1rem;
-    background: none !important;
-    outline: 0;
-    color: #9a00c0;
-    white-space: nowrap;
-    font-size: 1rem;
-    transition: all 0.3s ease-in 0s;
-}
 
-.cart__btn:hover {
-    background: #cb5ce6 !important;
-    color: #fff;
-}
 
-.icon svg {
-    margin-right: 0.8rem;
-    padding-bottom: 0.2rem;
-    font-size: 1.1rem;
-}
 
 @media screen and (min-width: 992px) {
-    .top__header {
-        margin-top: 6rem;
-    }
+.top__header{
+  margin-top: 6rem;
 }
+}
+

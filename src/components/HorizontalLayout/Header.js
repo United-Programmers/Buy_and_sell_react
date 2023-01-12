@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import '../Style.scss';
 import PropTypes from 'prop-types'
 import { connect } from "react-redux"
 import { Link } from "react-router-dom"
@@ -96,19 +95,19 @@ const Header = props => {
             </div>
 
 
-            <Link to="/shopping-cart" className="mt-2 pt-1 text-dark notification__belt">
+            <Link to="/shopping-cart" className="mt-2 pt-1 text-dark">
               <BsCart4 size={25} />
-              <span className="badge bg-success rounded-pill notification__belt__number">{amount}</span>
+              <span className="badge bg-danger rounded-pill">{amount}</span>
             </Link>
 
-            <Link to="/wishlist" className="mt-2 mx-5 pt-1 text-dark notification__belt">
+            <Link to="/wishlist" className="mt-2 mx-4 pt-1 text-dark">
               <AiOutlineHeart size={25} />
-              <span className="badge bg-info rounded-pill notification__belt__number">0</span>
+              <span className="badge bg-primary rounded-pill">0</span>
             </Link>
 
-            <Link to="/messages" className="mt-2  pt-1 text-dark notification__belt">
+            <Link to="/messages" className="mt-2  pt-1 text-dark">
               <IoMdNotificationsOutline size={25} />
-              <span className="badge bg-danger rounded-pill notification__belt__number">2</span>
+              <span className="badge bg-danger rounded-pill">2</span>
             </Link>
 
             <ProfileMenu />

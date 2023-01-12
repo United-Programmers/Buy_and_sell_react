@@ -11,15 +11,3 @@ $ git push
 
 to push to github 
 git merge main
-
-
-to check your branch origin
-//=> git remote -v
-
-
-New Dependencies
-================
-// => npm i react-bootstrap
-// => npm i react-toastify
-// => npm i @reduxjs/toolkit
-// => npm i redux-persist
