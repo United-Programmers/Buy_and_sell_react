@@ -8,7 +8,7 @@ class Charts extends Component {
 
         this.state = {
             options: {
-                colors: ['#AA7EB5', '#9a00c0', '#A110C6'],
+                colors: ['#AA7EB5', '#d466ef', '#A110C6'],
                 chart: {
                     toolbar: {
                         show: false,
