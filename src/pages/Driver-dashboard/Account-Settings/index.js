@@ -8,6 +8,8 @@ import PageWrapper from "components/PageWrapper";
 import Layout from "../index"
 import { FcAddImage } from 'react-icons/fc';
 import CustomBtn from 'components/CustomBtn';
+import ProfileForm from "./Components/ProfileForm";
+import PasswordForm from "./Components/PasswordForm";
 
 const AccountSettings = () => {
 
@@ -50,12 +52,24 @@ const AccountSettings = () => {
                         <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
                     </div>
                 </Col>
+                 <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
+                   <ProfileForm />
+                   <div className="bb">
+                  <button >Update Profile</button>
+                   </div>
+                </AvForm>
+
            </Row>
-
-
-
            </CardBody>
            </Card>
+            <Card>
+                <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
+                    <PasswordForm/>
+                  <div style={{margin:"15px"}} className="bb">
+                  <button >Update Password</button>
+                   </div>
+                </AvForm>
+                </Card>
 
 </div>
         </Layout>
