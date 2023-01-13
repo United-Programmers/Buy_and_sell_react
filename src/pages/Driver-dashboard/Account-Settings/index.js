@@ -1,7 +1,7 @@
-import React , { useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 import "./style.scss"
 import MetaTags from 'react-meta-tags';
-import { Col, Container, Row , Card, CardBody, Button, Badge} from "reactstrap"
+import { Col, Container, Row, Card, CardBody, Button, Badge } from "reactstrap"
 import { AvForm, AvField } from "availity-reactstrap-validation"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
@@ -36,28 +36,28 @@ const AccountSettings = () => {
         <Layout>
             <div>
 
-              <Card>
-            <CardBody>
-           <Row>
-           <Col md={12} className="text-center margin-0">
-                    <label>Upload 2000 * 1333 </label>
-                    <div className="d-flex justify-content-center align-items-center border upload__img">
-                        <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
-                        <Badge className="btn-icon btn-icon-only position-absolute"
-                            onClick={onThumbChangeClickImageCover}
-                        > <FcAddImage size={40} />
-                        </Badge>
-                        <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
-                    </div>
-                </Col>
-           </Row>
+                <Card>
+                    <CardBody>
+                        <Row>
+                            <Col md={12} className="text-center margin-0">
+                                <label>Upload 2000 * 1333 </label>
+                                <div className="d-flex justify-content-center align-items-center border upload__img">
+                                    <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
+                                    <Badge className="btn-icon btn-icon-only position-absolute"
+                                        onClick={onThumbChangeClickImageCover}
+                                    > <FcAddImage size={40} />
+                                    </Badge>
+                                    <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
+                                </div>
+                            </Col>
+                        </Row>
 
 
 
-           </CardBody>
-           </Card>
+                    </CardBody>
+                </Card>
 
-</div>
+            </div>
         </Layout>
     )
 }
