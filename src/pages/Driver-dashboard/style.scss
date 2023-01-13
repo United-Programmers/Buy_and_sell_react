@@ -77,3 +77,11 @@
     background: rgba(165, 255, 250, 0.185) !important;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        top: 2em;
+        margin: 1em 0;
+        border-radius: 15px;
+    }
+}

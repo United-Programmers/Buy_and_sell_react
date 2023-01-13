@@ -134,6 +134,7 @@ const AdminSidebarContent = props => {
                                 <span >{props.t("Vendors (Users)")}</span>
                             </Link>
                         </li>
+
                         <li>
                             <Link to="/drivers" className="waves-effect">
                                 <GrUserAdmin size={22} className="me-2" />
