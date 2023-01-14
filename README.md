@@ -1,6 +1,6 @@
 # **Buy and Sell**
 
-## React E-commerce Application
+## An E-commerce Application
 
 ![Preview of Buy and Sell. An E-commerce Application](public/screenshot/buyandsellreact.png)
 
