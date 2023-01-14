@@ -57,6 +57,19 @@ import DeliverHistory from "../pages/Driver-dashboard/Deliver-History/index"
 import DriverAccountSettings from "../pages/Driver-dashboard/Account-Settings/index"
 
 
+// * ADMIN PAGES 
+import AdminDashboard from "../pages/Admin-dashboard/Dashboard/index"
+import AdminNewOrders from "../pages/Admin-dashboard/NewOrders/index"
+import AdminAssignOrders from "../pages/Admin-dashboard/AssignOrders/index"
+import AdminOrderHistory from "../pages/Admin-dashboard/OrderHistory/index"
+import AdminAccountSettings from "../pages/Admin-dashboard/AccountSettings/index"
+import AdminDrivers from "../pages/Admin-dashboard/Drivers/index"
+import AdminBuyers from "../pages/Admin-dashboard/Buyers/index"
+import AdminVendors from "../pages/Admin-dashboard/Vendors/index"
+import AdminTotalProducts from "../pages/Admin-dashboard/TotalProducts/index"
+import AdminDeliveredProducts from "../pages/Admin-dashboard/DeliveredProducts/index"
+
+
 
 const userRoutes = [
 
@@ -92,7 +105,7 @@ const userRoutes = [
 
 
   //* VENDORS ROUTES
-  { path: "/vendors", component: Vendors },
+  { path: "/vendors-products", component: Vendors },
   { path: "/vendors-list", component: VendorList },
   { path: "/vendor-shop/:id", component: VendorShop },
   { path: "/vendor-account", component: VendorAccount },
@@ -111,6 +124,21 @@ const userRoutes = [
   { path: "/driver-products-delivery", component: ProductToDeliver },
   { path: "/deliver-history", component: DeliverHistory },
   { path: "/driver-account-settings", component: DriverAccountSettings },
+  //* END
+
+
+
+  //* ADMIN ROUTES
+  { path: "/admin-dashboard", component: AdminDashboard },
+  { path: "/admin-account", component: AdminAccountSettings },
+  { path: "/new-orders", component: AdminNewOrders },
+  { path: "/assign-orders", component: AdminAssignOrders },
+  { path: "/order-history", component: AdminOrderHistory },
+  { path: "/drivers", component: AdminDrivers },
+  { path: "/buyers", component: AdminBuyers },
+  { path: "/vendors", component: AdminVendors },
+  { path: "/all-product", component: AdminTotalProducts },
+  { path: "/delivered-products", component: AdminDeliveredProducts },
   //* END
 
 
