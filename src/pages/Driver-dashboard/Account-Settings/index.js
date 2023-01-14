@@ -1,15 +1,13 @@
-import React , { useState, useRef } from "react"
+import React, { useState, useRef } from "react"
 import "./style.scss"
 import MetaTags from 'react-meta-tags';
-import { Col, Container, Row , Card, CardBody, Button, Badge} from "reactstrap"
+import { Col, Container, Row, Card, CardBody, Button, Badge } from "reactstrap"
 import { AvForm, AvField } from "availity-reactstrap-validation"
 import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
 import Layout from "../index"
 import { FcAddImage } from 'react-icons/fc';
 import CustomBtn from 'components/CustomBtn';
-import ProfileForm from "./Components/ProfileForm";
-import PasswordForm from "./Components/PasswordForm";
 
 const AccountSettings = () => {
 
@@ -38,40 +36,28 @@ const AccountSettings = () => {
         <Layout>
             <div>
 
-              <Card>
-            <CardBody>
-           <Row>
-           <Col md={12} className="text-center margin-0">
-                    <label>Upload 2000 * 1333 </label>
-                    <div className="d-flex justify-content-center align-items-center border upload__img">
-                        <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
-                        <Badge className="btn-icon btn-icon-only position-absolute"
-                            onClick={onThumbChangeClickImageCover}
-                        > <FcAddImage size={40} />
-                        </Badge>
-                        <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
-                    </div>
-                </Col>
-                 <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
-                   <ProfileForm />
-                   <div className="bb">
-                  <button >Update Profile</button>
-                   </div>
-                </AvForm>
+                <Card>
+                    <CardBody>
+                        <Row>
+                            <Col md={12} className="text-center margin-0">
+                                <label>Upload 2000 * 1333 </label>
+                                <div className="d-flex justify-content-center align-items-center border upload__img">
+                                    <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
+                                    <Badge className="btn-icon btn-icon-only position-absolute"
+                                        onClick={onThumbChangeClickImageCover}
+                                    > <FcAddImage size={40} />
+                                    </Badge>
+                                    <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
+                                </div>
+                            </Col>
+                        </Row>
 
-           </Row>
-           </CardBody>
-           </Card>
-            <Card>
-                <AvForm className="form-horizontal mt-4" onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
-                    <PasswordForm/>
-                  <div style={{margin:"15px"}} className="bb">
-                  <button >Update Password</button>
-                   </div>
-                </AvForm>
+
+
+                    </CardBody>
                 </Card>
 
-</div>
+            </div>
         </Layout>
     )
 }
