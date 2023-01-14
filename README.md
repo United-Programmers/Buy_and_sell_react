@@ -1,4 +1,4 @@
-# **Buy_and_Sell_React**
+# **Buy and Sell**
 
 ## An E-commerce Application
 
