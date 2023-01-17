@@ -8,6 +8,7 @@ import PageWrapper from "components/PageWrapper";
 import Layout from "../index"
 import { FcAddImage } from 'react-icons/fc';
 import CustomBtn from 'components/CustomBtn';
+import PasswordForm from "./Components/PasswordForm";
 
 const AccountSettings = () => {
 
@@ -51,10 +52,14 @@ const AccountSettings = () => {
                                 </div>
                             </Col>
                         </Row>
-
-
-
                     </CardBody>
+                </Card>
+                <Card>
+                    <Row>
+                        <Col>
+                            <PasswordForm/>
+                        </Col>
+                    </Row>
                 </Card>
 
             </div>
