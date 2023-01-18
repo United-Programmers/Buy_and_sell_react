@@ -7,6 +7,7 @@ import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
 import Layout from "../index"
 import { FcAddImage } from 'react-icons/fc';
+import { FcSettings } from 'react-icons/fc';
 import { BsPersonCircle } from 'react-icons/bs';
 import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import CustomBtn from 'components/CustomBtn';
@@ -42,6 +43,7 @@ const AccountSettings = () => {
 
     return (
         <Layout>
+            <h1 className="page-title mt-4 ms-2 mb-3 mt-lg-3  ms-lg-1"><span className="upload-setings"><FcSettings/></span> Account Settings </h1>
             <div>
 
                 <Card>
