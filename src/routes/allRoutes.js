@@ -49,6 +49,27 @@ import VendorOrders from "../pages/Vendors/Profile-account/Orders/index"
 import VendorAccountSettings from "../pages/Vendors/Profile-account/Account-settings/index"
 
 
+// * DRIVER PAGES 
+import DriverAccount from "../pages/Driver-dashboard/index"
+import DriverDashboard from "../pages/Driver-dashboard/Dashboard/index"
+import ProductToDeliver from "../pages/Driver-dashboard/Product-Delivered/index"
+import DeliverHistory from "../pages/Driver-dashboard/Deliver-History/index"
+import DriverAccountSettings from "../pages/Driver-dashboard/Account-Settings/index"
+
+
+// * ADMIN PAGES 
+import AdminDashboard from "../pages/Admin-dashboard/Dashboard/index"
+import AdminNewOrders from "../pages/Admin-dashboard/NewOrders/index"
+import AdminAssignOrders from "../pages/Admin-dashboard/AssignOrders/index"
+import AdminOrderHistory from "../pages/Admin-dashboard/OrderHistory/index"
+import AdminAccountSettings from "../pages/Admin-dashboard/AccountSettings/index"
+import AdminDrivers from "../pages/Admin-dashboard/Drivers/index"
+import AdminBuyers from "../pages/Admin-dashboard/Buyers/index"
+import AdminVendors from "../pages/Admin-dashboard/Vendors/index"
+import AdminTotalProducts from "../pages/Admin-dashboard/TotalProducts/index"
+import AdminDeliveredProducts from "../pages/Admin-dashboard/DeliveredProducts/index"
+
+
 
 const userRoutes = [
 
@@ -72,7 +93,7 @@ const userRoutes = [
 
 
   //* MESSAGE ROUTES
-     { path: "/messages", component: Messages },
+  { path: "/messages", component: Messages },
   // { path: "/user-message", component: UserMessage },
   // { path: "/admin-message", component: AdminMessage },
   // { path: "/driver-message", component: DriversMessage },
@@ -84,7 +105,7 @@ const userRoutes = [
 
 
   //* VENDORS ROUTES
-  { path: "/vendors", component: Vendors },
+  { path: "/vendors-products", component: Vendors },
   { path: "/vendors-list", component: VendorList },
   { path: "/vendor-shop/:id", component: VendorShop },
   { path: "/vendor-account", component: VendorAccount },
@@ -93,6 +114,31 @@ const userRoutes = [
   { path: "/vendor-products", component: VendorProducts },
   { path: "/vendor-orders", component: VendorOrders },
   { path: "/vendor-account-settings", component: VendorAccountSettings },
+  //* END
+
+
+
+  //* DRIVER ROUTES
+  { path: "/driver-account", component: DriverAccount },
+  { path: "/driver-dashboard", component: DriverDashboard },
+  { path: "/driver-products-delivery", component: ProductToDeliver },
+  { path: "/deliver-history", component: DeliverHistory },
+  { path: "/driver-account-settings", component: DriverAccountSettings },
+  //* END
+
+
+
+  //* ADMIN ROUTES
+  { path: "/admin-dashboard", component: AdminDashboard },
+  { path: "/admin-account", component: AdminAccountSettings },
+  { path: "/new-orders", component: AdminNewOrders },
+  { path: "/assign-orders", component: AdminAssignOrders },
+  { path: "/order-history", component: AdminOrderHistory },
+  { path: "/drivers", component: AdminDrivers },
+  { path: "/buyers", component: AdminBuyers },
+  { path: "/vendors", component: AdminVendors },
+  { path: "/all-product", component: AdminTotalProducts },
+  { path: "/delivered-products", component: AdminDeliveredProducts },
   //* END
 
 
