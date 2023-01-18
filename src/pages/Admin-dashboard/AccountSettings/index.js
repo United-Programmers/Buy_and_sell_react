@@ -52,6 +52,16 @@ const AccountSettings = () => {
                                     <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
                                 </div>
                             </Col>
+                            <div className="upload__profile">
+                                    <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={50} height={20} />
+                                    <Badge className="btn-icon btn-icon-only position-absolute"
+                                        onClick={onThumbChangeClickImageCover}
+                                    > <FcAddImage size={40} />
+                                    </Badge>
+                                    <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
+                                
+
+                            </div>
                         </Row>
                     </CardBody>
                 </Card>
