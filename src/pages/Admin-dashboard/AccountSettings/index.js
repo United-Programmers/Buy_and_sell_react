@@ -7,6 +7,8 @@ import Breadcrumb from "components/Common/Breadcrumb";
 import PageWrapper from "components/PageWrapper";
 import Layout from "../index"
 import { FcAddImage } from 'react-icons/fc';
+import { BsPersonCircle } from 'react-icons/bs';
+import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import CustomBtn from 'components/CustomBtn';
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import Account from "./components/Account";
@@ -16,6 +18,7 @@ const AccountSettings = () => {
     const refFileUploadImageCover = useRef(null);
     const [imageCoverServer, setImageCoverServer] = useState();
     const [imageCover, setImageCover] = useState();
+    
 
     const onThumbChangeClickImageCover = () => {
         if (refFileUploadImageCover) {
@@ -31,6 +34,8 @@ const AccountSettings = () => {
                 setImageCover(loadEvent.target.result);
             };
             reader.readAsDataURL(event.target.files[0]);
+
+            
         }
     };
 
@@ -41,7 +46,7 @@ const AccountSettings = () => {
                 <Card>
                     <CardBody>
                         <Row>
-                            <Col md={12} className="text-center margin-0">
+                            <Col md={12} className="text-center margin-0 position-relative">
                                 <label>Upload 2000 * 1333 </label>
                                 <div className="d-flex justify-content-center align-items-center border upload__img">
                                     <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
@@ -52,23 +57,56 @@ const AccountSettings = () => {
                                     <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
                                 </div>
                             </Col>
-                            <div className="upload__profile">
-                                    <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={50} height={20} />
-                                    <Badge className="btn-icon btn-icon-only position-absolute"
-                                        onClick={onThumbChangeClickImageCover}
-                                    > <FcAddImage size={40} />
-                                    </Badge>
-                                    <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
+                            
+                            
+                            <Col className="avatar-upload position-absolute">
+                                <div className="upload__profile position-relative">
+                                    
+                                        <img className="position-absolute" src={imageCover === undefined ? Image : imageCover} alt="" width={50} height={20} />
+                                        <div className='upload-av-icon position-absolute'> <BsPersonCircle/></div>
+                                        <Badge className="btn-icon btn-upload btn-icon-only position-absolute "
+                                            onClick={onThumbChangeClickImageCover}
+                                        > <FcAddImage size={30} />
+                                        </Badge>
+                                        <input type="file" ref={refFileUploadImageCover} className="file-upload d-none" accept="image/*" onChange={changeThumbImageCover} />
                                 
-
-                            </div>
+                                </div>
+                            </Col>
+   
                         </Row>
                     </CardBody>
                 </Card>
-                <Card>
+                <Card className="card-up-form">
                     <Row>
                         <Col>
-                           
+                          
+                                <AvForm
+                                        className="form-horizontal mt-4"
+                                        onValidSubmit={(e, v) => {
+                                            handleValidSubmit(e, v)
+                                        }}
+                                    >
+                                        <div class="p-word-contain">
+                                            <div className="mb-3 myInput upload-input">
+                                                <span className="icon-one">< MdOutlineMarkEmailRead /></span>
+                                                <AvField
+                                                    name="email"
+                                                    label="Email Address"
+                                                    className="form-control first-form"
+                                                    placeholder="Enter email"
+                                                    type="email"
+                                                    required
+                                                />
+                                            </div>
+                                        </div>
+
+                                        
+
+                                        
+                                    </AvForm>
+                                                
+
+                            
                         </Col>
                     </Row>
                 </Card>
