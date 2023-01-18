@@ -13,7 +13,7 @@ import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import CustomBtn from 'components/CustomBtn';
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 
-import AccountUpload from "./components/AccountUpload";
+import AccountUpload from "./Components/AccountUpload";
 
 
 const AccountSettings = () => {
