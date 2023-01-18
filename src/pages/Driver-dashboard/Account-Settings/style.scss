@@ -1,37 +1,39 @@
-.upload__img,
-.upload__img img {
-    border-radius: 15px !important;
-    background: white;
-    margin: 0.6em;
+.p-word-container{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: inherit;
+    gap: 30px;
 }
 
+.password > p{
+    margin: 10px 0px;
+    font-weight: 500;
+    font-size: 17px;
+}
 
-textarea {
-    background-color: rgba(244, 242, 242, 1);
+.pf-input{
+    width: 100%;
+    padding: 15px 5px;
+    border-radius: 10px;
+    background-color: #F6F6F6;
     border: none;
-
-
 }
 
-.textArea::placeholder {
-    margin-top: 100px;
-}
-
-
-.bb {
-    justify-content: center;
-    align-items: center;
+.update-pword{
+    background-color: #aa68bb;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 7px 40px;
     text-align: center;
+    border: none;
+}
 
-    // margin-left: 10pc;
-    // border-radius: 40px;
-    button {
-        border-radius: 40px;
-        width: 206px;
-        height: 40px;
-        background-color: rgba(161, 16, 198, 1);
-        color: white;
-        border: none;
-
-    }
+.update-pword-container{
+    text-align: center;
+    display: grid;
+    place-content: center;
+    margin: 15px 0px;
 }

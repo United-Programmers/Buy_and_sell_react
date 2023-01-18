@@ -32,7 +32,7 @@ const ProfileMenu = () => {
           <div className="dropdown-divider" />
           <DropdownItem tag="a"> <Link to="/driver-dashboard" className="text-dark">  <BiUserCircle size={20} /> Driver Account </Link> </DropdownItem>
           <div className="dropdown-divider" />
-          <DropdownItem tag="a"> <Link to="/#" className="text-dark">  <BiUserCircle size={20} /> Admin </Link> </DropdownItem>
+          <DropdownItem tag="a"> <Link to="/admin-dashboard" className="text-dark">  <BiUserCircle size={20} /> Admin </Link> </DropdownItem>
           {/* <div className="dropdown-divider" />
           <DropdownItem tag="a"> <Link to="/user-orders" className="text-dark">  <SlBasketLoaded size={20} /> Orders </Link> </DropdownItem> */}
           {/* <div className="dropdown-divider" />
