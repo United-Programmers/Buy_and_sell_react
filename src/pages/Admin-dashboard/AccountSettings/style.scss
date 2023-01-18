@@ -1,3 +1,7 @@
+.upload-header{
+    background: #f6f6f6!important;
+}
+
 .upload__profile {
     background: #F6F6F6;
     width: 60px !important;
@@ -19,6 +23,7 @@
     height: 60px !important;
     border-radius: 100%;
     z-index: 1;
+    border: 2px solid #ebc6f3;
 }
 
 .btn-upload{
@@ -27,76 +32,23 @@
     z-index: 2;
 }
 
-
 .avatar-upload{
     top: 190px;
     left: 30px;
     color: none !important;
 }
 
-
-
-.card-up-form{
+.card-up-form-one{
     padding: 0 2rem !important;
+    
+}
+.card-up-form{
+    padding: 1.5rem 2rem !important;
+    
 }
 .upload-input{
-    max-width: 700px !important;
+    max-width: 650px !important;
     margin: auto !important;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.p-word-container{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-family: inherit;
-    gap: 30px;
-}
-
-.password > p{
-    margin: 10px 0px;
-    font-weight: 500;
-    font-size: 17px;
-}
-
-.pf-input{
-    width: 100%;
-    padding: 15px 5px;
-    border-radius: 10px;
-    background-color: #F6F6F6;
-    border: none;
-}
-
-.update-pword{
-    background-color: #aa68bb;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 20px;
-    padding: 7px 40px;
-    text-align: center;
-    border: none;
-}
-
-.update-pword-container{
-    text-align: center;
-    display: grid;
-    place-content: center;
-    margin: 15px 0px;
-}

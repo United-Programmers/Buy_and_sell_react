@@ -11,7 +11,8 @@ import { BsPersonCircle } from 'react-icons/bs';
 import { MdOutlineMarkEmailRead } from 'react-icons/md';
 import CustomBtn from 'components/CustomBtn';
 import { MdOutlineDashboardCustomize } from "react-icons/md";
-import Account from "./components/Account";
+
+import AccountUpload from "./components/AccountUpload";
 
 
 const AccountSettings = () => {
@@ -49,7 +50,7 @@ const AccountSettings = () => {
                             <Col md={12} className="text-center margin-0 position-relative">
                                 <label>Upload 2000 * 1333 </label>
                                 <div className="d-flex justify-content-center align-items-center border upload__img">
-                                    <img src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
+                                    <img  src={imageCover === undefined ? Image : imageCover} alt="Upload image cover" width={500} height={200} />
                                     <Badge className="btn-icon btn-icon-only position-absolute"
                                         onClick={onThumbChangeClickImageCover}
                                     > <FcAddImage size={40} />
@@ -72,44 +73,39 @@ const AccountSettings = () => {
                                 
                                 </div>
                             </Col>
+                            <Col className="card-up-form-one">
+                                <AvForm
+                                            className="form-horizontal mt-4"
+                                            onValidSubmit={(e, v) => {
+                                                handleValidSubmit(e, v)
+                                            }}
+                                        >
+                                            <div class="p-word-contain">
+                                                <div className="mb-3 myInput upload-input">
+                                                    <span className="icon-one">< MdOutlineMarkEmailRead /></span>
+                                                    <AvField
+                                                        name="email"
+                                                        label="Email Address"
+                                                        className="form-control first-form"
+                                                        placeholder="Enter email"
+                                                        type="email"
+                                                        required
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            
+
+                                            
+                                        </AvForm>
+                            </Col>
    
                         </Row>
                     </CardBody>
                 </Card>
-                <Card className="card-up-form">
-                    <Row>
-                        <Col>
-                          
-                                <AvForm
-                                        className="form-horizontal mt-4"
-                                        onValidSubmit={(e, v) => {
-                                            handleValidSubmit(e, v)
-                                        }}
-                                    >
-                                        <div class="p-word-contain">
-                                            <div className="mb-3 myInput upload-input">
-                                                <span className="icon-one">< MdOutlineMarkEmailRead /></span>
-                                                <AvField
-                                                    name="email"
-                                                    label="Email Address"
-                                                    className="form-control first-form"
-                                                    placeholder="Enter email"
-                                                    type="email"
-                                                    required
-                                                />
-                                            </div>
-                                        </div>
-
-                                        
-
-                                        
-                                    </AvForm>
-                                                
-
-                            
-                        </Col>
-                    </Row>
-                </Card>
+                
+                
+                <AccountUpload/>
 
             </div>
         </Layout>
