@@ -1,12 +1,12 @@
 import React, { Fragment, useState, useRef } from "react";
 import { Table, Pagination } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import data from "../../components/data";
+import data from "../components/data";
 import { Badge, Card } from 'reactstrap';
 import { AiOutlineEye } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-const BuyersTable = () => {
+const VendorsTables = () => {
 
     const sort = 4;
     let jobPagination = Array(Math.ceil(data.profileTable.data.length / sort)).fill().map((_, i) => i + 1);
@@ -57,7 +57,7 @@ const BuyersTable = () => {
                                                         {i === 0 ? (
                                                             <img
                                                                 className="rounded-circle avatar-sm"
-                                                                width="35"
+                                                                width="15"
                                                                 src={da}
                                                                 alt=""
                                                             />
@@ -65,7 +65,7 @@ const BuyersTable = () => {
                                                             <Fragment>
                                                                 <div >
                                                                     {da}
-                                                                    {i === 6 && (
+                                                                    {i === 7 && (
                                                                         <div className="d-flex">
                                                                             <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__view p-2">
                                                                                 <AiOutlineEye size={14} />
@@ -92,7 +92,7 @@ const BuyersTable = () => {
                                 <div className="dataTables_info">
                                     Showing {activePag.current * sort + 1} to {data.profileTable.data.length < (activePag.current + 1) * sort ? data.profileTable.data.length
                                         : (activePag.current + 1) * sort}
-                                    of {data.profileTable.data.length} entries
+                                     of {data.profileTable.data.length} entries
                                 </div>
 
                                 <div className="dataTables_paginate paging_simple_numbers">
@@ -149,4 +149,4 @@ const BuyersTable = () => {
     );
 };
 
-export default BuyersTable;
+export default VendorsTables;
