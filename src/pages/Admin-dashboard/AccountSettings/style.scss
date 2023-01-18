@@ -1,0 +1,57 @@
+.upload-header{
+    background: #f6f6f6!important;
+}
+
+.upload__profile {
+    background: #F6F6F6;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+.upload-av-icon svg{
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100%; 
+    color: #ebc6f3 !important;
+}
+.upload__profile img{
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 100%;
+    z-index: 1;
+    border: 2px solid #ebc6f3;
+}
+
+.btn-upload{
+    top: 27px;
+    left: 35px;
+    z-index: 2;
+}
+
+.avatar-upload{
+    top: 190px;
+    left: 30px;
+    color: none !important;
+}
+
+.card-up-form-one{
+    padding: 0 2rem !important;
+    
+}
+.card-up-form{
+    padding: 1.5rem 2rem !important;
+    
+}
+.upload-input{
+    max-width: 650px !important;
+    margin: auto !important;
+}
+
+.upload-setings svg{
+    font-size: 1.5rem;
+    color: #ebc6f3 !important;
+}
