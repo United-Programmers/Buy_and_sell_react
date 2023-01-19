@@ -70,7 +70,7 @@ const DriverChart = () => {
 
   return (
     <React.Fragment>
-      <Card className="chartHeight" style={{ height: "270px" }}>
+      <Card className="chartHeight mt-3" style={{ height: "270px" }}>
         <ReactApexChart
           options={options}
           series={series}

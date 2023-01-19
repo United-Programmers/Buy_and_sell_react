@@ -16,6 +16,7 @@ const DriverDashboard = () => {
         </span>{" "}
         Driver Dashboard{" "}
       </h1>
+      <Cards />
       <DriverChart />
     </Layout>
   )
