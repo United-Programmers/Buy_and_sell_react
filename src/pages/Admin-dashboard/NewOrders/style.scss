@@ -1,0 +1,38 @@
+thead{
+    background: #f8fafc !important;
+    margin: 0 !important;
+}
+.table_header{
+    color: 0;
+}
+.avatar-sm {
+   object-fit: cover;
+   
+}
+.rounded-avatar {
+    border: 2px solid #9a00c0;
+}
+
+.order-title{
+    color: #9a00c0;
+}
+
+.order-icon{
+    font-size: 1.6rem;
+}
+
+.paginate_button{
+    color: #9a00c0;
+}
+
+.btn-outline-primary{
+    border: 1px solid #9a00c0 !important;
+}
+.btn-outline-primary:hover{
+    background:  #be2ce2 !important;
+    color: #fff !important;
+}
+
+.btn-outline-primary a:hover{
+    color: #fff !important;
+}
