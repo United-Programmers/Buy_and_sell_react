@@ -10,9 +10,10 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "chad@gmail.com",
-            "Active",
-            "Suspend",
-            "",
+            "Paid",
+            "Nike",
+            '$67 000',
+           
             
         ],
         [
@@ -21,9 +22,9 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "john@gmail.com",
-            "Active",
-            "Suspend",
-            "",
+            "Canceled",
+            "Nike",
+            '$67 000'
         ],
         [
             pic2,
@@ -31,9 +32,9 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "xxxxxxxx",
-            "Active",
-            "Suspend",
-            "",
+            "Refunded",
+            "Nike",
+            '$67 000'
         ],
         [
             pic1,
@@ -41,9 +42,9 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "chad@gmail.com",
-            "Not Active",
-            "Suspend",
-            "",
+            "Paid",
+            "Nike",
+            '$67 000'
         ],
         [
             pic3,
@@ -51,9 +52,9 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "chad@gmail.com",
-            "Active",
-            "Suspend",
-            "",
+            "Canceled",
+            "Nike",
+            '$67 000'
         ],
         [
             pic3,
@@ -61,9 +62,9 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "chad@gmail.com",
-            "Active",
-            "Suspend",
-            "",
+            "Paid",
+            "Nike",
+            '$67 000'
         ],
         [
             pic2,
@@ -71,9 +72,9 @@ const profileTable = {
             "Doe",
             "2022-11-25",
             "chad@gmail.com",
-            "Active",
-            "Suspend",
-            "",
+            "Refunded",
+            "Nike",
+            '$67 000'
         ],
     ],
     columns: [
@@ -82,9 +83,10 @@ const profileTable = {
         "Surname",
         "Date",
         "Email",
-        "Active",
-        "suspend",
-        "action",
+        "Status",
+        "Product",
+        "Revenue",
+       
     ],
 };
 
