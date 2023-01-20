@@ -73,9 +73,7 @@ function DeliverHiustoryTable() {
                               <Fragment>
                                 <div>
                                   {da}
-                                  {i === 6 && (
-                                    <div className="d-flex justify-content-center ms-0 ps-3"></div>
-                                  )}
+                                  {i === 6 && <div> </div>}
                                 </div>
                               </Fragment>
                             )}
