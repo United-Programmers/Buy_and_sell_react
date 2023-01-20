@@ -10,7 +10,7 @@ thead{
    
 }
 .rounded-avatar {
-    border: 2px solid #9a00c0;
+    border: 2px solid #db8fee;
 }
 
 .order-title{
@@ -21,12 +21,13 @@ thead{
     font-size: 1.6rem;
 }
 
-.paginate_button{
-    color: #9a00c0;
+.paginate_button .current{
+    color: #fff!important;
 }
 
 .btn-outline-primary{
     border: 1px solid #9a00c0 !important;
+    color: #9a00c0 !important;
 }
 .btn-outline-primary:hover{
     background:  #be2ce2 !important;

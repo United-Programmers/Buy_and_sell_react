@@ -12,7 +12,8 @@ const profileTable = {
             "chad@gmail.com",
             "Paid",
             "Nike",
-            '$67 000'
+            '$67 000',
+           
             
         ],
         [
@@ -85,6 +86,7 @@ const profileTable = {
         "Status",
         "Product",
         "Revenue",
+       
     ],
 };
 

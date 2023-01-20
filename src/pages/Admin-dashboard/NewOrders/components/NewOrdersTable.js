@@ -67,9 +67,15 @@ const   NewOrdersTable = () => {
                                                             <Fragment>
                                                                 <div >
                                                                     {da}
-                                                                    {i === 7 && (
+                                                                    {i === 8 && (
                                                                         <div className="d-flex">
-                                                                            
+                                                                            <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__success p-2">
+                                                                                <AiOutlineEye size={14} />
+                                                                            </Badge>
+                                                                            <Badge to="#" className="rounded-circle btn-danger table__btn shadow btn-xs sharp p-2"
+                                                                            >
+                                                                                <RiDeleteBin6Line size={14} />
+                                                                            </Badge>
                                                                         </div>
                                                                     )}
                                                                 </div>
