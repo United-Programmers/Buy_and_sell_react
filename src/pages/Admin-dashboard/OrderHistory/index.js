@@ -10,7 +10,7 @@ const OrderHistory = () => {
     return (
         <Layout>
             {/* Your components here */}
-            <h1> Order History </h1>
+            <OrderHistoryTable/>
         </Layout>
     )
 }
