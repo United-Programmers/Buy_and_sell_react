@@ -64,7 +64,7 @@ const BuyersTable = () => {
                                                         ) : (
                                                             <Fragment>
                                                                 <div >
-                                                                    {da}
+                                                                
                                                                     {i === 6 && (
                                                                         <div className="d-flex">
                                                                             <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__view p-2">
