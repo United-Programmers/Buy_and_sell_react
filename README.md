@@ -1,6 +1,6 @@
 # **Buy and Sell**
 
-## An E-commerce Application
+## React E-commerce Application
 
 ![Preview of Buy and Sell. An E-commerce Application](public/screenshot/buyandsellreact.png)
 
@@ -8,13 +8,13 @@
 
 ### **Getting Started**
 
-- Clone this Repository: by running this command your Terminal
+- Clone this Repository: by running this command your on Terminal.
 
 ```bash
 git clone https://github.com/United-Programmers/Buy_and_sell_react.git
 ```
 
-- Run the following commands
+- Now Run the following commands :
 
 ```bash
 cd Buy_and_sell_react
@@ -35,20 +35,23 @@ npm start
 
 - Download the Zip file and extract it to a folder of your choice
 
-- then run the following commands
-
-- now you can start the application by running
+- then run the following command
 
 ```bash
 npm install
 or
 npm install --force
+```
+
+- Now you can start the application by running
+
+```bash
 npm start
 ```
 
-## About the Project
+## **About this Project**
 
-Users should be able to:
+Users are able to:
 
 - View the optimal layout depending on their device's screen size.
 - Easily navigate the User Interface.
@@ -78,5 +81,7 @@ We love receiving feedback! We're always looking to improve this service. So if 
 **Have fun building!** 🚀
 
 # Buy_and_sell_react
+
 E-commerce website
->>>>>>> Stashed changes
+
+
