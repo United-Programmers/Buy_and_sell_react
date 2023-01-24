@@ -66,6 +66,7 @@ const VendorsTables = () => {
                                                                 <div >
                                                                     {da}
                                                                     {i === 7 && (
+
                                                                         <div className="d-flex">
                                                                             <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__view p-2">
                                                                                 <AiOutlineEye size={14} />
