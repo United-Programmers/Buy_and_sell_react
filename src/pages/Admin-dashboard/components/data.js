@@ -204,7 +204,7 @@ const feeTable = {
 
 const DeliveryTable = {
     data: [
-        [
+        [ 
             pic4,
             'Macbook M1 Max',
             '2023-05-18',
