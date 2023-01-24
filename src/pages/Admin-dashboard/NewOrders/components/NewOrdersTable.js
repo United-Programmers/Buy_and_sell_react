@@ -1,12 +1,13 @@
 import React, { Fragment, useState, useRef } from "react";
 import { Table, Pagination } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import data from "../components/data";
+import data from "./data";
 import { Badge, Card } from 'reactstrap';
 import { AiOutlineEye } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { MdStarBorder } from "react-icons/md";
 
-const VendorsTables = () => {
+const   NewOrdersTable = () => {
 
     const sort = 4;
     let jobPagination = Array(Math.ceil(data.profileTable.data.length / sort)).fill().map((_, i) => i + 1);
@@ -38,7 +39,7 @@ const VendorsTables = () => {
     return (
         <div className="col-12">
             <Card className="p-4">
-                <h4 className="table-card-title"> Vendors </h4>
+                <h4 className="table-card-title "><span class="order-title"><MdStarBorder className="order-icon mb-2"/>New</span> Orders</h4>
                 <div>
                     <Table responsive className="w-100">
                         <div id="example_wrapper" className="dataTables_wrapper">
@@ -56,7 +57,7 @@ const VendorsTables = () => {
                                                     <td className="table__content_data">
                                                         {i === 0 ? (
                                                             <img
-                                                                className="rounded-circle avatar-sm"
+                                                                className="rounded-circle avatar-sm rounded-avatar"
                                                                 width="15"
                                                                 src={da}
                                                                 alt=""
@@ -65,9 +66,9 @@ const VendorsTables = () => {
                                                             <Fragment>
                                                                 <div >
                                                                     {da}
-                                                                    {i === 7 && (
+                                                                    {i === 8 && (
                                                                         <div className="d-flex">
-                                                                            <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__view p-2">
+                                                                            <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__success p-2">
                                                                                 <AiOutlineEye size={14} />
                                                                             </Badge>
                                                                             <Badge to="#" className="rounded-circle btn-danger table__btn shadow btn-xs sharp p-2"
@@ -149,4 +150,4 @@ const VendorsTables = () => {
     );
 };
 
-export default VendorsTables;
+export default NewOrdersTable;
