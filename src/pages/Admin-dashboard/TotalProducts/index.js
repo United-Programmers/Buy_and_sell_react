@@ -10,7 +10,7 @@ const TotalProducts = () => {
     return (
         <Layout>
             {/* Your components here */}
-            <h5 className="main-p-heading"> Total Products </h5>
+            {/* <h5 className="main-p-heading"> Total Products </h5> */}
             <TotalProductsList />
         </Layout>
     )
