@@ -3,7 +3,7 @@ import "./style.scss"
 import Layout from "../index"
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { Row, Card, Col } from "react-bootstrap";
-import NewOrdersTable from "./Components/NewOrdersTable";
+import NewOrdersTable from "./components/NewOrdersTable";
 
 const NewOrders = () => {
 
