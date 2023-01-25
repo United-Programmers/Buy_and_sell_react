@@ -11,9 +11,6 @@ import MetaTagComp from "components/MetaTag";
 import CustomBtn from "components/CustomBtn";
 import { CiLogin } from "react-icons/ci";
 import InputForm from "./components/InputForm";
-
-
-//Import custom hook
 import usePost from "../../../hooks/usePost";
 import { RegisterMsg } from "../../../components/NotifyMessage";
 
@@ -21,11 +18,12 @@ import { RegisterMsg } from "../../../components/NotifyMessage";
 
 const SellerRegister = () => {
 
-
   const { execute, pending, data } = usePost()
 
   const handleValidSubmit = (e, values) => {
     e.preventDefault();
+
+    console.log("values : ", values)
 
     const Method = 'POST', endPoint = 'users/seller/signUp', isJSON = false, token = null;
 
@@ -33,13 +31,14 @@ const SellerRegister = () => {
       "firstName": values.firstName,
       "lastName": values.lastName,
       "phoneNumber": values.phoneNumber,
-      "agreed": true,
+      "agreed": values.true[0],
       "email": values.email,
       "password": values.password,
-      "passwordConfirm": values.passwordConfirm,
-      "businessDescriptions": values.businessDescriptions,
-      "shopName": values.shopName,
-      "paymentInfo": ""
+      "passwordConfirm": values.confirmPassword,
+      "shopName": values.company, // or shopName
+      "website": values.socialMedia,
+      "socialMedia": values.socialMedia,
+      "vatRegistered": values.vat
     });
 
     execute(endPoint, userDate, Method, RegisterMsg, token, isJSON)
