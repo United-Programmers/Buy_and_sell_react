@@ -322,7 +322,7 @@ label {
 
 //* for the input style
 .myInput .form-group input {
-    height: 50px;
+    height: 40px;
     background-color: #f6f6f6;
     border: none;
 }
@@ -336,4 +336,18 @@ label {
 
 #page-topbar {
     background: white !important;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #e1e1e1 !important;
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #e1e1e1 !important;
+}
+
+ ::placeholder {
+    color: #d0d0d0 !important;
 }
