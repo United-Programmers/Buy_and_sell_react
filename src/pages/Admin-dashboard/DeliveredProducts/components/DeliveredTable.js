@@ -60,7 +60,7 @@ export const DelieveredTable = () =>{
                                 <tbody>
 
                                     {deliverData.current.map((data, index) => ( //map through the array values
-                                        <tr key={index}>
+                                        <tr key={index}> 
                                             
                                                 <>
                                                     {data.map((da, i)=>(
