@@ -1,6 +1,10 @@
 import pic1 from "../../../assets/images/product/img-1.png";
 import pic2 from "../../../assets/images/product/img-2.png";
 import pic3 from "../../../assets/images/product/img-3.png";
+import pic4 from '../../../assets/images/product/img-11.jpg';
+import pic5 from '../../../assets/images/product/img-12.webp';
+import pic6 from '../../../assets/images/product/img-4.png';
+
 
 const profileTable = {
     data: [
@@ -196,9 +200,62 @@ const feeTable = {
 };
 
 
+
+
+const DeliveryTable = {
+    data: [
+        [ 
+            pic4,
+            'Macbook M1 Max',
+            '2023-05-18',
+            '2023-05-21',
+            '12:00pm',
+            profileTable.data[0][1],
+            ''
+
+        ],
+
+        [
+            pic5,
+            'Black Hoodie',
+            '2023-05-18',
+            '2023-05-21',
+            '12:00pm',
+            profileTable.data[1][1],
+            '',
+
+        ],
+
+        [
+            pic6,
+            'White T-Shirt',
+            '2023-05-18',
+            '2023-05-21',
+            '12:00pm',
+            profileTable.data[2][1],
+            '',
+        ]
+
+    ],
+
+    columns: [
+        'Pic',
+        'Product Name',
+        'Assign Date',
+        'Delivery Date',
+        'Time',
+        'Buyer',
+        'Action',
+        
+
+    ]
+}
+
+
 const data = {
     profileTable,
-    feeTable
+    feeTable,
+    DeliveryTable
 };
 
 export default data;
