@@ -15,4 +15,4 @@ const Buyers = () => {
     )
 }
 
-export default Buyers
+export default Buyers 

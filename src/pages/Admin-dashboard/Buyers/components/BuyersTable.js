@@ -42,7 +42,7 @@ const VendorsTables = () => {
                 <div>
                     <Table responsive className="w-100">
                         <div id="example_wrapper" className="dataTables_wrapper">
-                            <table id="example" className="display w-100 dataTable">
+                            <table id="example" className="display w-100 dataTable"> 
 
                                 <thead>
                                     <tr role="row">  {data.profileTable.columns.map((d, i) => (<th className="table_header" key={i}>{d}</th>))} </tr>
@@ -66,6 +66,7 @@ const VendorsTables = () => {
                                                                 <div >
                                                                     {da}
                                                                     {i === 7 && (
+
                                                                         <div className="d-flex">
                                                                             <Badge to="#" className="rounded-circle table__btn shadow btn-xs sharp me-1 btn__view p-2">
                                                                                 <AiOutlineEye size={14} />

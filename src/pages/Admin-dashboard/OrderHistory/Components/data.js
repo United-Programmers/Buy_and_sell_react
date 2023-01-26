@@ -1,85 +1,75 @@
-import pic1 from "../../../assets/images/product/img-1.png";
-import pic2 from "../../../assets/images/product/img-2.png";
-import pic3 from "../../../assets/images/product/img-3.png";
-import pic4 from '../../../assets/images/product/img-11.jpg';
-import pic5 from '../../../assets/images/product/img-12.webp';
-import pic6 from '../../../assets/images/product/img-4.png';
+import pic1 from "../../../../assets/images/product/orderHistory1.svg"
+import pic2 from "../../../../assets/images/product/orderHistory2.svg"
+import pic3 from "../../../../assets/images/product/orderHistory3.svg"
 
-
-const profileTable = {
+const orderTable = {
     data: [
         [
             pic1,
-            "Dai Rios",
-            "R 200",
-            "65",
+            "MacBook Pro 16-inch Apple M1 Max",
+            "red",
             "sm",
-            "male",
-            "",
-        ],
-        [
-            pic3,
-            "Jenette Caldwell",
-            "R 200",
-            "55",
-            "xxl",
-            "male",
+            "Paid",
+            "3",
+            "R200",
+            "Pick Up",
+            "R600",,
+            "2023 / 02 / 6",
             "",
         ],
         [
             pic2,
-            "Yuri Berry",
-            "R 150",
-            "45",
-            "sm",
-            "female",
-            "",
-        ],
-        [
-            pic1,
-            "Caesar Vance",
-            "R 200",
-            "20",
+            "MacBook Pro 16-inch Apple M1 Max",
+            "green",
             "md",
-            "other",
+            "Paid",
+            "2",
+            "R300",
+            "Collection",
+            "R300",,
+            "2023 / 02 / 6",
             "",
         ],
         [
             pic3,
-            "Doris Wilder",
-            "R 330",
-            "33",
+            "MacBook Pro 16-inch Apple M1 Max",
+            "yellow",
             "lg",
-            "female",
+            "Paid",
+            "6",
+            "R450",
+            "Collection",
+            "R450",,
+            "2023 / 02 / 6",
             "",
         ],
         [
-            pic1,
-            "Angelica Ramos",
-            "R 200",
-            "33",
-            "sm",
-            "male",
+            pic3,
+            "MacBook Pro 16-inch Apple M1 Max",
+            "yellow",
+            "lg",
+            "Paid",
+            "6",
+            "R450",
+            "Collection",
+            "R450",,
+            "2023 / 02 / 6",
             "",
         ],
-        [
-            pic1,
-            "Gavin Joyce",
-            "R 150",
-            "33",
-            "md",
-            "other",
-            "",
-        ],
+        
     ],
     columns: [
-        "pic",
+        "Pic",
         "Product Name",
-        "Price",
-        "stock",
+        "Color",
         "Size",
-        "Gender",
-        "actions",
+        "Status",
+        "Quantity",
+        "Price",
+        "Deliver Type",
+        "Total Price",
+        "Date",
+        "Action",
     ],
 };
 
@@ -200,62 +190,9 @@ const feeTable = {
 };
 
 
-
-
-const DeliveryTable = {
-    data: [
-        [ 
-            pic4,
-            'Macbook M1 Max',
-            '2023-05-18',
-            '2023-05-21',
-            '12:00pm',
-            profileTable.data[0][1],
-            ''
-
-        ],
-
-        [
-            pic5,
-            'Black Hoodie',
-            '2023-05-18',
-            '2023-05-21',
-            '12:00pm',
-            profileTable.data[1][1],
-            '',
-
-        ],
-
-        [
-            pic6,
-            'White T-Shirt',
-            '2023-05-18',
-            '2023-05-21',
-            '12:00pm',
-            profileTable.data[2][1],
-            '',
-        ]
-
-    ],
-
-    columns: [
-        'Pic',
-        'Product Name',
-        'Assign Date',
-        'Delivery Date',
-        'Time',
-        'Buyer',
-        'Action',
-        
-
-    ]
-}
-
-
 const data = {
-    profileTable,
-    feeTable,
-    DeliveryTable
+    orderTable,
+    feeTable
 };
 
 export default data;

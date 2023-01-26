@@ -9,13 +9,6 @@ import CustomBtn from 'components/CustomBtn';
 import { AvForm, AvField } from "availity-reactstrap-validation"
 
 
-
-
-
-
-
-
-
 function AccountUpload() {
   return (
     <>
