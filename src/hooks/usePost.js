@@ -24,7 +24,8 @@ const usePost = () => {
             redirect: 'follow'
         };
 
-        return fetch(`${process.env.REACT_APP_API_V1}/${endPoint}`, requestOptions)
+        // return fetch(`${process.env.REACT_APP_API_V1}/${endPoint}`, requestOptions)
+        return fetch(`${process.env.REACT_APP_API_LOCAL}${endPoint}`, requestOptions)
             .then(response => response.json())
             .then(res => {
                 if (res?.status === 'success') {
