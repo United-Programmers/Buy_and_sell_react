@@ -42,7 +42,7 @@ const VendorsTables = () => {
                 <div>
                     <Table responsive className="w-100">
                         <div id="example_wrapper" className="dataTables_wrapper">
-                            <table id="example" className="display w-100 dataTable">
+                            <table id="example" className="display w-100 dataTable"> 
 
                                 <thead>
                                     <tr role="row">  {data.profileTable.columns.map((d, i) => (<th className="table_header" key={i}>{d}</th>))} </tr>
