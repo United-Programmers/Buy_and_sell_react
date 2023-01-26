@@ -113,20 +113,21 @@ function InputForm() {
       </Col>
 
       <div className="mb-3 mt-3 radioInput">
+        <label htmlFor="">Are you VAT registered ?</label>
         <AvRadioGroup
           inline
           name="vat"
-          label="Are you VAT registered ?"
+          // label="Are you VAT registered ?"
           required
         >
-          <AvRadio label="Yes" value="Yes" />
-          <AvRadio label="No" value="No" />
+          <AvRadio label="Yes" value="true" />
+          <AvRadio label="No" value="false" />
         </AvRadioGroup>
       </div>
 
       <div className="mb-3 " >
-        <AvCheckboxGroup inline name="true"  required>
-        <AvCheckbox label="Agreed to our terms and conditions" value="true" />
+        <AvCheckboxGroup inline name="true" required>
+          <AvCheckbox label="Agreed to our terms and conditions" value="true" />
         </AvCheckboxGroup>
       </div>
 

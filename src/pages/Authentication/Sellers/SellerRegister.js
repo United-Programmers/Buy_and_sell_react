@@ -22,10 +22,7 @@ const SellerRegister = () => {
 
   const handleValidSubmit = (e, values) => {
     e.preventDefault();
-
-    console.log("values : ", values)
-
-    const Method = 'POST', endPoint = 'users/seller/signUp', isJSON = false, token = null;
+    const Method = 'POST', endPoint = 'auth/seller/signUp', isJSON = false, token = true;
 
     const userDate = JSON.stringify({
       "firstName": values.firstName,
@@ -35,8 +32,8 @@ const SellerRegister = () => {
       "email": values.email,
       "password": values.password,
       "passwordConfirm": values.confirmPassword,
-      "shopName": values.company, // or shopName
-      "website": values.socialMedia,
+      "shopName": values.company, // or Company name
+      "website": values.website,
       "socialMedia": values.socialMedia,
       "vatRegistered": values.vat
     });
@@ -59,7 +56,7 @@ const SellerRegister = () => {
                     <InputForm />
 
                     <div className="text-center me-3">
-                      <CustomBtn btnName="Submit" icon={<CiLogin size={28} />} />
+                      <CustomBtn btnName="Submit" icon={<CiLogin size={28} />} Pending={pending} />
                     </div>
                   </AvForm>
                 </div>
