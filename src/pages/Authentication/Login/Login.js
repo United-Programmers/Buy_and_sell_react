@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags"
 import React, { useState } from "react"
 import { Row, Col, CardBody, Card, Alert, Container } from "reactstrap"
 import { connect } from "react-redux"
-import { withRouter, Link } from "react-router-dom"
+import { withRouter, Link, useHistory } from "react-router-dom"
 import { AvForm, AvField } from "availity-reactstrap-validation"
 import { loginUser, apiError } from "../../../store/actions"
 import Button from "components/Common/Button/Button"
@@ -11,14 +11,40 @@ import "./style.scss"
 import PageWrapper from "components/PageWrapper"
 import CustomBtn from "components/CustomBtn"
 import { CiLogin } from "react-icons/ci"
+import { useDispatch_2 } from "../../../index";
+import { HomeRoute } from "../../../components/RouteName"
+import { LoginMsg } from "../../../components/NotifyMessage"
+import usePost from "hooks/usePost"
+import { Login } from "Redux/Slices/userSlice"
 
-const Login = () => {
+
+
+const LoginComp = () => {
+
+  const history = useHistory()
+  const dispatch = useDispatch_2();
+  const { execute, pending, data } = usePost()
+
+  const handleValidSubmit = (e, values) => {
+    e.preventDefault();
+    const Method = 'POST', endPoint = 'auth/login', token = null;
+    const raw = JSON.stringify({
+      "email": values.email,
+      "password": values.password
+    });
+    execute(endPoint, raw, Method, LoginMsg, token)
+  }
+
+  if (data?.status === 'success') {
+    dispatch(Login(data));
+    window.setTimeout(() => {
+      history.push(HomeRoute);
+    }, 3000);
+  }
 
   return (
     <React.Fragment>
-      <MetaTags>
-        <title>Login | Buy & sell</title>
-      </MetaTags>
+      <MetaTags>  <title>Login | Buy & sell</title> </MetaTags>
 
       <div className="page-content account-pages my-5 pt-5">
         <Row className="justify-content-center mt-5">
@@ -29,10 +55,7 @@ const Login = () => {
                 <div className="p-3">
                   <AvForm
                     className="form-horizontal mt-4"
-                    onValidSubmit={(e, v) => {
-                      handleValidSubmit(e, v)
-                    }}
-                  >
+                    onValidSubmit={(e, v) => { handleValidSubmit(e, v) }}>
                     <div className="mb-3 myInput">
                       <AvField
                         name="email"
@@ -62,8 +85,7 @@ const Login = () => {
                     <Row className="mt-2 mb-0 row">
                       <div className="col-12 mt-4">
                         <Link to="/forgot-password">
-                          <i className="mdi mdi-lock"></i> Forgot your
-                          password?
+                          <i className="mdi mdi-lock"></i> Forgot your password?
                         </Link>
                       </div>
                     </Row>
@@ -90,4 +112,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default LoginComp
