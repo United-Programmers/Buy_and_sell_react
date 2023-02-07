@@ -1,4 +1,4 @@
-const DashboardRoute = "/dashboard"
+const HomeRoute = "/home"
 const AdminDashboardRoute = "/admin-dashboard"
 const LoginRoute = "/login"
 const ForgotPasswordRoute = "/forgot-password"
@@ -17,12 +17,12 @@ const LoanRequestRoute = "/loan-request"
 
 
 export {
+    HomeRoute,
     LoginRoute,
     ForgotPasswordRoute,
     ResetPasswordRoute,
     StudentRegRoute,
     VerifyEmailRoute,
-    DashboardRoute,
     LogoutRoute,
     RegisterAsRoute,
     ProfileRoute,
