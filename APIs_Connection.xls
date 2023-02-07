@@ -1,9 +1,21 @@
-APIs							
-							
-							
-							
-							
-							
-							
-							
-							
+			
+								
+								
+								
+								
+								
+								
+								
+								
+		CONNECTED APIs						
+		END POINT	CONNECTED					
+		api/v1/auth/user/signup	100%					
+		api/v1/auth/seller/signUp	100%					
+		api/v1/auth/driver/signUp	50%					
+		api/v1/auth/login	100%					
+								
+								
+								
+								
+								
+
